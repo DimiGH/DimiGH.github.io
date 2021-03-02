@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dimifw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://spendyourdogecoins.cf
+  * I am dimifw (https://keybase.io/dimifw) on keybase.
+  * I have a public key ASDSM2O1nm0f6Lj6lmJ_BUJR9-NUR1Abxv9JQfFuY70RDAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d23363b59e6d1fe8b8fa96627f054251f7e35447501bc6ff4941f16e63bd110c0a",
+      "host": "keybase.io",
+      "kid": "0120d23363b59e6d1fe8b8fa96627f054251f7e35447501bc6ff4941f16e63bd110c0a",
+      "uid": "f1b067e3cdecfc083ef8783141a27e19",
+      "username": "dimifw"
+    },
+    "merkle_root": {
+      "ctime": 1614708556,
+      "hash": "ac9212310ffa66d3181ab830aa0702ef2778c7e087693d92a7d68525afedd9c64336a1c8c633b4c548c77f3c965736dd381b6a1e91ce6d425c88170a02e7a318",
+      "hash_meta": "5bdbd6962f51de479b2883561cba58675ada4c3715f58ed3519cbef6fc1270cb",
+      "seqno": 19271149
+    },
+    "service": {
+      "entropy": "f9tvMIx/hQJMSSKzQ7A3DAL0",
+      "hostname": "spendyourdogecoins.cf",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1614708575,
+  "expire_in": 504576000,
+  "prev": "4589144d43fbb2a0391f750575bc7237c1abeb6b8cc4e4b113867e418cf4c088",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0jNjtZ5tH+i4+pZifwVCUffjVEdQG8b/SUHxbmO9EQwKp3BheWxvYWTESpcCEcQgRYkUTUP7sqA5H3UFdbxyN8Gr62uMxOSxE4Z+QYz0wIjEIH53SvwQOoDuBORFzK9azajB38w08Eyf82prUv53G2OIAgHCo3NpZ8RA81+ccRHsKbliAUEfNSyVahS1Z8lkuEBR4mKS/8WUUj5rrViOkNUiS/mKrNwIlYLfkx7AHqsFfKYFq2F50VBQB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDkUQIF5vrGT0s9m1hjcPV8qMfMhqxhTBfRX9wUZtRexo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dimifw
+
+==================================================================
