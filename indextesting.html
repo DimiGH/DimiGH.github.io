@@ -1,1814 +1,218 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
 	<!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
+	<meta charset="utf-8">
+	<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
 
-<!-- Search Engine -->
-<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-<meta name="keywords" content="Doge,Dogecoin,Shops,Stores,Pay,List,Directory">
-<meta name="author" content="DimiFW">
-<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-	
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="SpendYourDogecoins.cf">
-<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
+	<!-- Search Engine -->
+	<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="keywords" content="Doge,Dogecoin,Shops,Stores,Pay,List,Directory" />
+	<meta name="author" content="DimiFW" />
+	<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
 
-<!-- for Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://www.spendyourdogecoins.cf">
-<meta name="twitter:title" content="SpendYourDogecoins">
-<meta name="twitter:description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta name="twitter:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-<meta name="twitter:site" content="@SpendYourDoge">
-<meta name="twitter:creator" content="@DimiFW">
-    
-	
-	<link rel="icon" href="/image/favicon.ico">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="SpendYourDogecoins.cf" />
+	<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+
+	<!-- for Twitter -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="https://www.spendyourdogecoins.cf" />
+	<meta name="twitter:title" content="SpendYourDogecoins" />
+	<meta name="twitter:description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="twitter:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="twitter:site" content="@SpendYourDoge" />
+	<meta name="twitter:creator" content="@DimiFW" />
+
+	<link rel="icon" href="./image/favicon.ico" />
 
 	<style>
+	body {
+		font-family: 'Comic Sans MS', Verdana, sans-serif;
+		color: #FFCC00;
+		background-color: #323232;
+	}
 
-        body {
-            font-family: 'Comic Sans MS', Verdana, sans-serif;
-            color: #FFCC00;
-            background-color: #323232;
-			text-align: center;
-        }
+	a:link {
+		color: #FFCC00;
+		text-decoration: none;
+	}
 
-        a:link {
-            color: #FFCC00;
-            text-decoration: none;
-        }
+	a:visited {
+		color: #FFCC00;
+		text-decoration: none;
+	}
 
-        a:visited {
-			color: #FFCC00;
-            text-decoration: none;
-        }
-		
-		.color-pink {
-			color: #FF6699 !important;
-            text-decoration: none;
-        }
+	a:hover {
+		color: #FFCC00;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
 
-        a:hover {
-            color: #FFCC00;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-        }
+	a:active {
+		color: #FFFFFF;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
 
-        a:active {
-            color: #FFFFFF;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-        }
+	div.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 165px;
+		margin: 3px;
+		border: 1px solid #FFCC00;
+		background-color: #323232;
+	}
 
-    </style>
+	div.category {
+		text-align: center;
+		padding-bottom: 32px;
+	}
+	div.category > .category-title {
+		color: #FF6699 !important;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	div.category > ul {
+		padding-inline-start: 0;
+	}
+	div.category .category-entry {
+		font-size: 15px;
+		list-style-type: none;
+		margin: 2px 0;
+	}
+	</style>
 
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
+	<div id="app">
+		<!-- Site navigation -->
+		<div class="fixed">
+			<span style="margin: 5px;"><a href="index.html">- Home</a></span>
+			<br>
+			<span style="margin: 5px;"><a href="about.html">- About/FAQ</a></span>
+			<br>
+			<span style="margin: 5px;"><a href="changelog.html">- Changelog</a></span>
+			<br>
+			<span style="margin: 5px;"><a href="partners.html">- Other Doge Stuff</a></span>
+			<br>
+			<span style="margin: 5px;"><a href="graphics.html">- Graphics</a></span>
+		</div>
 
-    <h1 style="font-size: 15px; text-align: center;"><a href="index.html"><img src="/image/banner.png" alt="SpendYourDogecoins"></a></h1>
-    
-    <h2 style="font-size: 18px; text-align: center;"><a href="index.html">Home</a> - <a href="changelog.html">Changelog</a> - <a href="about.html">About/FAQ</a> - <a href="partners.html">Other Doge Stuff</a> - <a href="graphics.html">Graphics</a> - <a href="mailto:spendyourdogecoins@protonmail.com" target=”_blank”>Email</a> - <a href="https://twitter.com/SpendYourDoge" target=”_blank”>Twitter</a>
-	
-    <h4 style="font-size: 11px; text-align: center; text-decoration: underline;"><a href="changelog.html">(Last time updated/checked: 04/26/2021)<br>Total stores currently listed: 375</a></h4>	
+		<h1 style="font-size: 15px; text-align: center;">
+			<a href="index.html"><img src="./image/banner.png" alt="SpendYourDogecoins" /></a>
+		</h1>
 
-	<h3 style="font-size: 25px; color: #FF6699; text-align: center;">~ ~ ~ Spotlight ~ ~ ~</h3>
-	
-	<div style="font-size: 15px; text-align: center; margin:2px;">
-		
-		<a href="https://www.dogecoinlist.com/" target=”_blank”><b>DogecoinList</b></a>
+		<h2 style="font-size: 13px; text-align: center;">
+			Contact Email:
+			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank">spendyourdogecoins@protonmail.com</a>
+		</h2>
+
+		<h2 style="font-size: 13px; text-align: center;">
+			<a href="https://twitter.com/SpendYourDoge" target="_blank">
+				<img src="./image/twitter.png" alt="">
+				SpendYourDogecoins on Twitter
+			</a>
+			<a href="https://twitter.com/SpendYourDoge" target="_blank">
+				<img src="./image/twitter.png" alt="">
+			</a>
+		</h2>
+
+		<!-- Changelog -->
+		<h4 style="font-size: 11px; text-align: center; text-decoration: underline;">
+			<a href="changelog.html">
+				(Last time updated/checked: 04/26/2021)<br>
+				Total stores currently listed: {{ storeCount }}
+			</a>
+		</h4>
+
+		<!-- Spotlight -->
+		<div class="category">
+			<h3 class="category-title">
+				~ ~ ~ Spotlight ~ ~ ~
+			</h3>
+
+			<a href="https://www.dogecoinlist.com/" target="_blank"><b>DogecoinList</b></a>
+			<br>
+			<a href="https://www.dogecoinlist.com/" target="_blank"><img src="./image/dogecoinlist.png" alt="Dogecoinlist.com"></a>
+			<br>
+			Sell your things for Dogecoin. Similar to eBay/craigslist, but with Dogecoin.
+			<br>
+			<br>
+			<a href="https://r0ok.com/" target="_blank"><b>r0ok Clothing Co.</b></a>
+			<br>
+			<a href="https://r0ok.com/" target="_blank"><img src="./image/r0okclothing.png" alt="r0ok.com"></a>
+			<br>
+			Mental Health Awareness Clothes. Part of the monthly profits get donated to charities.
+		</div>
+
+		<!-- Categories -->
+		<div
+			v-for="category in categories"
+			:id="category.title"
+			class="category"
+		>
+			<!-- Title -->
+			<a class="category-title" :href="'#' + category.title">
+				~ ~ ~ {{ category.title }} ~ ~ ~
+			</a>
+
+			<!-- Site links -->
+			<ul>
+				<li class="category-entry" v-for="entry in category.entries">
+					<a
+						:href="entry.href"
+						target="_blank"
+						:onClick="entry.restricted ? `return confirm('Please confirm that you are at least 18 years old before visiting this store')` : ''"
+					>
+						<b>{{ entry.name }}</b> - {{ entry.description }}
+					</a>
+				</li>
+			</ul>
+		</div>
+
 		<br>
-		<a href="https://www.dogecoinlist.com/" target=”_blank”><img src="/image/dogecoinlist.png" alt="Dogecoinlist.com"></a>
-        <br>
-		Sell your things for Dogecoin. Similar to eBay/craigslist, but with Dogecoin.
-       	<br>
 		<br>
-		<a href="https://r0ok.com/" target=”_blank”><b>r0ok Clothing Co.</b></a>
-		<br>
-		<a href="https://r0ok.com/" target=”_blank”><img src="/image/r0okclothing.png" alt="r0ok.com"></a>
-		<br>
-		Mental Health Awarness Clothes. Part of the monthly profits get donated to charities.
-		    </div>
-<br>
-	
-    <a class="color-pink" href="#Art"><span id="Art" style="font-size: 25px; color: #FF6699 !important; text-align: center;"><b>~ ~ ~ Art ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-   	<a href="https://cryptoart.com/" target=”_blank”><b>CryptoArt</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Art</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://lynxartcollection.com/" target=”_blank”><b>Lynx Art Collection</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto & Various Art</i></span></a>
-	
-    </div>
-   
-	<br>
 
-	<a class="color-pink" href="#Automobile"><span id="Automobile" style="font-size: 25px; color: #FF6699 !important; text-align: center;"><b>~ ~ ~ Automobile ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://bitcars.eu/" target=”_blank”><b>BitCars</b><span style="font-size: 10px;"> (Germany - Globee)</span><br><span style="font-size: 13px;"><i>Luxury Cars & Oldtimers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cueanthonyracing.com/" target=”_blank”><b>Cue Anthony Racing</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Over 32000 Auto, SUV, Truck & UTV/ATV Aftermarket Performance Parts & Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ksportusa.com/" target=”_blank”><b>Ksport USA</b><span style="font-size: 10px;"> (USA - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Auto Parts Seller like suspension, brake and air ride systems and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.paylatertires.com/" target=”_blank”><b>Pay Later Tires</b><span style="font-size: 10px;"> (USA - Plisio)</span><br><span style="font-size: 13px;"><i>Wheels & Tires</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.facebook.com/VehicleCleansing/" target=”_blank”><b>ShineAuto</b><span style="font-size: 10px;"> (UK - In Store Payment)</span><br><span style="font-size: 13px;"><i>Vehicle paint correcting, polishing and ceramic coatings. Located in Maidstone, UK.</i></span></a>
-	
-    </div>
-	
-    <br>
-	
-	<a class="color-pink" href="#Beds"><span id="Beds" style="font-size: 25px; color: #FF6699 !important; text-align: center;"><b>~ ~ ~ Beds ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
+		<center><b>Disclaimer:</b></center>
+		<h4 style="font-size: 11px; text-align: center;">
+			All links are provided with the best of my knowledge. <br>Please make sure to check the shops listed here
+			yourself again, before spending your Dogecoins there. <br>In no way should the admin of this website be
+			responsible for any fraudulently activities from any listed shop.
+		</h4>
 
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bestsleepcentre.com" target=”_blank”><b>Best Sleep Centre</b><span style="font-size: 10px;"> (Canada - Bitpay)</span><br><span style="font-size: 13px;"><i>Mattresses, Beds, Pillows and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bolstersleep.com" target=”_blank”><b>Bolster</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Hybrid Mattress</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://essentialsleepboutique.com" target=”_blank”><b>Essential Sleep</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Mattresses, Pillows</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.putnams.co.uk" target=”_blank”><b>Putnams</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>Mattresses, Pillows and more</i></span></a>
-			
-    </div>
-	
-    <br>
-
-    <a class="color-pink" href="#Clothing"><span id="Clothing" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Clothing ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://1337.fashion/" target=”_blank”><b>1337 Fashion</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Clothes and merch</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://airbrushcustoms.net/" target=”_blank”><b>AirbrushCustoms</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Custom Airbrushed T shirts, Hats, Hoodies, and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://akumuink.com" target=”_blank”><b>Akumu Ink Clothing</b><span style="font-size: 10px;"> (Netherlands - Bitpay)</span><br><span style="font-size: 13px;"><i>Nightmare Inspired Art Clothing</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://aliencarp.com" target=”_blank”><b>Alien Carp</b><span style="font-size: 10px;"> (UK - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Angler Clothing, Shirts, Mugs and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://aliveandmore.com" target=”_blank”><b>Alive & More</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>Artistic Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://atheist.shoes" target=”_blank”><b>Atheist Shoes</b><span style="font-size: 10px;"> (Germany - Bitpay)</span><br><span style="font-size: 13px;"><i>Handmade, Bauhaus-inspired Shoes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://authenticsolo.com" target=”_blank”><b>AuthenticSolo</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://bedlamthreadz.com/" target=”_blank”><b>BedlamThreadz</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Shirts, Caps and Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bonocler.com" target=”_blank”><b>Bonocler Eyewear</b><span style="font-size: 10px;"> (Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>Swiss Glasses Store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bottegasenatore.com" target=”_blank”><b>Bottega Senatore</b><span style="font-size: 10px;"> (Italy/Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>Handmade Italian Leather Shoes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://btfd.shop/" target=”_blank”><b>BTFD.shop</b><span style="font-size: 10px;"> (USA - Swirl)</span><br><span style="font-size: 13px;"><i>Crypto Shirts, Mugs and Stickers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coinmonster.store/" target=”_blank”><b>Coin Monster</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cryptobantam.com/" target=”_blank”><b>CryptoBantam</b><span style="font-size: 10px;"> (USA/Europe - MyCryptoCheckout/Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptowardrobe.com/" target=”_blank”><b>CryptoWardrobe</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Shirts, Hoodies, Mugs, Hats, Socks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.culturekings.com.au" target=”_blank”><b>Culture Kings</b><span style="font-size: 10px;"> (Australia - Bitpay)</span><br><span style="font-size: 13px;"><i>Streetwear, Sneakers and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.vanassibara.com" target=”_blank”><b>Diego Vanissabara</b><span style="font-size: 10px;"> (UK - CoinGate)</span><br><span style="font-size: 13px;"><i>High End Designer Shoes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dogeswag.com/shop/" target=”_blank”><b>DogeSwag</b><span style="font-size: 10px;"> (USA - GoUrl)</span><br><span style="font-size: 13px;"><i>Doge/Crypto Shirts and Mugs</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dogetomars.com/collections/all" target=”_blank”><b>DogeToMars</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Doge(coin) Shirts, Hats, Face Masks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.dogewares.co.uk" target=”_blank”><b>Doge Wares</b><span style="font-size: 10px;"> (UK - ProDoge)</span><br><span style="font-size: 13px;"><i>Dogecoin Hat</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://eatmeclothing.com/" target=”_blank”><b>Eat Me Clothing</b><span style="font-size: 10px;"> (USA/Mexico/Latvia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Huge Clothing Sortiment</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://elevenplus.shop/" target=”_blank”><b>Elevenplus Shop</b><span style="font-size: 10px;"> (Italy - GoUrl)</span><br><span style="font-size: 13px;"><i>Water repellent, breathable and washable face masks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.frankandbeans.com.au" target=”_blank”><b>Frank & Beans</b><span style="font-size: 10px;"> (Australia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Underwear</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://girlmeetsdress.com" target=”_blank”><b>Girl Meets Dress</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>UK Luxury Dress Hire Store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hipptee.com" target=”_blank”><b>HippTee</b><span style="font-size: 10px;"> (USA - Coinpayments/Globee)</span><br><span style="font-size: 13px;"><i>Crypto Shirts</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.jaykirby.com.au/" target=”_blank”><b>Jay Kirby</b><span style="font-size: 10px;"> (Australia - Bitpay)</span><br><span style="font-size: 13px;"><i>Cufflinks, Ties & Bow Ties</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kandykorn.shop" target=”_blank”><b>Kandykorn.Shop</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Custom Underground Clothing</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kryptoez.com/" target=”_blank”><b>Kryptoez</b><span style="font-size: 10px;"> (UK - Coinpayments/NowPayments)</span><br><span style="font-size: 13px;"><i>Crypto Socks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.kryptothreadz.com/" target=”_blank”><b>Krypto Threadz</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.masksbysharon.com" target=”_blank”><b>Masks by Sharon</b><span style="font-size: 10px;"> (USA - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Custom Made Face Masks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.mycoconutheart.com/" target=”_blank”><b>MyCoconutHeart</b><span style="font-size: 10px;"> (USA - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Womens Clothing</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://mydogecoin.rocks" target=”_blank”><b>My Dogecoin Rocks</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Dogecoin Clothes and Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://odeclothing.com/" target=”_blank”><b>Ode Clothing</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.parkandfinch.com/" target=”_blank”><b>ParkAndFinch</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Glasses</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://www.poisonouspinups.com/store/" onClick="return confirm('Please confirm that you are at least 18 years old before visiting this store')" target=”_blank”><b>Poisonous Pinups</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Poisonous Pinups Clothing</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://print-ted.com/collections/crypto-collection" target=”_blank”><b>Print-Ted</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto clothes collection and Design your own shirt</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://r0ok.com" target=”_blank”><b>r0ok Clothing Co.</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Mental Health Awarness Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.shadowwwork.com" target=”_blank”><b>Shadowwork</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Clothes</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shop.storyv.com" target=”_blank”><b>Shop StoryV</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Womens Travel Apparel and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shopbeachwearonline.com/shop/" target=”_blank”><b>Siam Secrets Apparel</b><span style="font-size: 10px;"> (Thailand - Bitpay)</span><br><span style="font-size: 13px;"><i>Summer and Beach Fashion</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.thescarfboutique.com" target=”_blank”><b>The Scarf Boutique</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Silk Scarves</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://thestonkshop.com" target=”_blank”><b>The Stonk Shop</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Doge Shirts, Hoodies and Hats</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.zeroconfs.com/" target=”_blank”><b>zeroconfs</b><span style="font-size: 10px;"> (Iceland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Clothing, Mugs, Hats</i></span></a>
-    </div>
-
-    <br>
-		
-	<a class="color-pink" href="#HardwareWallets"><span id="HardwareWallets" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Crypto Hardware Wallets ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.balletcrypto.com/en/buy/" target=”_blank”><b>Ballet</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Hardware Wallet, buyable with Dogecoin and supporting Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coinstop.io" target=”_blank”><b>Coinstop.io</b><span style="font-size: 10px;"> (Australia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Authorised Trezor, Ledger, Billfodl & Bitbox dealer</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coolwallet.io" target=”_blank”><b>CoolWallet</b><span style="font-size: 10px;"> (Taiwan - Bitpay)</span><br><span style="font-size: 13px;"><i>Hardware Wallet, buyable with Dogecoin, but <b>not</b> supporting Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://shapeshift.com/keepkey" target=”_blank”><b>KeepKey</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Hardware Wallet, buyable with Dogecoin and supporting Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.ledger.com" target=”_blank”><b>Ledger</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Hardware Wallet, buyable with Dogecoin and supporting Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shop.safepal.io/" target=”_blank”><b>SafePal.io</b><span style="font-size: 10px;"> (China - Coinpayments)</span><br><span style="font-size: 13px;"><i>Hardware Wallet, buyable with Dogecoin and supporting Dogecoin</i></span></a>
-	
-    </div>
-			
-	<br>
-
-	<a class="color-pink" href="#PaymentProviders"><span id="PaymentProviders" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Dogecoin Payment Providers ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bitpay.com" target=”_blank”><b>Bitpay.com</b><span style="font-size: 10px;"> (200+ Countries supported)</span><br><span style="font-size: 13px;"><i>5 different coins, 1% fee, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://btcpayserver.org/" target=”_blank”><b>BTCPay</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>14 different coins, self-hosted, open-source, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coingate.com" target=”_blank”><b>CoinGate.com</b><span style="font-size: 10px;"> (100+ Countries supported)</span><br><span style="font-size: 13px;"><i>50+ different coins, 1% fee, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coinify.com" target=”_blank”><b>Coinify.com</b><span style="font-size: 10px;"> (70+ Countries supported)</span><br><span style="font-size: 13px;"><i>10 different coins, no fees, KYC required, daily/weekly fiat conversion options</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coinpayments.net" target=”_blank”><b>Coinpayments.net</b><span style="font-size: 10px;"> (200+ Countries supported)</span><br><span style="font-size: 13px;"><i>2055+ different coins, 0.5% fee, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coinremitter.com/" target=”_blank”><b>CoinRemitter.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>8 different coins, 0.23% fee, no KYC, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptocurrencycheckout.com" target=”_blank”><b>CryptocurrencyCheckout.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>50+ different coins, no fees, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptoprocessing.com/" target=”_blank”><b>Cryptoprocessing.com</b><span style="font-size: 10px;"> (90+ Countries supported)</span><br><span style="font-size: 13px;"><i>30+ different coins, KYC required, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cryptowoo.com/" target=”_blank”><b>CryptoWoo.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>9 different coins, no KYC, p2p payments, WooCommerce store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://globee.com/" target=”_blank”><b>Globee.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>7 different coins, 1% fee, no KYC, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://gourl.io/" target=”_blank”><b>GoUrl.io</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>12 different coins, 1.5% fee, no KYC, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://mycryptocheckout.com/" target=”_blank”><b>MyCryptoCheckout.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>100+ different coins, 0% fee, no KYC, p2p payments, WooCommerce store plugin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://nowpayments.io/" target=”_blank”><b>NowPayments.io</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>50+ different coins, 0.4%-0.5% fee, KYC required, instant payouts, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://pawcommerce.com/" target=”_blank”><b>PawCommerce.com</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>Dogecoin only, no fees, no KYC</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://paykassa.pro/en/" target=”_blank”><b>PayKassa.pro</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>10 different coins, 4% fee, no KYC, fiat conversion options, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://plisio.net/" target=”_blank”><b>Plisio.net</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>8 different coins, 0.5% fee, no KYC, wide variety of store plugins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://prodoge.com/" target=”_blank”><b>ProDoge</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>7 different coins, no fees, website widget, mobile app</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://swirlpay.io/" target=”_blank”><b>SwirlPay</b><span style="font-size: 10px;"> (Worldwide supported)</span><br><span style="font-size: 13px;"><i>18 different coins, p2p, no fees</i></span></a>
+		<h5 style="font-size: 9px; text-align: center;">
+			<a href="https://www.reddit.com/user/DimiFW/"><u>/u/DimiFW</u></a>
+			<br>
+			Donate: D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN
+		</h5>
 	</div>
 
-    <br>
+	<h5 style="text-align: center;">
+		<script src="https://www.w3counter.com/tracker.js?id=136549"></script>
+	</h5>
 
-	<a class="color-pink" href="#Donating"><span id="Donating" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Donating ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-       
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://aneotropical.weebly.com/donations.html" target=”_blank”><b>Animal Neotropical</b><span style="font-size: 10px;"> (D5ivRQwT4TU8CEjNBhorpMKSe8bVkMYURQ)</span><br><span style="font-size: 13px;"><i>Nature and animal protection</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://archive.org/donate/cryptocurrency/" target=”_blank”><b>archive.org</b><span style="font-size: 10px;"> (via changelly)</span><br><span style="font-size: 13px;"><i>Internet archive</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.alexslemonade.org/donate-cryptocurrency" target=”_blank”><b>Alex's Lemonade Stand Foundation</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Foundation for childhood cancer</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.antiwokes.com" target=”_blank”><b>AntiWokeSamaritans</b><span style="font-size: 10px;"> (D5wHD2pX8bEKmL5DBBGqV3mjMizjNcam1e)</span><br><span style="font-size: 13px;"><i>Freedom of speech</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://assertivekids.org" target=”_blank”><b>Assertive Kids Foundation</b><span style="font-size: 10px;"> (DKyLXgCCgBSPbBujg1YbjRNfrhxFtnVGQk)</span><br><span style="font-size: 13px;"><i>Anti-Bullying</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.care.org/get-involved/ways-to-give/cryptocurrency/" target=”_blank”><b>CARE</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Supporting people in need worldwide</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.clevelandmetroparks.com/parks/support/donate/donate-with-bitcoin/$25-bitcoin-donation" target=”_blank”><b>Cleveland Metroparks</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Preserve and protect the Cleveland Metroparks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.crohnscolitisfoundation.org/donate/donate-cryptocurrency" target=”_blank”><b>Crohn's & Colitis Foundation</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Organization dedicated to finding cures for Crohn's disease and ulcerative colitis</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.dogecoinmultisig.org/multisigmain/index.html?payspot=9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y#payspot" target=”_blank”><b>DogecoinSocksForTheHomeless</b><span style="font-size: 10px;"> (9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y)</span><br><span style="font-size: 13px;"><i>Socks for homeless people in LA</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dogecoinfah.com/" target=”_blank”><b>Doge4FAH</b><span style="font-size: 10px;"> (DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW)</span><br><span style="font-size: 13px;"><i>Dogecoin Folding At Home team</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://twitter.com/GiveDirectly/status/1356251465107566598" target=”_blank”><b>GiveDirectly</b><span style="font-size: 10px;"> (DJbsZJVxMaRqY1tZXQDk8wZVjU5cJdxKKw)</span><br><span style="font-size: 13px;"><i>Supporting people living in poverty</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.gooddoge.com" target=”_blank”><b>Good Doge</b><span style="font-size: 10px;"> (DRRY838tP39h7tLteVqBkWLimkCCD7zydh)</span><br><span style="font-size: 13px;"><i>Supporting Animal Shelters</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.greenfieldcities.org/private-funding/" target=”_blank”><b>Greenfield Cities</b><span style="font-size: 10px;"> (DG1Q8MBkQms8QAfJ39DZ3ACpWKt4h5hZ9j)</span><br><span style="font-size: 13px;"><i>Creating safe, sustainable and prospering places in conflict zones</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://humanesocietytampa.org/how-to-help/" target=”_blank”><b>Humane Society Tampa</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Support for homeless animals</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://kamikazeanimated.com/comic/support-us/dogecoin-donations/" target=”_blank”><b>Kamikaze Comics</b><span style="font-size: 10px;"> (DC8Tuid8X3Qwnpo5cvBum19w2LRWXfepqr)</span><br><span style="font-size: 13px;"><i>Weekly scifi webcomic</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.karamfoundation.org/pay-with-bitpay/" target=”_blank”><b>Karam Foundation</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Supporting syrian youth</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kenneltocouch.org/pitbull-charity/" target=”_blank”><b>Kennel To Couch</b><span style="font-size: 10px;"> (DP9zHA3cJ3Nc5otkphEXQYDWRX5dN7XHzp)</span><br><span style="font-size: 13px;"><i>Supporting shelter Pitbulls</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.landon.net/give/landonfund" target=”_blank”><b>Landon Fund</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Boys School</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.libreoffice.org/donate/" target=”_blank”><b>LibreOffice</b><span style="font-size: 10px;"> (via CoinGate)</span><br><span style="font-size: 13px;"><i>Open Source and free Office Software</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://wiki.mozilla.org/Donate_Bitcoin" target=”_blank”><b>Mozilla Foundation</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Organization to support and collectively lead the open source Mozilla project</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://mybrowseraddon.com" target=”_blank”><b>MyBrowserAddon</b><span style="font-size: 10px;"> (DPF4dBYNrF5exg2mZ5S1px1oS41UsbVzg2)</span><br><span style="font-size: 13px;"><i>Open Source browser addons</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://www.nyan.cat/index.php?cat=nyandoge" target=”_blank”><b>Nyan.cat</b><span style="font-size: 10px;"> (D6aG2swnBPnZVQ8xSChx87XEMgeDwruHLG)</span><br><span style="font-size: 13px;"><i>Creator of Nyan Cat</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.onetail.org/dogecoin/" target=”_blank”><b>One Tail at a Time</b><span style="font-size: 10px;"> (DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS)</span><br><span style="font-size: 13px;"><i>Support for homeless animals</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://rainforestfoundation.org/donate/cryptocurrency/" target=”_blank”><b>Rainforest Foundation US</b><span style="font-size: 10px;"> (DBUkMjJQj3xLR8bb9u3o8FJ11XvGGE9L9v)</span><br><span style="font-size: 13px;"><i>Supporting people living in rainforests</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://rainforestpartnership.org/donate/" target=”_blank”><b>Rainforest Partnership</b><span style="font-size: 10px;"> (via coinpayments)</span><br><span style="font-size: 13px;"><i>Supporting the existence of rainforests</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://redditenhancementsuite.com/contribute/" target=”_blank”><b>Reddit Enhancement Suite</b><span style="font-size: 10px;"> (DNmr7pr6b2MKojd1YaLuSuBCgwDnkt3gYb)</span><br><span style="font-size: 13px;"><i>Most popular Reddit enhancing browser extension</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.roomtoread.org/donate-cryptocurrency/" target=”_blank”><b>Room To Read</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Supporting Child Education</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://saltlakecitymission.org/" target=”_blank”><b>Saltlake City Mission</b><span style="font-size: 10px;"> (via coinpayments)</span><br><span style="font-size: 13px;"><i>Inner-City Church based Rescue Mission Ministry</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://sonofasaint.org/cryptocurrency/" target=”_blank”><b>Son of a Saint</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Supporting fatherless boys</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://thehumaneleague.org/donate-cryptocurrencies" target=”_blank”><b>The Humane League</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Organization to end the abuse of animals in the food industry</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://theoceancleanup.com/donate/" target=”_blank”><b>The Ocean Cleanup</b><span style="font-size: 10px;"> (DNqzuPJ3aUQBcj2t43UJsXKdFAw6PfeXQe)</span><br><span style="font-size: 13px;"><i>Cleaning up oceans worldwide</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://skatepark.org" target=”_blank”><b>The Skatepark Project</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Creating Public Skateparks worldwide</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.thorn.org/donate/" target=”_blank”><b>Thorn.org</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Protecting children from sexual abuse</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://uif.uillinois.edu/cryptocurrency" target=”_blank”><b>University of Illinois</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Donate to the maintaining of the University of Illinois</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://donate.wikimedia.org/wiki/Ways_to_Give#Cryptocurrency" target=”_blank”><b>WikiMedia Foundation</b><span style="font-size: 10px;"> (via Bitpay)</span><br><span style="font-size: 13px;"><i>Collecting donations for Wikipedia and Wikimedia projects</i></span></a>
-	       
-    </div>
-
-    <br>
-
-	<a class="color-pink" href="#Food"><span id="Food" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Food ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.blockchaincoffee.space/" target=”_blank”><b>Blockchain Coffee</b><span style="font-size: 10px;"> (Mexico - Coinpayments)</span><br><span style="font-size: 13px;"><i>Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bringthebeers.com" target=”_blank”><b>BringTheBeers</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Beers delivered in the Southern New Hampshire area</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.btc-wine.com" target=”_blank”><b>BTC Wine</b><span style="font-size: 10px;"> (France - Bitpay)</span><br><span style="font-size: 13px;"><i>French Wine</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coffeeur.com" target=”_blank”><b>Coffeeur</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coffeezyme.com" target=”_blank”><b>CoffeeZyme</b><span style="font-size: 10px;"> (USA - Plisio)</span><br><span style="font-size: 13px;"><i>Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://devbrew.coffee" target=”_blank”><b>Devbrew Coffee</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://drapis.com/" target=”_blank”><b>DrApis</b><span style="font-size: 10px;"> (Portugal - Coinpayments)</span><br><span style="font-size: 13px;"><i>Raw Portuguese Bee Honey</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hearthandpantry.com" target=”_blank”><b>Hearth and Pantry</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Honey, Hot Sauce, Jam, Syrup, Seasoning and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.crayfishathiseafoods.com/shop" target=”_blank”><b>Henderson Inlet Crayfish</b><span style="font-size: 10px;"> (US - Manual Payment)</span><br><span style="font-size: 13px;"><i>Wild caught Crayfish</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://idgaf.lol/doge" target=”_blank”><b>IDGAF</b><span style="font-size: 10px;"> (USA - Plisio)</span><br><span style="font-size: 13px;"><i>Random $20 food delivery</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://inserrata.it/en/" target=”_blank”><b>Inserrata</b><span style="font-size: 10px;"> (Italy - Bitpay)</span><br><span style="font-size: 13px;"><i>Italian Wine and Oil</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.la-boutique.ca" target=”_blank”><b>La-Boutique</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Canadian Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.lieferando.at" target=”_blank”><b>Lieferando</b><span style="font-size: 10px;"> (Europe - Bitpay)</span><br><span style="font-size: 13px;"><i>Food Delivery Service in 13 different countries</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.menufy.com" target=”_blank”><b>Menufy</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>US Food Delivery Service (Bitpay/Dogecoin payment only available at partner restaurants)</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://morenakawhe.com/" target=”_blank”><b>Morena Kawhe</b><span style="font-size: 10px;"> (New Zealand - Coinpayments)</span><br><span style="font-size: 13px;"><i>Coffee</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.nmteaco.com" target=”_blank”><b>New Mexico Tea Company</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Tea and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.pexpeppers.com" target=”_blank”><b>PexPeppers</b><span style="font-size: 10px;"> (USA - Coinpayments/NowPayments)</span><br><span style="font-size: 13px;"><i>Hot Sauces</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shibacoffeeandtea.com" target=”_blank”><b>Shiba Coffee and Tea</b><span style="font-size: 10px;"> (USA - CryptocurrencyCheckout)</span><br><span style="font-size: 13px;"><i>Coffee and Tea</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://sour.gg" target=”_blank”><b>Sour.gg</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Sour Candy</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.suasa.net.br/en/" target=”_blank”><b>Suasa</b><span style="font-size: 10px;"> (Portugal - Coinpayments)</span><br><span style="font-size: 13px;"><i>Portugues shop selling indonesian food</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://greenwitchseed.ca" target=”_blank”><b>The Green Witch Seed</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Food and Flower Seeds</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://wackysauces.com/" target=”_blank”><b>WackySauces</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Hot Sauces</i></span></a>
-    </div>
-
-    <br>
-
-    <a class="color-pink" href="#Gaming"><span id="Gaming" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Gaming ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://1stpal.com/" target=”_blank”><b>1stpal</b><span style="font-size: 10px;"> (UAE - Plisio)</span><br><span style="font-size: 13px;"><i>Game Keys and Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.accountwarehouse.com" target=”_blank”><b>Account Warehouse</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Buy and Sell Game Accounts</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://allgamer.net" target=”_blank”><b>Allgamer</b><span style="font-size: 10px;"> (USA - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Game Servers</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.amiibronfc.com" target=”_blank”><b>AmiiBro NFC</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>NFC Gaming Tokens</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.cjs-cdkeys.com" target=”_blank”><b>CJS CD Keys</b><span style="font-size: 10px;"> (USA - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Steam/Origin/Uplay Games/Keys</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://gamerall.com/" target=”_blank”><b>Gamerall</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>CSGO Items, TF2 Items, DOTA Items, Rust Items and much more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.gamesonly.at/" target=”_blank”><b>Gamesonly.at</b><span style="font-size: 10px;"> (Austria - CoinGate)</span><br><span style="font-size: 13px;"><i>Steam/Origin/Uplay Games/Keys</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.gmdice.com" target=”_blank”><b>GMDice</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Gaming Dice and Miniatures</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.keys4coins.com" target=”_blank”><b>Keys4Coins</b><span style="font-size: 10px;"> (Norway - CryptoWoo)</span><br><span style="font-size: 13px;"><i>Steam/Origin/Uplay Games/Keys</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://metallicdicegames.com/" target=”_blank”><b>MetallicDiceGames</b><span style="font-size: 10px;"> (USA - NomiddlemanCrypto)</span><br><span style="font-size: 13px;"><i>Premium Gaming Dice</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.mmoga.com" target=”_blank”><b>MMOGA</b><span style="font-size: 10px;"> (Hong Kong - CoinGate)</span><br><span style="font-size: 13px;"><i>Steam/Origin/Uplay Games/Keys</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.monster.tech/" target=”_blank”><b>Monster.Tech</b><span style="font-size: 10px;"> (Germany - CoinGate)</span><br><span style="font-size: 13px;"><i>Flight Sim and Racing accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.play-asia.com" target=”_blank”><b>Play-Asia</b><span style="font-size: 10px;"> (Hong Kong - Coinpayments)</span><br><span style="font-size: 13px;"><i>Video Games, Keys and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ruinsofchaos.com/recruit.php?uniqid=421i" target=”_blank”><b>Ruins of Chaos</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>War browsergame, with premium currency purchasable with Dogecoin and an integrated Dogecoin Faucet</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.strangergamesbst.com" target=”_blank”><b>Stranger Games</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Classic Video Games, Collectibles and Funko Pops</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.torn.com" target=”_blank”><b>Torn.com</b><span style="font-size: 10px;"> (USA - CoinGate)</span><br><span style="font-size: 13px;"><i>Real-life, text based browser game. Premium account upgrade purchasable with Dogecoin.</i></span></a>
-	</div>
-
-    <br>
-	
-    <a class="color-pink" href="#GiftCards"><span id="GiftCards" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Gift Cards ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bitcoingiftcards.com.au" target=”_blank”><b>BitcoinGiftcards</b><span style="font-size: 10px;"> (Australia - NomiddlemanCrypto)</span><br><span style="font-size: 13px;"><i>Mainly Australian Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.bitrefill.com/buy/?code=GV7hU5BE" target=”_blank”><b>Bitrefill</b><span style="font-size: 10px;"> (Sweden - Manual Payment)</span><br><span style="font-size: 13px;"><i>3000+ Worldwide Gift Cards including Walmart, Amazon, Apple, Steam, eBay, Uber and many more</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coincards.com/" target=”_blank”><b>CoinCards</b><span style="font-size: 10px;"> (Canada - BTCPay)</span><br><span style="font-size: 13px;"><i>Mainly US and Canada Gift Cards</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coingate.com/gift-cards/all" target=”_blank”><b>CoinGate</b><span style="font-size: 10px;"> (Lithuania - CoinGate)</span><br><span style="font-size: 13px;"><i>500+ Worldwide Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coinsbee.com/en/" target=”_blank”><b>CoinsBee</b><span style="font-size: 10px;"> (Germany - CoinGate)</span><br><span style="font-size: 13px;"><i>500+ Worldwide Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://giftoff.com/" target=”_blank”><b>GiftOff</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>450+ Worldwide Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://japangiftcard.com" target=”_blank”><b>JapanGiftCard</b><span style="font-size: 10px;"> (Japan - CoinGate)</span><br><span style="font-size: 13px;"><i>Mainly Japan Gift Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.turgame.com" target=”_blank”><b>TurGame</b><span style="font-size: 10px;"> (Turkey - Bitpay/CoinGate)</span><br><span style="font-size: 13px;"><i>Mainly Turkey Gift Cards</i></span></a>
-	
-    </div>
-	
-	<br>
-	
-    <a class="color-pink" href="#HealthCare"><span id="HealthCare" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Health Care ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.cov.care" target=”_blank”><b>Cov.Care</b><span style="font-size: 10px;"> (USA - Manual Payment/Contact Support)</span><br><span style="font-size: 13px;"><i>Medical Supplies</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.goobat.care/" target=”_blank”><b>Goobat</b><span style="font-size: 10px;"> (Malaysia - Bitpay)</span><br><span style="font-size: 13px;"><i>Pharmacy</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://psawear.de" target=”_blank”><b>PSAwear</b><span style="font-size: 10px;"> (Germany - NowPayments)</span><br><span style="font-size: 13px;"><i>German FFP2 Masks Store</i></span></a>
-	
-	</div>
-
-	<br>
-	
-    <a class="color-pink" href="#Jewelry"><span id="Jewelry" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Jewelry ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.acejewelers.com/en/" target=”_blank”><b>AceJewelers</b><span style="font-size: 10px;"> (Netherlands - Bitpay)</span><br><span style="font-size: 13px;"><i>Jewelry and Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bitdials.eu/" target=”_blank”><b>BitDials</b><span style="font-size: 10px;"> (Germany - Globee)</span><br><span style="font-size: 13px;"><i>Jewelry, Luxury Watches, Bags etc.</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.crmjewelers.com" target=”_blank”><b>CRMJewelers</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Jewelry and Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://glamcarat.com" target=”_blank”><b>Glamcarat</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Personalized Silver Jewelry</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.icebox.com" target=”_blank”><b>Icebox</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Jewelry and Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.jenshansen.com" target=”_blank”><b>Jens Hansen</b><span style="font-size: 10px;"> (New Zealand - Bitpay)</span><br><span style="font-size: 13px;"><i>High Quality Jewelry including the ring from the "The Lord of The Rings" movie</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.jewelryaffairs.com" target=”_blank”><b>Jewelry Affairs</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Jewelry</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.multycolored.com/" target=”_blank”><b>Multycolored</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Jewelry, Shirts and Decoration</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://regentjewelers.net" target=”_blank”><b>Regent Jewelers</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Jewelry, Engagement Rings and Watches</i></span></a>
-	
-    </div>
-
-	<br>
-	
-    <a class="color-pink" href="#Merch"><span id="Merch" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Merch ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shop.theaudl.com" target=”_blank”><b>AUDL Store</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Official Merch Store for the American Ultimate Disc League</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.blockchainstuff.nl" target=”_blank”><b>BlockchainStuff</b><span style="font-size: 10px;"> (Netherlands - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto merch, Shirts, Hoodies, Socks, Caps, Mugs, Clocks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bulldogeofficial.wixsite.com/shop" target=”_blank”><b>Bulldoge Apparel</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Doge(coin) merch, Shirts, Necklace, Mugs, Stickers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coinvibe.net/" target=”_blank”><b>CoinVibe</b><span style="font-size: 10px;"> (Germany - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Merch, Key Chain, Stickers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cryptoholicshop.com/" target=”_blank”><b>CryptoHolic</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Merch, Shirts, Hoodies, Mugs, Face Masks and much more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dallasmavs.shop" target=”_blank”><b>Dallas Mavericks Shop</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Official Merch Store for NBA Team "Dallas Mavericks"</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://rocketsshop.com" target=”_blank”><b>Houston Rockets Shop</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Official Merch Store for NBA Team "Houston Rockets"</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://nineteeskid.net" target=”_blank”><b>Ninetees Kid</b><span style="font-size: 10px;"> (Germany - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Merch, Shirts, Hoodies, Caps, Key Tags</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://olympianbitcoin.store/" target=”_blank”><b>Olympian Bitcoin</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Crypto Merch, Shirts, Pillows, Mugs, Hats, Socks</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ruffi0.com/shop/" target=”_blank”><b>ruffi0</b><span style="font-size: 10px;"> (USA - NowPayments)</span><br><span style="font-size: 13px;"><i>ruffi0 Merch, Shirts, Bags, Stickers and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://merch.springrates.com" target=”_blank”><b>Springrates Merch</b><span style="font-size: 10px;"> (USA - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Springrates/Dogecar Merch, Shirts, Hats, Stickers and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://suchdogemart.com" target=”_blank”><b>Such Doge Mart</b><span style="font-size: 10px;"> (USA - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Doge(coin) Merch, Shirts, Stickers, Mugs</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://esports.x25.rs/shop/" target=”_blank”><b>x25 Esports</b><span style="font-size: 10px;"> (Serbia - Plisio)</span><br><span style="font-size: 13px;"><i>x25 Merch, Jersey, Shirts, Mousepad</i></span></a>
-			
-    </div>
-
-	<br>
-
-    <a class="color-pink" href="#Pets"><span id="Pets" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Pets ~ ~ ~</b></span></a>
-	
-    <div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://chewbysnacks.com/" target=”_blank”><b>Chewbysnacks</b><span style="font-size: 10px;"> (Canada - CryptoWoo)</span><br><span style="font-size: 13px;"><i>Homemade Dog Treats</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.petfinn.com" target=”_blank”><b>Finn</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Dog Nutrition Products</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hsccanada.com/" target=”_blank”><b>HSC Canada</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Dog and Cat Accessories, Beds, Feeders, Toys and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.pawfect-pals.com.au" target=”_blank”><b>Pawfect Pals</b><span style="font-size: 10px;"> (Australia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Dog Accessories, Toys, Leads, Beds and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://puppysnackers.com" target=”_blank”><b>PuppySnackers</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Homemade Dog Treats</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.woofo.nz/" target=”_blank”><b>Woofo Empawrium</b><span style="font-size: 10px;"> (New Zealand - Coinpayments)</span><br><span style="font-size: 13px;"><i>New Zealand based Dog Accessories Shop</i></span></a>
-	
-    </div>
-
-    <br>
-
-    <a class="color-pink" href="#Smoking"><span id="Smoking" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Smoking ~ ~ ~</b></span></a>
-	
-   <div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bitvape.com.au" target=”_blank”><b>BitVape</b><span style="font-size: 10px;"> (Australia - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Australian high rated JUUL store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.drdabber.com" target=”_blank”><b>Dr. Dabber</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Vaporizers and Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.frontiervapor.com" target=”_blank”><b>Frontier Vapor</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Vape Accessories, E-Liquid</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://rxvape.com/" target=”_blank”><b>RX Vape</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Vape Products, Vape Juice, DIY</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://texastextracts.com" target=”_blank”><b>Texas T Extracts</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Vape Juice</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://vapepenssstore.com/" target=”_blank”><b>VapePENstore</b><span style="font-size: 10px;"> (USA - GoUrl)</span><br><span style="font-size: 13px;"><i>Vape Products</i></span></a>
-		
-    </div>
- 
-	<br>
-    
-	<a class="color-pink" href="#Tech"><span id="Tech" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Tech Stores ~ ~ ~</b></span></a>
-	
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dariamicrophones.com" target=”_blank”><b>Daria Microphones</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Microphones</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shop.daskeyboard.com" target=”_blank”><b>DasKeyboard</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Keyboards and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://digitech4all.eu" target=”_blank”><b>Digitech4All</b><span style="font-size: 10px;"> (Greece - CoinGate)</span><br><span style="font-size: 13px;"><i>Greek Online Tech Store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://directvoltage.com/" target=”_blank”><b>DirectVoltage</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Lasers, 3DPrinting, Robotics, CNC, Arduino, Solar cells and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://dorset.tech/shop/" target=”_blank”><b>Dorset</b><span style="font-size: 10px;"> (UK - NowPayments)</span><br><span style="font-size: 13px;"><i>Wide Variety of Tech Articles</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.fasttech.com" target=”_blank”><b>FastTech</b><span style="font-size: 10px;"> (Hong Kong - Manual Payment)</span><br><span style="font-size: 13px;"><i>Wide Variety of Tech Articles</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.filamentone.com/" target=”_blank”><b>FilamentOne</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>3D Printers and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://flashquark.com" target=”_blank”><b>Flashquark</b><span style="font-size: 10px;"> (USA - MyCryptoCheckout)</span><br><span style="font-size: 13px;"><i>Keyboards and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://incheonbitcoin.shop/" target=”_blank”><b>IncheonBitcoinShop</b><span style="font-size: 10px;"> (South Korea - Coinpayments)</span><br><span style="font-size: 13px;"><i>ASIC Miners, Printers, Kitchen Supplies and much more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://minipc.eu/" target=”_blank”><b>MiniPC.eu</b><span style="font-size: 10px;"> (Netherlands - Coinpayments)</span><br><span style="font-size: 13px;"><i>Mini PCs</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.newegg.com" target=”_blank”><b>Newegg</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Computer and Electronics store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://omnitype.com" target=”_blank”><b>Omnitype</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Keyboards and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://uk.pi-supply.com/" target=”_blank”><b>Pi-Supply</b><span style="font-size: 10px;"> (UK - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Raspberry Pi and accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.scan.co.uk" target=”_blank”><b>Scan UK</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>PC components and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.stakebox.org" target=”_blank”><b>StakeBox</b><span style="font-size: 10px;"> (UK - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Staking and mining hardware, accessories, hardware wallets, digital security devices and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.webhallen.com" target=”_blank”><b>Webhallen</b><span style="font-size: 10px;"> (Sweden - Bitpay)</span><br><span style="font-size: 13px;"><i>Swedish Tech Store</i></span></a>
-		
-    </div>
-	
-    <br>
-	
-	<a class="color-pink" href="#Traveling"><span id="Traveling" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Traveling ~ ~ ~</b></span></a>
-	   
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.airbaltic.com/en-US/index" target=”_blank”><b>AirBaltic</b><span style="font-size: 10px;"> (Latvia - Bitpay)</span><br><span style="font-size: 13px;"><i>Flag carrier airline of Latvia. Dogecoin payment option for GREEN and GREEN plus tickets.</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://amberhotel.ch" target=”_blank”><b>Amber Hotel</b><span style="font-size: 10px;"> (Switzerland - In Store Payment)</span><br><span style="font-size: 13px;"><i>Swiss Ski and Spa Hotel</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptocruisedeals.com" target=”_blank”><b>Crypto Cruise Deals</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Cruises</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptoturismo.com" target=”_blank”><b>Crypto Turismo</b><span style="font-size: 10px;"> (Spain - Bitpay)</span><br><span style="font-size: 13px;"><i>Flight and Hotel Booking</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.fastprivatejet.com/en" target=”_blank”><b>Fast Private Jet</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Private Jet Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.jetfinder.com" target=”_blank”><b>Jet Finder</b><span style="font-size: 10px;"> (Canada - Bitpay)</span><br><span style="font-size: 13px;"><i>Private Jet Charter</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.qeeq.com" target=”_blank”><b>Qeeq</b><span style="font-size: 10px;"> (Ireland - Bitpay)</span><br><span style="font-size: 13px;"><i>Car Rentals Worldwide</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.simply-jet.ch/en/" target=”_blank”><b>Simple Jet</b><span style="font-size: 10px;"> (Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>Private Jet Charter</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://theyachtbreak.com" target=”_blank”><b>The Yacht Break</b><span style="font-size: 10px;"> (Slovenia - Bitpay)</span><br><span style="font-size: 13px;"><i>Sailing Holidays in Croatia</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.travala.com/" target=”_blank”><b>Travala</b><span style="font-size: 10px;"> (UK - Binance Pay)</span><br><span style="font-size: 13px;"><i>Flight and Hotel Booking via BinancePay</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.venicejets.com" target=”_blank”><b>VeniceJets</b><span style="font-size: 10px;"> (Italy - Bitpay)</span><br><span style="font-size: 13px;"><i>Private Jet Charter</i></span></a>
-	
-	</div>
-
-    <br>
-
-    <a class="color-pink" href="#VPN"><span id="VPN" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ VPN/Proxy ~ ~ ~</b></span></a>
-	   
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://airvpn.org" target=”_blank”><b>AirVPN</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://anonine.com" target=”_blank”><b>Anonine</b><span style="font-size: 10px;"> (Seychelles - Cryptonator)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://azirevpn.com" target=”_blank”><b>AzireVPN</b><span style="font-size: 10px;"> (Sweden - Manual Payment)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://borderlessvpn.io/" target=”_blank”><b>Borderless VPN</b><span style="font-size: 10px;"> (Norway - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cactusvpn.com/" target=”_blank”><b>CactusVPN</b><span style="font-size: 10px;"> (Moldova - CoinGate)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coinvpn.io" target=”_blank”><b>CoinVPN</b><span style="font-size: 10px;"> (Hong Kong - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptostorm.is" target=”_blank”><b>Cryptostorm</b><span style="font-size: 10px;"> (Iceland - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cyberghostvpn.com/en_US/" target=”_blank”><b>CyberGhost</b><span style="font-size: 10px;"> (Romania - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.expressvpn.com" target=”_blank”><b>ExpressVPN</b><span style="font-size: 10px;"> (British Virgin Islands - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://frootvpn.com" target=”_blank”><b>FrootVPN</b><span style="font-size: 10px;"> (Sweden - Cryptonator)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hide.me/en/" target=”_blank”><b>Hide.me</b><span style="font-size: 10px;"> (Malaysia - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hidemyna.me/" target=”_blank”><b>HideMy.name</b><span style="font-size: 10px;"> (Belize - Cryptonator)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.ivacy.com" target=”_blank”><b>Ivacy</b><span style="font-size: 10px;"> (Singapore - Bitpay/CoinGate)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.le-vpn.com" target=”_blank”><b>LeVPN</b><span style="font-size: 10px;"> (Hong Kong - CoinGate)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.liquidvpn.com" target=”_blank”><b>LiquidVPN</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.perfect-privacy.com/en/" target=”_blank”><b>Perfect Privacy</b><span style="font-size: 10px;"> (Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.privateinternetaccess.com" target=”_blank”><b>Private Internet Access</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://proxied.network" target=”_blank”><b>Proxied Network</b><span style="font-size: 10px;"> (Australia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Proxy</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.slickvpn.com" target=”_blank”><b>SlickVPN</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://surfshark.com/" target=”_blank”><b>Surfshark</b><span style="font-size: 10px;"> (British Virgin Islands - Coinpayments/CoinGate)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://torguard.net" target=”_blank”><b>TorGuard</b><span style="font-size: 10px;"> (USA - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://vpn.ac" target=”_blank”><b>VPN Access</b><span style="font-size: 10px;"> (Romania - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://vpnanon.net" target=”_blank”><b>VPNAnon</b><span style="font-size: 10px;"> (Iceland - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://vpnarea.com/front/home" target=”_blank”><b>VPNArea</b><span style="font-size: 10px;"> (Bulgaria - Bitpay)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.vpnshazam.com/" target=”_blank”><b>VPNShazam</b><span style="font-size: 10px;"> (Palestine - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://vpn.surf/" target=”_blank”><b>VPNSurf</b><span style="font-size: 10px;"> (Lithuania - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://vpntunnel.com/" target=”_blank”><b>VPNTunnel</b><span style="font-size: 10px;"> (USA - Cryptonator)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.widevpn.com/" target=”_blank”><b>WideVPN</b><span style="font-size: 10px;"> (Romania - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://xeovo.com/" target=”_blank”><b>Xeovo</b><span style="font-size: 10px;"> (Finland - Coinpayments)</span><br><span style="font-size: 13px;"><i>VPN</i></span></a>
-
-    </div>
-    
-    <br>
-
-    <a class="color-pink" href="#Watches"><span id="Watches" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Watches ~ ~ ~</b></span></a>
-	   
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cozy.sg/" target=”_blank”><b>Cozy Handmade</b><span style="font-size: 10px;"> (Singapore - Coinpayments)</span><br><span style="font-size: 13px;"><i>Watches, Handmade Leather Watch Straps and Leather Wallets</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://iflwatches.com" target=”_blank”><b>IFL Watches</b><span style="font-size: 10px;"> (Sweden - Bitpay)</span><br><span style="font-size: 13px;"><i>Watches and Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.pita.es" target=”_blank”><b>Pita Barcelona</b><span style="font-size: 10px;"> (Spain - Cointopay)</span><br><span style="font-size: 13px;"><i>Custom Made Luxury Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://project-o-concept.com/en/" target=”_blank”><b>Project O</b><span style="font-size: 10px;"> (France - CoinGate)</span><br><span style="font-size: 13px;"><i>Futuristic Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.timepiecebank.com" target=”_blank”><b>Timepiece Bank</b><span style="font-size: 10px;"> (Belgium - Bitpay)</span><br><span style="font-size: 13px;"><i>Luxury Watches</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://urwerk.shop" target=”_blank”><b>Urwerk</b><span style="font-size: 10px;"> (Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>High Quality Swiss Watches</i></span></a>
-	
-    </div>
-
-    <br>
-
-    <a class="color-pink" href="#WebHosting"><span id="WebHosting" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Web Hosting ~ ~ ~</b></span></a>
-	   
-	<div style="font-size: 15px; text-align: center;">
-	
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="http://www.97cents.net" target=”_blank”><b>97cents</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://abacohosting.com" target=”_blank”><b>AbacoHosting</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Business Email, SSL Certificates</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.altushost.com" target=”_blank”><b>AltusHost</b><span style="font-size: 10px;"> (Netherlands - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Website Builder, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bacloud.com/en" target=”_blank”><b>Bacloud</b><span style="font-size: 10px;"> (Lithuania - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://beehosting.pro" target=”_blank”><b>BeeHosting</b><span style="font-size: 10px;"> (Estonia - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bytesized-hosting.com" target=”_blank”><b>Bytesized Hosting</b><span style="font-size: 10px;"> (Netherlands - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bithost.io" target=”_blank”><b>Bithost.io</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.centohost.com/" target=”_blank”><b>Centohost</b><span style="font-size: 10px;"> (Bosnia and Herzegovina - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cinfu.com/" target=”_blank”><b>Cinfu</b><span style="font-size: 10px;"> (Seychelles - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coin.host/" target=”_blank”><b>Coin.Host</b><span style="font-size: 10px;"> (Switzerland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, DDOS Protection</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://coinhost.io/" target=”_blank”><b>CoinHost.io</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://crowncloud.net/" target=”_blank”><b>Crowncloud</b><span style="font-size: 10px;"> (Australia - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptocloudhosting.org/" target=”_blank”><b>CryptoCloudHosting</b><span style="font-size: 10px;"> (UK - Manual Payment)</span><br><span style="font-size: 13px;"><i>Web Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://deinserverhost.de/" target=”_blank”><b>DeinServerHost</b><span style="font-size: 10px;"> (Germany - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Gameserver, vServer, Rootserver, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://eurohoster.org" target=”_blank”><b>EuroHoster</b><span style="font-size: 10px;"> (Bulgaria - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Domain Service, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://evolution-host.com/" target=”_blank”><b>Evolution Host</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Gameserver, VDS Hosting, DDOS Protection</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://flokinet.is/" target=”_blank”><b>Flokinet.is</b><span style="font-size: 10px;"> (Iceland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Teamspeak, Voip, DDOS Protection</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.gandi.net/en-US" target=”_blank”><b>Gandi</b><span style="font-size: 10px;"> (France - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.geekshosted.com" target=”_blank”><b>GeeksHosted</b><span style="font-size: 10px;"> (Romania - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, SEO Services</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ginernet.com/en/" target=”_blank”><b>Ginernet</b><span style="font-size: 10px;"> (Spain - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://glowhost.com" target=”_blank”><b>GlowHost</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hawkhost.com/" target=”_blank”><b>HawkHost</b><span style="font-size: 10px;"> (Canada - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hosterbox.com" target=”_blank”><b>HosterBox</b><span style="font-size: 10px;"> (Canada - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hosterium.com" target=”_blank”><b>Hosterium</b><span style="font-size: 10px;"> (Slovakia - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hosthavoc.com/" target=”_blank”><b>Host Havoc</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Game Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hosting.co.uk/" target=”_blank”><b>Hosting.co.uk</b><span style="font-size: 10px;"> (UK - Coingate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Dedicated Servers, SSL Certificates, VPN, SEO Services</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hosting24.com" target=”_blank”><b>Hosting24</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hostinger.com/" target=”_blank”><b>Hostinger</b><span style="font-size: 10px;"> (Lithuania - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Online Store and Website Builder, Email Service, Domain Service, Minecraft Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hostingssi.com" target=”_blank”><b>Hosting SSi</b><span style="font-size: 10px;"> (Venezuela - Coinpayments)</span><br><span style="font-size: 13px;"><i>Venezuelan Web Hosting, Reseller-Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hostiso.com" target=”_blank”><b>Hostiso</b><span style="font-size: 10px;"> (Switzerland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, uVPS, VPN, SEO Services</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hostkey.com" target=”_blank”><b>Hostkey</b><span style="font-size: 10px;"> (Netherlands - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hostmenow.org/" target=”_blank”><b>HostMeNow</b><span style="font-size: 10px;"> (UK - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://hostsailor.com/" target=”_blank”><b>Hostsailor</b><span style="font-size: 10px;"> (UAE - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Reseller-Hosting, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.host-stage.net" target=”_blank”><b>HostStage</b><span style="font-size: 10px;"> (France - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hostwinds.com" target=”_blank”><b>Hostwinds</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, SSL Certificates</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.hostzealot.com/" target=”_blank”><b>Hostzealot</b><span style="font-size: 10px;"> (Bulgaria - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.idfnv.com/en/" target=”_blank”><b>IDF Private Hosting</b><span style="font-size: 10px;"> (Seychelles - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Seedbox Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://impreza.host/" target=”_blank”><b>Impreza</b><span style="font-size: 10px;"> (Seychelles - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Offshore Hosting, TOR Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://inceptionhosting.com" target=”_blank”><b>Inception Hosting</b><span style="font-size: 10px;"> (UK - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.luhoster.com" target=”_blank”><b>LuHoster</b><span style="font-size: 10px;"> (UK - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://luxhosting.lu" target=”_blank”><b>LuxHosting</b><span style="font-size: 10px;"> (Luxembourg - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Website Builder, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.maxko-hosting.com" target=”_blank”><b>Maxko Hosting</b><span style="font-size: 10px;"> (Croatia - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.meanservers.com" target=”_blank”><b>Mean Servers</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.motov.net" target=”_blank”><b>Motov</b><span style="font-size: 10px;"> (Bulgaria - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.namecheap.com" target=”_blank”><b>Namecheap</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, VPN</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.neoserv.si" target=”_blank”><b>Neoserv</b><span style="font-size: 10px;"> (Slovenia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Slovenian Web Host</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.privex.io/" target=”_blank”><b>Privex</b><span style="font-size: 10px;"> (Belize - Manual Payment)</span><br><span style="font-size: 13px;"><i>Private Cloud Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.qhoster.com/" target=”_blank”><b>QHoster</b><span style="font-size: 10px;"> (Uruguay - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, Dedicated Servers, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.routerhosting.com/" target=”_blank”><b>Routerhosting</b><span style="font-size: 10px;"> (New Zealand - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://scohostings.com" target=”_blank”><b>SCOHosting</b><span style="font-size: 10px;"> (UK - Bitpay/CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-    <a href="https://www.snel.com/" target=”_blank”><b>Snel</b><span style="font-size: 10px;"> (Netherlands - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Reseller-Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.superbytehosting.com" target=”_blank”><b>Super Byte Hosting</b><span style="font-size: 10px;"> (India - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Reseller-Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.thcservers.com/" target=”_blank”><b>THCservers</b><span style="font-size: 10px;"> (Romania - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Reseller-Hosting, Online Store Builder, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://tmthosting.net/" target=”_blank”><b>TMT Hosting</b><span style="font-size: 10px;"> (UK - CryptocurrencyCheckout)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ushost247.com/" target=”_blank”><b>USHost247</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, SSL Certificates, VPN, Website Builder</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.valuehosted.com/" target=”_blank”><b>ValueHosted</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Web Hosting, Reseller-Hosting, SSL Certificates, DDOS Protection</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.vantagevps.com" target=”_blank”><b>VantageVPS</b><span style="font-size: 10px;"> (Hong Kong - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.wdmsh.com" target=”_blank”><b>WDMSH</b><span style="font-size: 10px;"> (Netherlands - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Shoutcast Streaming</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://web4africa.com" target=”_blank”><b>Web4Africa</b><span style="font-size: 10px;"> (South Africa - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Domain Service, SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://xethost.com" target=”_blank”><b>XetHost</b><span style="font-size: 10px;"> (Hungary - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.zamahost.com" target=”_blank”><b>ZamaHost</b><span style="font-size: 10px;"> (UK - CoinGate)</span><br><span style="font-size: 13px;"><i>Web Hosting, Dedicated Servers, Domain Service, SSL Certificates</i></span></a>
-    </div>
-    
-    <br>
-	
-    <a class="color-pink" href="#Misc"><span id="Misc" style="font-size: 25px; color: #FF6699; text-align: center;"><b>~ ~ ~ Misc ~ ~ ~</b></span></a>
-	   
-	<div style="font-size: 15px; text-align: center;">
-
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.1billionsubscribers.com" target=”_blank”><b>1BillionSubscribers</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Water-Proof Paper Boat</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://a86.cz/" target=”_blank”><b>A86</b><span style="font-size: 10px;"> (Czech Republic - Manual Payment)</span><br><span style="font-size: 13px;"><i>3D-printed miniature figures</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://alohatuners.com" target=”_blank”><b>Aloha Tuners</b><span style="font-size: 10px;"> (Hawaii - Bitpay)</span><br><span style="font-size: 13px;"><i>Cute Instrument Tuners</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://atlantis.icu" target=”_blank”><b>Atlantis</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>General Online Store, Clothing, Electronics, Pet Supplies, Health Care and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ayrgamersguild.com/" target=”_blank”><b>AYR Gamers Guild</b><span style="font-size: 10px;"> (Canada - GoUrl)</span><br><span style="font-size: 13px;"><i>3D printed miniatures, terrain and gaming accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.bandicam.com" target=”_blank”><b>Bandicam</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Screen Recording Software</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.beliani.co.uk" target=”_blank”><b>Beliani</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>Furniture and Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://blockchain-adventures.com/shop/" target=”_blank”><b>BlockchainAdventures</b><span style="font-size: 10px;"> (USA - GoUrl)</span><br><span style="font-size: 13px;"><i>"Toshi to the moon" book and merch</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://boostonlineshop.com" target=”_blank”><b>Boost Athletics</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Gym Apparel and Equipment</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://bpfragrance.nl" target=”_blank”><b>BP Fragrance</b><span style="font-size: 10px;"> (Netherlands - Coinpayments)</span><br><span style="font-size: 13px;"><i>Dutch perfumes shop</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://breakstore.fr" target=”_blank”><b>Break Store</b><span style="font-size: 10px;"> (France - Coinpayments)</span><br><span style="font-size: 13px;"><i>French Mega Store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.carrozzasurfboards.com" target=”_blank”><b>Carrozza Surfboards</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Surfboards, Accessories and Apparel</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://chip.tax" target=”_blank”><b>Chip.tax</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Full-service firm</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://circular-calendar.com" target=”_blank”><b>Circular Calendar</b><span style="font-size: 10px;"> (Germany - Coinpayments)</span><br><span style="font-size: 13px;"><i>The Circular Wall Calendar</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.cleanitsupply.com/t/Dogecoin-Bitcoin-Process.aspx" target=”_blank”><b>CleanItSupply</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Cleaning Supplies</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://coinality.com/" target=”_blank”><b>Coinality</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Jobs for crypto</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.coolstuffjapan.com/" target=”_blank”><b>CoolStuffJapan</b><span style="font-size: 10px;"> (Japan - Coinpayments)</span><br><span style="font-size: 13px;"><i>Japanese store, food, snacks, cushions, toys and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.carlreese.com/" target=”_blank”><b>CR Construction</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Home Inspection company located in Santa Clarita, LA/California</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://cryptoreads.net" target=”_blank”><b>CryptoReads</b><span style="font-size: 10px;"> (Iceland - PawCommerce)</span><br><span style="font-size: 13px;"><i>Digital Books</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.dogecoinlist.com/" target=”_blank”><b>DogecoinList</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Craigslist Dogecoin Edition</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://expressbitcoinpostage.com/" target=”_blank”><b>ExpressBitcoinPostage</b><span style="font-size: 10px;"> (Hong Kong - Coinpayments)</span><br><span style="font-size: 13px;"><i>Shipping Labels from UPS, USPS and Hongkong Post</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.galaxus.ch/en" target=”_blank”><b>Galaxus</b><span style="font-size: 10px;"> (Switzerland - Coinify)</span><br><span style="font-size: 13px;"><i>Swiss Home Supply Store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://gluecksmagie.de/" target=”_blank”><b>Gluecksmagie</b><span style="font-size: 10px;"> (Germany - Coinpayments)</span><br><span style="font-size: 13px;"><i>German lucky charms store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://greenbeltoutdoors.com" target=”_blank”><b>GreenBelt Outdoors</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Camping, Kayaking and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://portfolio.idoneus.io" target=”_blank”><b>Idoneus</b><span style="font-size: 10px;"> (Switzerland - Bitpay)</span><br><span style="font-size: 13px;"><i>Luxury Assets, Goods & Services</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.justbibs.com.au" target=”_blank”><b>Just BIBS</b><span style="font-size: 10px;"> (Australia - Bitpay/Coinpayments)</span><br><span style="font-size: 13px;"><i>Pacifiers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kalimbera.com" target=”_blank”><b>Kalimbera</b><span style="font-size: 10px;"> (Ireland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Kalimba/Thumb Piano store</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kawaiicrypto.com/" target=”_blank”><b>KawaiiCrypto</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Cute Dogecoin/Crypto Stickers</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.kivaka.com/" target=”_blank”><b>Kivaka</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Bodypiercing-Studio in Aurora, Illinois. Book an appointment online and pay with Dogecoin.</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://1800safeair.com/" target=”_blank”><b>Kronos Advanced Technologies</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Air purifier and filter</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://kumaknives.com" target=”_blank”><b>KUMA Knives</b><span style="font-size: 10px;"> (Denmark - Coinpayments)</span><br><span style="font-size: 13px;"><i>Damascus steel knives</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.livingroomofsatoshi.com/" target=”_blank”><b>LivingRoomOfSatoshi</b><span style="font-size: 10px;"> (Australia - Manual Payment)</span><br><span style="font-size: 13px;"><i>Pay basically every bill in Australia with Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://lbneon.com" target=”_blank”><b>Long Beach Neon</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>LED and Neon Signs</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.longhouse.co/" target=”_blank”><b>Longhouse Media</b><span style="font-size: 10px;"> (Canada - Manual Payment)</span><br><span style="font-size: 13px;"><i>Web Design, SEO and Marketing Consulting</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.houseofinternationaldecor.com/shop/" target=”_blank”><b>Lue's House of International Decor</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Decor Articles</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://uk.lush.com" target=”_blank”><b>Lush</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>Handmade Cosmetics</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://mightymaxcart.com" target=”_blank”><b>Mighty Max Cart</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>USA MADE Utility Carts</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.mobisun.com/" target=”_blank”><b>MobiSun</b><span style="font-size: 10px;"> (Netherlands - Coinpayments)</span><br><span style="font-size: 13px;"><i>Solar Panels, Power Banks, Solar Generators</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://moleculestore.com/" target=”_blank”><b>Molecule Store</b><span style="font-size: 10px;"> (Switzerland - Coinpayments)</span><br><span style="font-size: 13px;"><i>Various Articles about molecules</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.mpmsouvenir.com" target=”_blank”><b>MPMSouvenir</b><span style="font-size: 10px;"> (Italy - CoinGate)</span><br><span style="font-size: 13px;"><i>Italian gift shop</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.mylegaledge.com/" target=”_blank”><b>MyLegalEdge</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>Provider of online legal documents and forms</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://www.oceanking.com.au/" target=”_blank”><b>OceanKing</b><span style="font-size: 10px;"> (Australia - Manual Payment)</span><br><span style="font-size: 13px;"><i>Vitamin Supplements, Dairy Products, Manuka Honey and Skincare</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://roundtheblock.com.au/" target=”_blank”><b>Round The Block</b><span style="font-size: 10px;"> (Australia - Manual Payment)</span><br><span style="font-size: 13px;"><i>Buy gift cards & pay basically every bill in Australia with Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://ryanlondon.com" target=”_blank”><b>Ryan London</b><span style="font-size: 10px;"> (UK - Bitpay)</span><br><span style="font-size: 13px;"><i>Leather goods store located in London</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shibemint.com" target=”_blank”><b>Shibe Mint</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Physical Dogecoins</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shopofthings.ch/" target=”_blank”><b>ShopOfThings</b><span style="font-size: 10px;"> (Switzerland - CoinGate)</span><br><span style="font-size: 13px;"><i>Electronic Tech Parts</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://suatmm.com/" target=”_blank”><b>ShutUpAndTakeMyMoney</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Cool Gadgets and Geeky Products</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://sphinxgadgets.com" target=”_blank”><b>SphinxGadgets</b><span style="font-size: 10px;"> (USA - Globee)</span><br><span style="font-size: 13px;"><i>Random Password Generator</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://squadronsoap.com.au" target=”_blank”><b>Squadron Soap</b><span style="font-size: 10px;"> (Australia - Coinpayments)</span><br><span style="font-size: 13px;"><i>Australian Shaving Soap</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.ssldragon.com/" target=”_blank”><b>SSL Dragon</b><span style="font-size: 10px;"> (USA - EncryptCoin)</span><br><span style="font-size: 13px;"><i>SSL Certificates</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://sunshinesoulcandles.com" target=”_blank”><b>Sunshine Soul</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Homemade Candles</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://teamjbhobbies.com" target=”_blank”><b>Team JB Hobbies</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Papercrafting, RC Cars and Chess Accessories</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="http://thaibam.net/" target=”_blank”><b>ThaiBaM</b><span style="font-size: 10px;"> (Thailand - Coinpayments)</span><br><span style="font-size: 13px;"><i>Coffee, Tea, Oils, Balms etc.</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://thedogemoon.shop" target=”_blank”><b>The Dogemoon Shop</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>3D Printed Custom Dogemoon Lamp</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.toploadersports.com" target=”_blank”><b>Top Loader Sports</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Sports and Doge Trading Cards</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://tormentbox.com/" target=”_blank”><b>TormentBox</b><span style="font-size: 10px;"> (USA - Manual Payment)</span><br><span style="font-size: 13px;"><i>Various prank articles like glitter letters etc.</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://trickmugs.com" target=”_blank”><b>Trick Mugs</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Mugs that change their look when filled up</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://www.twitch.tv" target=”_blank”><b>Twitch.tv</b><span style="font-size: 10px;"> (USA - Bitpay)</span><br><span style="font-size: 13px;"><i>Subscriptions and Premium Currency via Dogecoin</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://usastrong.io" target=”_blank”><b>USAStrong</b><span style="font-size: 10px;"> (USA - Globee)</span><br><span style="font-size: 13px;"><i>US-made Mega Store, clothing, home supplies, pet supplies and more</i></span></a>
-	<div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://wikileaks.shop/" target=”_blank”><b>WikiLeaks Shop</b><span style="font-size: 10px;"> (USA - Coinpayments)</span><br><span style="font-size: 13px;"><i>Official Shirts, Mugs, Stickers, Posters, etc.</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://shop.wildgears.com/" target=”_blank”><b>WildGears</b><span style="font-size: 10px;"> (Canada - Coinpayments)</span><br><span style="font-size: 13px;"><i>Drawing Gears</i></span></a>
-    <div style="line-height:50%;">
-    <br>
-	</div>
-	<a href="https://zenmarket.jp/en/" target=”_blank”><b>ZenMarket</b><span style="font-size: 10px;"> (Japan - Manual Payment)</span><br><span style="font-size: 13px;"><i>Japanese Proxy Buying Service</i></span></a>
-	
-	</div>
-
- 
-<br>
-<br>
-<br>
-<center><b>Disclaimer:</b></center><h4 style="font-size: 11px; text-align: center;">All links are provided with the best of my knowledge. <br>Please make sure to check the shops listed here yourself again, before spending your Dogecoins there. <br>In no way should the admin of this website be responsible for any fraudulently activities from any listed shop.</h4>
-
-<h5 style="font-size: 9px; text-align: center;"><a href="https://www.reddit.com/user/DimiFW/"><u>/u/DimiFW</u></a><br>Donate: D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN</h5>
-<h5 style="text-align: center;"><script src="https://www.w3counter.com/tracker.js?id=136549"></script></h5>
+	<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+			categories: [],
+		},
+		computed: {
+			storeCount() {
+				return this.categories.reduce((sum, category) => sum + category.entries.length, 0)
+			}
+		},
+		async created() {
+			this.categories = await fetch('./data.json')
+				.then(response => response.json())
+		}
+	})
+	</script>
 </body>
-
 </html>
