@@ -57,32 +57,31 @@
 		text-shadow: 0 0 10px #FF6699;
 	}
 
-	div.fixed {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 165px;
-		margin: 3px;
-		border: 1px solid #FFCC00;
-		background-color: #323232;
-	}
-
-	div.category {
+	.category {
 		text-align: center;
-		padding-bottom: 32px;
 	}
-	div.category > .category-title {
+	.category-title {
 		color: #FF6699 !important;
 		font-size: 25px;
 		font-weight: bold;
+		margin: 32px 0 12px 0;
 	}
-	div.category > ul {
+	.category > ul {
+		margin: 0;
 		padding-inline-start: 0;
 	}
-	div.category .category-entry {
-		font-size: 15px;
+	.website {
 		list-style-type: none;
-		margin: 2px 0;
+		margin: 2px 0 4px 0;
+	}
+	.website-title {
+		font-size: 15px;
+	}
+	.website-properties {
+		font-size: 10px
+	}
+	.website-description {
+		font-size: 13px;
 	}
 	</style>
 
@@ -91,36 +90,22 @@
 
 <body>
 	<div id="app">
-		<!-- Site navigation -->
-		<div class="fixed">
-			<span style="margin: 5px;"><a href="index.html">- Home</a></span>
-			<br>
-			<span style="margin: 5px;"><a href="about.html">- About/FAQ</a></span>
-			<br>
-			<span style="margin: 5px;"><a href="changelog.html">- Changelog</a></span>
-			<br>
-			<span style="margin: 5px;"><a href="partners.html">- Other Doge Stuff</a></span>
-			<br>
-			<span style="margin: 5px;"><a href="graphics.html">- Graphics</a></span>
-		</div>
-
+		<!-- Header -->
 		<h1 style="font-size: 15px; text-align: center;">
-			<a href="index.html"><img src="./image/banner.png" alt="SpendYourDogecoins" /></a>
+			<a href="index.html">
+				<img src="./image/banner.png" alt="SpendYourDogecoins">
+			</a>
 		</h1>
 
-		<h2 style="font-size: 13px; text-align: center;">
-			Contact Email:
-			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank">spendyourdogecoins@protonmail.com</a>
-		</h2>
-
-		<h2 style="font-size: 13px; text-align: center;">
-			<a href="https://twitter.com/SpendYourDoge" target="_blank">
-				<img src="./image/twitter.png" alt="">
-				SpendYourDogecoins on Twitter
-			</a>
-			<a href="https://twitter.com/SpendYourDoge" target="_blank">
-				<img src="./image/twitter.png" alt="">
-			</a>
+		<!-- Navigation -->
+		<h2 style="font-size: 18px; text-align: center;">
+			<a href="index.html">Home</a> -
+			<a href="changelog.html">Changelog</a> -
+			<a href="about.html">About/FAQ</a> -
+			<a href="partners.html">Other Doge Stuff</a> -
+			<a href="graphics.html">Graphics</a> -
+			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank">Email</a> -
+			<a href="https://twitter.com/SpendYourDoge" target="_blank">Twitter</a>
 		</h2>
 
 		<!-- Changelog -->
@@ -142,8 +127,10 @@
 			<a href="https://www.dogecoinlist.com/" target="_blank"><img src="./image/dogecoinlist.png" alt="Dogecoinlist.com"></a>
 			<br>
 			Sell your things for Dogecoin. Similar to eBay/craigslist, but with Dogecoin.
+
 			<br>
 			<br>
+
 			<a href="https://r0ok.com/" target="_blank"><b>r0ok Clothing Co.</b></a>
 			<br>
 			<a href="https://r0ok.com/" target="_blank"><img src="./image/r0okclothing.png" alt="r0ok.com"></a>
@@ -158,19 +145,26 @@
 			class="category"
 		>
 			<!-- Title -->
-			<a class="category-title" :href="'#' + category.title">
-				~ ~ ~ {{ category.title }} ~ ~ ~
+			<a :href="'#' + category.title">
+				<h3 class="category-title">
+					~ ~ ~ {{ category.title }} ~ ~ ~
+				</h3>
 			</a>
 
 			<!-- Site links -->
 			<ul>
-				<li class="category-entry" v-for="entry in category.entries">
+				<li class="website" v-for="entry in category.entries">
 					<a
 						:href="entry.href"
 						target="_blank"
 						:onClick="entry.restricted ? `return confirm('Please confirm that you are at least 18 years old before visiting this store')` : ''"
 					>
-						<b>{{ entry.name }}</b> - {{ entry.description }}
+						<b class="website-title">{{ entry.name }}</b>
+						<span class="website-properties">
+							({{ [entry.location, entry.method].filter(x => !!x).join(' - ') }})
+						</span>
+						<br>
+						<i class="website-description">{{ entry.description }}</i>
 					</a>
 				</li>
 			</ul>
@@ -205,7 +199,13 @@
 		},
 		computed: {
 			storeCount() {
-				return this.categories.reduce((sum, category) => sum + category.entries.length, 0)
+				let count = 0
+				for (const category of this.categories) {
+					for (const entry of category.entries) {
+						count++
+					}
+				}
+				return count
 			}
 		},
 		async created() {
