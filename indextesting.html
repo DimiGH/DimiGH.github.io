@@ -64,7 +64,7 @@
 		color: #FF6699 !important;
 		font-size: 25px;
 		font-weight: bold;
-		margin: 32px 0 12px 0;
+		margin: 32px 0 0 0;
 	}
 	.category > ul {
 		margin: 0;
@@ -83,9 +83,47 @@
 	.website-description {
 		font-size: 13px;
 	}
+	.hide-Button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 15px;
+		color: #FF6699;
+		text-align: center;
+	}
 	</style>
 
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<Script>
+		function hideDiv (whichDiv) {
+			document.getElementById(whichDiv + " Div").style.display = "none";
+			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "showDiv('" + whichDiv + "')");
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Show"
+		}
+		function showDiv(whichDiv) {
+			document.getElementById(whichDiv + " Div").style.removeProperty("display");
+			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "hideDiv('" + whichDiv + "')");
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide"
+		}
+		function hideAll () {
+			for (i = 0; i < categoryNames.length; i++) {
+				document.getElementById(categoryNames[i] + " Div").style.display = "none";
+				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "showDiv('" + categoryNames[i] + "')");
+				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Show"
+			}
+			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
+			document.getElementById("HideAllButton").innerHTML = "Show All"
+		}
+		function showAll () {
+			for (i = 0; i < categoryNames.length; i++) {
+				document.getElementById(categoryNames[i] + " Div").style.removeProperty("display");
+				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "hideDiv('" + categoryNames[i] + "')");
+				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Hide"
+			}
+			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
+			document.getElementById("HideAllButton").innerHTML = "Hide All"
+		}
+	</Script>
 </head>
 
 <body>
@@ -115,6 +153,9 @@
 				Total stores currently listed: {{ storeCount }}
 			</a>
 		</h4>
+
+		<!-- Hide All Button-->
+		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All</button>
 
 		<!-- Spotlight -->
 		<div class="category">
@@ -151,8 +192,11 @@
 				</h3>
 			</a>
 
+			<!-- Hide Category Button-->
+			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.title + ' Div Button'">Hide</button>
+
 			<!-- Site links -->
-			<ul>
+			<ul :id="category.title + ' Div'">
 				<li class="website" v-for="entry in category.entries">
 					<a
 						:href="entry.href"
@@ -213,6 +257,13 @@
 				.then(response => response.json())
 		}
 	})
+
+	categoryNames = [];
+	document.body.onload = function(){
+		app.categories.forEach(element => {
+			categoryNames.push(element.title)
+		});
+	};
 	</script>
 </body>
 </html>
