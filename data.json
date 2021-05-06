@@ -1,0 +1,2714 @@
+[
+  {
+    "title": "Art",
+    "entries": [
+      {
+        "name": "CryptoArt",
+        "description": "Crypto Art",
+        "href": "https://cryptoart.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Lynx Art Collection",
+        "description": "Crypto & Various Art",
+        "href": "https://lynxartcollection.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Automobile",
+    "entries": [
+      {
+        "name": "BitCars",
+        "description": "Luxury Cars & Oldtimers",
+        "href": "https://bitcars.eu/",
+        "location": "Germany",
+        "method": "Globee"
+      },
+      {
+        "name": "Cue Anthony Racing",
+        "description": "Over 32000 Auto, SUV, Truck & UTV/ATV Aftermarket Performance Parts & Accessories",
+        "href": "https://cueanthonyracing.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Ksport USA",
+        "description": "Auto Parts Seller like suspension, brake and air ride systems and more",
+        "href": "https://ksportusa.com/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "Pay Later Tires",
+        "description": "Wheels & Tires",
+        "href": "https://www.paylatertires.com/",
+        "location": "USA",
+        "method": "Plisio"
+      },
+      {
+        "name": "ShineAuto",
+        "description": "Vehicle paint correcting, polishing and ceramic coatings. Located in Maidstone, UK.",
+        "href": "https://www.facebook.com/VehicleCleansing/",
+        "location": "UK",
+        "method": "In Store Payment"
+      }
+    ]
+  },
+  {
+    "title": "Beds",
+    "entries": [
+      {
+        "name": "Best Sleep Centre",
+        "description": "Mattresses, Beds, Pillows and more",
+        "href": "https://www.bestsleepcentre.com/",
+        "location": "Canada",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Bolster",
+        "description": "Hybrid Mattress",
+        "href": "https://bolstersleep.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Essential Sleep",
+        "description": "Mattresses, Pillows",
+        "href": "https://essentialsleepboutique.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Putnams",
+        "description": "Mattresses, Pillows and more",
+        "href": "https://www.putnams.co.uk/",
+        "location": "UK",
+        "method": "Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "Clothing",
+    "entries": [
+      {
+        "name": "1337 Fashion",
+        "description": "Various Clothes and merch",
+        "href": "https://1337.fashion/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "AirbrushCustoms",
+        "description": "Custom Airbrushed T shirts, Hats, Hoodies, and more",
+        "href": "https://airbrushcustoms.net/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Akumu Ink Clothing",
+        "description": "Nightmare Inspired Art Clothing",
+        "href": "https://akumuink.com/",
+        "location": "Netherlands",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Alien Carp",
+        "description": "Angler Clothing, Shirts, Mugs and more",
+        "href": "https://aliencarp.com/",
+        "location": "UK",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "Alive & More",
+        "description": "Artistic Clothes",
+        "href": "https://aliveandmore.com/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Atheist Shoes",
+        "description": "Handmade, Bauhaus-inspired Shoes",
+        "href": "https://atheist.shoes/",
+        "location": "Germany",
+        "method": "Bitpay"
+      },
+      {
+        "name": "AuthenticSolo",
+        "description": "Various Clothes",
+        "href": "https://authenticsolo.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "BedlamThreadz",
+        "description": "Shirts, Caps and Accessories",
+        "href": "https://bedlamthreadz.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Bonocler Eyewear",
+        "description": "Swiss Glasses Store",
+        "href": "https://bonocler.com/",
+        "location": "Switzerland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Bottega Senatore",
+        "description": "Handmade Italian Leather Shoes",
+        "href": "https://www.bottegasenatore.com/",
+        "location": "Italy/Switzerland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "BTFD.shop",
+        "description": "Crypto Shirts, Mugs and Stickers",
+        "href": "https://btfd.shop/",
+        "location": "USA",
+        "method": "Swirl"
+      },
+      {
+        "name": "Coin Monster",
+        "description": "Crypto Clothes",
+        "href": "https://coinmonster.store/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CryptoBantam",
+        "description": "Crypto Clothes",
+        "href": "https://www.cryptobantam.com/",
+        "location": "USA/Europe",
+        "method": "MyCryptoCheckout/Coinpayments"
+      },
+      {
+        "name": "CryptoWardrobe",
+        "description": "Crypto Shirts, Hoodies, Mugs, Hats, Socks",
+        "href": "https://cryptowardrobe.com/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Culture Kings",
+        "description": "Streetwear, Sneakers and more",
+        "href": "https://www.culturekings.com.au/",
+        "location": "Australia",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Diego Vanissabara",
+        "description": "High End Designer Shoes",
+        "href": "https://www.vanassibara.com/",
+        "location": "UK",
+        "method": "CoinGate"
+      },
+      {
+        "name": "DogeSwag",
+        "description": "Doge/Crypto Shirts and Mugs",
+        "href": "https://dogeswag.com/shop/",
+        "location": "USA",
+        "method": "GoUrl"
+      },
+      {
+        "name": "DogeToMars",
+        "description": "Doge(coin) Shirts, Hats, Face Masks",
+        "href": "https://dogetomars.com/collections/all",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Doge Wares",
+        "description": "Dogecoin Hat",
+        "href": "https://www.dogewares.co.uk/",
+        "location": "UK",
+        "method": "ProDoge"
+      },
+      {
+        "name": "Eat Me Clothing",
+        "description": "Huge Clothing Sortiment",
+        "href": "https://eatmeclothing.com/",
+        "location": "USA/Mexico/Latvia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Elevenplus Shop",
+        "description": "Water repellent, breathable and washable face masks",
+        "href": "https://elevenplus.shop/",
+        "location": "Italy",
+        "method": "GoUrl"
+      },
+      {
+        "name": "Frank & Beans",
+        "description": "Underwear",
+        "href": "https://www.frankandbeans.com.au/",
+        "location": "Australia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Girl Meets Dress",
+        "description": "UK Luxury Dress Hire Store",
+        "href": "https://girlmeetsdress.com/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "HippTee",
+        "description": "Crypto Shirts",
+        "href": "https://hipptee.com/",
+        "location": "USA",
+        "method": "Coinpayments/Globee"
+      },
+      {
+        "name": "Jay Kirby",
+        "description": "Cufflinks, Ties & Bow Ties",
+        "href": "https://www.jaykirby.com.au/",
+        "location": "Australia",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Kandykorn.Shop",
+        "description": "Custom Underground Clothing",
+        "href": "https://kandykorn.shop/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Kryptoez",
+        "description": "Crypto Socks",
+        "href": "https://kryptoez.com/",
+        "location": "UK",
+        "method": "Coinpayments/NowPayments"
+      },
+      {
+        "name": "Krypto Threadz",
+        "description": "Crypto Clothes",
+        "href": "https://www.kryptothreadz.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Masks by Sharon",
+        "description": "Custom Made Face Masks",
+        "href": "https://www.masksbysharon.com/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "MyCoconutHeart",
+        "description": "Womens Clothing",
+        "href": "https://www.mycoconutheart.com/",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "My Dogecoin Rocks",
+        "description": "Dogecoin Clothes and Accessories",
+        "href": "https://mydogecoin.rocks/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Ode Clothing",
+        "description": "Various Clothes",
+        "href": "https://odeclothing.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ParkAndFinch",
+        "description": "Glasses",
+        "href": "https://www.parkandfinch.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Poisonous Pinups",
+        "description": "Poisonous Pinups Clothing",
+        "href": "http://www.poisonouspinups.com/store/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Print-Ted",
+        "description": "Crypto clothes collection and Design your own shirt",
+        "href": "https://print-ted.com/collections/crypto-collection",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "r0ok Clothing Co.",
+        "description": "Mental Health Awarness Clothes",
+        "href": "https://r0ok.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Shadowwork",
+        "description": "Various Clothes",
+        "href": "https://www.shadowwwork.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Shop StoryV",
+        "description": "Womens Travel Apparel and more",
+        "href": "https://shop.storyv.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Siam Secrets Apparel",
+        "description": "Summer and Beach Fashion",
+        "href": "https://shopbeachwearonline.com/shop/",
+        "location": "Thailand",
+        "method": "Bitpay"
+      },
+      {
+        "name": "The Scarf Boutique",
+        "description": "Silk Scarves",
+        "href": "https://www.thescarfboutique.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "The Stonk Shop",
+        "description": "Doge Shirts, Hoodies and Hats",
+        "href": "https://thestonkshop.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "zeroconfs",
+        "description": "Crypto Clothing, Mugs, Hats",
+        "href": "https://www.zeroconfs.com/",
+        "location": "Iceland",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Crypto Hardware Wallets",
+    "entries": [
+      {
+        "name": "Ballet",
+        "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
+        "href": "https://www.balletcrypto.com/en/buy/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Coinstop.io",
+        "description": "Authorised Trezor, Ledger, Billfodl & Bitbox dealer",
+        "href": "https://coinstop.io/",
+        "location": "Australia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CoolWallet",
+        "description": "Hardware Wallet, buyable with Dogecoin, but not supporting Dogecoin",
+        "href": "https://www.coolwallet.io/",
+        "location": "Taiwan",
+        "method": "Bitpay"
+      },
+      {
+        "name": "KeepKey",
+        "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
+        "href": "https://shapeshift.com/keepkey",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Ledger",
+        "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
+        "href": "https://www.ledger.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "SafePal.io",
+        "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
+        "href": "https://shop.safepal.io/",
+        "location": "China",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Dogecoin Payment Providers",
+    "entries": [
+      {
+        "name": "Bitpay.com",
+        "description": "5 different coins, 1% fee, fiat conversion options, wide variety of store plugins",
+        "href": "https://bitpay.com/",
+        "method": "200+ Countries supported"
+      },
+      {
+        "name": "BTCPay",
+        "description": "14 different coins, self-hosted, open-source, wide variety of store plugins",
+        "href": "https://btcpayserver.org/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "CoinGate.com",
+        "description": "50+ different coins, 1% fee, fiat conversion options, wide variety of store plugins",
+        "href": "https://coingate.com/",
+        "method": "100+ Countries supported"
+      },
+      {
+        "name": "Coinify.com",
+        "description": "10 different coins, no fees, KYC required, daily/weekly fiat conversion options",
+        "href": "https://www.coinify.com/",
+        "method": "70+ Countries supported"
+      },
+      {
+        "name": "Coinpayments.net",
+        "description": "2055+ different coins, 0.5% fee, fiat conversion options, wide variety of store plugins",
+        "href": "https://www.coinpayments.net/",
+        "method": "200+ Countries supported"
+      },
+      {
+        "name": "CoinRemitter.com",
+        "description": "8 different coins, 0.23% fee, no KYC, wide variety of store plugins",
+        "href": "https://coinremitter.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "CryptocurrencyCheckout.com",
+        "description": "50+ different coins, no fees, fiat conversion options, wide variety of store plugins",
+        "href": "https://cryptocurrencycheckout.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "Cryptoprocessing.com",
+        "description": "30+ different coins, KYC required, fiat conversion options, wide variety of store plugins",
+        "href": "https://cryptoprocessing.com/",
+        "method": "90+ Countries supported"
+      },
+      {
+        "name": "CryptoWoo.com",
+        "description": "9 different coins, no KYC, p2p payments, WooCommerce store plugins",
+        "href": "https://www.cryptowoo.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "Globee.com",
+        "description": "7 different coins, 1% fee, no KYC, fiat conversion options, wide variety of store plugins",
+        "href": "https://globee.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "GoUrl.io",
+        "description": "12 different coins, 1.5% fee, no KYC, wide variety of store plugins",
+        "href": "https://gourl.io/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "MyCryptoCheckout.com",
+        "description": "100+ different coins, 0% fee, no KYC, p2p payments, WooCommerce store plugin",
+        "href": "https://mycryptocheckout.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "NowPayments.io",
+        "description": "50+ different coins, 0.4%-0.5% fee, KYC required, instant payouts, fiat conversion options, wide variety of store plugins",
+        "href": "https://nowpayments.io/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "PawCommerce.com",
+        "description": "Dogecoin only, no fees, no KYC",
+        "href": "https://pawcommerce.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "PayKassa.pro",
+        "description": "10 different coins, 4% fee, no KYC, fiat conversion options, wide variety of store plugins",
+        "href": "https://paykassa.pro/en/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "Plisio.net",
+        "description": "8 different coins, 0.5% fee, no KYC, wide variety of store plugins",
+        "href": "https://plisio.net/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "ProDoge",
+        "description": "7 different coins, no fees, website widget, mobile app",
+        "href": "https://prodoge.com/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "SwirlPay",
+        "description": "18 different coins, p2p, no fees",
+        "href": "https://swirlpay.io/",
+        "method": "Worldwide supported"
+      }
+    ]
+  },
+  {
+    "title": "Donating",
+    "entries": [
+      {
+        "name": "Animal Neotropical",
+        "description": "Nature and animal protection",
+        "href": "https://aneotropical.weebly.com/donations.html",
+        "method": "D5ivRQwT4TU8CEjNBhorpMKSe8bVkMYURQ"
+      },
+      {
+        "name": "archive.org",
+        "description": "Internet archive",
+        "href": "https://archive.org/donate/cryptocurrency/",
+        "method": "via changelly"
+      },
+      {
+        "name": "Alex's Lemonade Stand Foundation",
+        "description": "Foundation for childhood cancer",
+        "href": "https://www.alexslemonade.org/donate-cryptocurrency",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "AntiWokeSamaritans",
+        "description": "Freedom of speech",
+        "href": "https://www.antiwokes.com/",
+        "method": "D5wHD2pX8bEKmL5DBBGqV3mjMizjNcam1e"
+      },
+      {
+        "name": "Assertive Kids Foundation",
+        "description": "Anti-Bullying",
+        "href": "https://assertivekids.org/",
+        "method": "DKyLXgCCgBSPbBujg1YbjRNfrhxFtnVGQk"
+      },
+      {
+        "name": "CARE",
+        "description": "Supporting people in need worldwide",
+        "href": "https://www.care.org/get-involved/ways-to-give/cryptocurrency/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Cleveland Metroparks",
+        "description": "Preserve and protect the Cleveland Metroparks",
+        "href": "https://www.clevelandmetroparks.com/parks/support/donate/donate-with-bitcoin/$25-bitcoin-donation",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Crohn's & Colitis Foundation",
+        "description": "Organization dedicated to finding cures for Crohn's disease and ulcerative colitis",
+        "href": "https://www.crohnscolitisfoundation.org/donate/donate-cryptocurrency",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "DogecoinSocksForTheHomeless",
+        "description": "Socks for homeless people in LA",
+        "href": "https://www.dogecoinmultisig.org/multisigmain/index.html?payspot=9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y#payspot",
+        "method": "9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y"
+      },
+      {
+        "name": "Doge4FAH",
+        "description": "Dogecoin Folding At Home team",
+        "href": "https://dogecoinfah.com/",
+        "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
+      },
+      {
+        "name": "GiveDirectly",
+        "description": "Supporting people living in poverty",
+        "href": "https://twitter.com/GiveDirectly/status/1356251465107566598",
+        "method": "DJbsZJVxMaRqY1tZXQDk8wZVjU5cJdxKKw"
+      },
+      {
+        "name": "Good Doge",
+        "description": "Supporting Animal Shelters",
+        "href": "https://www.gooddoge.com/",
+        "method": "DRRY838tP39h7tLteVqBkWLimkCCD7zydh"
+      },
+      {
+        "name": "Greenfield Cities",
+        "description": "Creating safe, sustainable and prospering places in conflict zones",
+        "href": "https://www.greenfieldcities.org/private-funding/",
+        "method": "DG1Q8MBkQms8QAfJ39DZ3ACpWKt4h5hZ9j"
+      },
+      {
+        "name": "Humane Society Tampa",
+        "description": "Support for homeless animals",
+        "href": "https://humanesocietytampa.org/how-to-help/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Kamikaze Comics",
+        "description": "Weekly scifi webcomic",
+        "href": "http://kamikazeanimated.com/comic/support-us/dogecoin-donations/",
+        "method": "DC8Tuid8X3Qwnpo5cvBum19w2LRWXfepqr"
+      },
+      {
+        "name": "Karam Foundation",
+        "description": "Supporting syrian youth",
+        "href": "https://www.karamfoundation.org/pay-with-bitpay/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Kennel To Couch",
+        "description": "Supporting shelter Pitbulls",
+        "href": "https://kenneltocouch.org/pitbull-charity/",
+        "method": "DP9zHA3cJ3Nc5otkphEXQYDWRX5dN7XHzp"
+      },
+      {
+        "name": "Landon Fund",
+        "description": "Boys School",
+        "href": "https://www.landon.net/give/landonfund",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "LibreOffice",
+        "description": "Open Source and free Office Software",
+        "href": "https://www.libreoffice.org/donate/",
+        "method": "via CoinGate"
+      },
+      {
+        "name": "Mozilla Foundation",
+        "description": "Organization to support and collectively lead the open source Mozilla project",
+        "href": "https://wiki.mozilla.org/Donate_Bitcoin",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "MyBrowserAddon",
+        "description": "Open Source browser addons",
+        "href": "https://mybrowseraddon.com/",
+        "method": "DPF4dBYNrF5exg2mZ5S1px1oS41UsbVzg2"
+      },
+      {
+        "name": "Nyan.cat",
+        "description": "Creator of Nyan Cat",
+        "href": "http://www.nyan.cat/index.php?cat=nyandoge",
+        "method": "D6aG2swnBPnZVQ8xSChx87XEMgeDwruHLG"
+      },
+      {
+        "name": "One Tail at a Time",
+        "description": "Support for homeless animals",
+        "href": "https://www.onetail.org/dogecoin/",
+        "method": "DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS"
+      },
+      {
+        "name": "Rainforest Foundation US",
+        "description": "Supporting people living in rainforests",
+        "href": "https://rainforestfoundation.org/donate/cryptocurrency/",
+        "method": "DBUkMjJQj3xLR8bb9u3o8FJ11XvGGE9L9v"
+      },
+      {
+        "name": "Rainforest Partnership",
+        "description": "Supporting the existence of rainforests",
+        "href": "https://rainforestpartnership.org/donate/",
+        "method": "via coinpayments"
+      },
+      {
+        "name": "Reddit Enhancement Suite",
+        "description": "Most popular Reddit enhancing browser extension",
+        "href": "https://redditenhancementsuite.com/contribute/",
+        "method": "DNmr7pr6b2MKojd1YaLuSuBCgwDnkt3gYb"
+      },
+      {
+        "name": "Room To Read",
+        "description": "Supporting Child Education",
+        "href": "https://www.roomtoread.org/donate-cryptocurrency/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Saltlake City Mission",
+        "description": "Inner-City Church based Rescue Mission Ministry",
+        "href": "https://saltlakecitymission.org/",
+        "method": "via coinpayments"
+      },
+      {
+        "name": "Son of a Saint",
+        "description": "Supporting fatherless boys",
+        "href": "https://sonofasaint.org/cryptocurrency/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "The Humane League",
+        "description": "Organization to end the abuse of animals in the food industry",
+        "href": "https://thehumaneleague.org/donate-cryptocurrencies",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "The Ocean Cleanup",
+        "description": "Cleaning up oceans worldwide",
+        "href": "https://theoceancleanup.com/donate/",
+        "method": "DNqzuPJ3aUQBcj2t43UJsXKdFAw6PfeXQe"
+      },
+      {
+        "name": "The Skatepark Project",
+        "description": "Creating Public Skateparks worldwide",
+        "href": "https://skatepark.org/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "Thorn.org",
+        "description": "Protecting children from sexual abuse",
+        "href": "https://www.thorn.org/donate/",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "University of Illinois",
+        "description": "Donate to the maintaining of the University of Illinois",
+        "href": "https://uif.uillinois.edu/cryptocurrency",
+        "method": "via Bitpay"
+      },
+      {
+        "name": "WikiMedia Foundation",
+        "description": "Collecting donations for Wikipedia and Wikimedia projects",
+        "href": "https://donate.wikimedia.org/wiki/Ways_to_Give#Cryptocurrency",
+        "method": "via Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "Food",
+    "entries": [
+      {
+        "name": "Blockchain Coffee",
+        "description": "Coffee",
+        "href": "https://www.blockchaincoffee.space/",
+        "location": "Mexico",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "BringTheBeers",
+        "description": "Beers delivered in the Southern New Hampshire area",
+        "href": "https://www.bringthebeers.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "BTC Wine",
+        "description": "French Wine",
+        "href": "https://www.btc-wine.com/",
+        "location": "France",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Coffeeur",
+        "description": "Coffee",
+        "href": "https://coffeeur.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CoffeeZyme",
+        "description": "Coffee",
+        "href": "https://coffeezyme.com/",
+        "location": "USA",
+        "method": "Plisio"
+      },
+      {
+        "name": "Devbrew Coffee",
+        "description": "Coffee",
+        "href": "https://devbrew.coffee/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "DrApis",
+        "description": "Raw Portuguese Bee Honey",
+        "href": "http://drapis.com/",
+        "location": "Portugal",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hearth and Pantry",
+        "description": "Honey, Hot Sauce, Jam, Syrup, Seasoning and more",
+        "href": "https://hearthandpantry.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Henderson Inlet Crayfish",
+        "description": "Wild caught Crayfish",
+        "href": "https://www.crayfishathiseafoods.com/shop",
+        "location": "US",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "IDGAF",
+        "description": "Random $20 food delivery",
+        "href": "https://idgaf.lol/doge",
+        "location": "USA",
+        "method": "Plisio"
+      },
+      {
+        "name": "Inserrata",
+        "description": "Italian Wine and Oil",
+        "href": "https://inserrata.it/en/",
+        "location": "Italy",
+        "method": "Bitpay"
+      },
+      {
+        "name": "La-Boutique",
+        "description": "Canadian Coffee",
+        "href": "https://www.la-boutique.ca/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Lieferando",
+        "description": "Food Delivery Service in 13 different countries",
+        "href": "https://www.lieferando.at/",
+        "location": "Europe",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Menufy",
+        "description": "US Food Delivery Service (Bitpay/Dogecoin payment only available at partner restaurants)",
+        "href": "https://www.menufy.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Morena Kawhe",
+        "description": "Coffee",
+        "href": "https://morenakawhe.com/",
+        "location": "New Zealand",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "New Mexico Tea Company",
+        "description": "Tea and accessories",
+        "href": "https://www.nmteaco.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "PexPeppers",
+        "description": "Hot Sauces",
+        "href": "https://www.pexpeppers.com/",
+        "location": "USA",
+        "method": "Coinpayments/NowPayments"
+      },
+      {
+        "name": "Shiba Coffee and Tea",
+        "description": "Coffee and Tea",
+        "href": "https://shibacoffeeandtea.com/",
+        "location": "USA",
+        "method": "CryptocurrencyCheckout"
+      },
+      {
+        "name": "Sour.gg",
+        "description": "Sour Candy",
+        "href": "https://sour.gg/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Suasa",
+        "description": "Portugues shop selling indonesian food",
+        "href": "https://www.suasa.net.br/en/",
+        "location": "Portugal",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "The Green Witch Seed",
+        "description": "Various Food and Flower Seeds",
+        "href": "https://greenwitchseed.ca/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "WackySauces",
+        "description": "Hot Sauces",
+        "href": "https://wackysauces.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Gaming",
+    "entries": [
+      {
+        "name": "1stpal",
+        "description": "Game Keys and Gift Cards",
+        "href": "https://1stpal.com/",
+        "location": "UAE",
+        "method": "Plisio"
+      },
+      {
+        "name": "Account Warehouse",
+        "description": "Buy and Sell Game Accounts",
+        "href": "https://www.accountwarehouse.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Allgamer",
+        "description": "Game Servers",
+        "href": "https://allgamer.net/",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "AmiiBro NFC",
+        "description": "NFC Gaming Tokens",
+        "href": "https://www.amiibronfc.com/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "CJS CD Keys",
+        "description": "Steam/Origin/Uplay Games/Keys",
+        "href": "https://www.cjs-cdkeys.com/",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Gamerall",
+        "description": "CSGO Items, TF2 Items, DOTA Items, Rust Items and much more",
+        "href": "https://gamerall.com/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Gamesonly.at",
+        "description": "Steam/Origin/Uplay Games/Keys",
+        "href": "https://www.gamesonly.at/",
+        "location": "Austria",
+        "method": "CoinGate"
+      },
+      {
+        "name": "GMDice",
+        "description": "Gaming Dice and Miniatures",
+        "href": "https://www.gmdice.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Keys4Coins",
+        "description": "Steam/Origin/Uplay Games/Keys",
+        "href": "https://www.keys4coins.com/",
+        "location": "Norway",
+        "method": "CryptoWoo"
+      },
+      {
+        "name": "MetallicDiceGames",
+        "description": "Premium Gaming Dice",
+        "href": "https://metallicdicegames.com/",
+        "location": "USA",
+        "method": "NomiddlemanCrypto"
+      },
+      {
+        "name": "MMOGA",
+        "description": "Steam/Origin/Uplay Games/Keys",
+        "href": "https://www.mmoga.com/",
+        "location": "Hong Kong",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Monster.Tech",
+        "description": "Flight Sim and Racing accessories",
+        "href": "https://www.monster.tech/",
+        "location": "Germany",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Play-Asia",
+        "description": "Video Games, Keys and more",
+        "href": "https://www.play-asia.com/",
+        "location": "Hong Kong",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Ruins of Chaos",
+        "description": "War browsergame, with premium currency purchasable with Dogecoin and an integrated Dogecoin Faucet",
+        "href": "https://ruinsofchaos.com/recruit.php?uniqid=421i",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Stranger Games",
+        "description": "Classic Video Games, Collectibles and Funko Pops",
+        "href": "https://www.strangergamesbst.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Torn.com",
+        "description": "Real-life, text based browser game. Premium account upgrade purchasable with Dogecoin.",
+        "href": "https://www.torn.com/",
+        "location": "USA",
+        "method": "CoinGate"
+      }
+    ]
+  },
+  {
+    "title": "Gift Cards",
+    "entries": [
+      {
+        "name": "BitcoinGiftcards",
+        "description": "Mainly Australian Gift Cards",
+        "href": "https://bitcoingiftcards.com.au/",
+        "location": "Australia",
+        "method": "NomiddlemanCrypto"
+      },
+      {
+        "name": "Bitrefill",
+        "description": "3000+ Worldwide Gift Cards including Walmart, Amazon, Apple, Steam, eBay, Uber and many more",
+        "href": "https://www.bitrefill.com/buy/?code=GV7hU5BE",
+        "location": "Sweden",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "CoinCards",
+        "description": "Mainly US and Canada Gift Cards",
+        "href": "https://coincards.com/",
+        "location": "Canada",
+        "method": "BTCPay"
+      },
+      {
+        "name": "CoinGate",
+        "description": "500+ Worldwide Gift Cards",
+        "href": "https://coingate.com/gift-cards/all",
+        "location": "Lithuania",
+        "method": "CoinGate"
+      },
+      {
+        "name": "CoinsBee",
+        "description": "500+ Worldwide Gift Cards",
+        "href": "https://www.coinsbee.com/en/",
+        "location": "Germany",
+        "method": "CoinGate"
+      },
+      {
+        "name": "GiftOff",
+        "description": "450+ Worldwide Gift Cards",
+        "href": "https://giftoff.com/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "JapanGiftCard",
+        "description": "Mainly Japan Gift Cards",
+        "href": "https://japangiftcard.com/",
+        "location": "Japan",
+        "method": "CoinGate"
+      },
+      {
+        "name": "TurGame",
+        "description": "Mainly Turkey Gift Cards",
+        "href": "https://www.turgame.com/",
+        "location": "Turkey",
+        "method": "Bitpay/CoinGate"
+      }
+    ]
+  },
+  {
+    "title": "Health Care",
+    "entries": [
+      {
+        "name": "Cov.Care",
+        "description": "Medical Supplies",
+        "href": "https://www.cov.care/",
+        "location": "USA",
+        "method": "Manual Payment/Contact Support"
+      },
+      {
+        "name": "Goobat",
+        "description": "Pharmacy",
+        "href": "https://www.goobat.care/",
+        "location": "Malaysia",
+        "method": "Bitpay"
+      },
+      {
+        "name": "PSAwear",
+        "description": "German FFP2 Masks Store",
+        "href": "https://psawear.de/",
+        "location": "Germany",
+        "method": "NowPayments"
+      }
+    ]
+  },
+  {
+    "title": "Jewelry",
+    "entries": [
+      {
+        "name": "AceJewelers",
+        "description": "Jewelry and Watches",
+        "href": "https://www.acejewelers.com/en/",
+        "location": "Netherlands",
+        "method": "Bitpay"
+      },
+      {
+        "name": "BitDials",
+        "description": "Jewelry, Luxury Watches, Bags etc.",
+        "href": "https://www.bitdials.eu/",
+        "location": "Germany",
+        "method": "Globee"
+      },
+      {
+        "name": "CRMJewelers",
+        "description": "Jewelry and Watches",
+        "href": "https://www.crmjewelers.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Glamcarat",
+        "description": "Personalized Silver Jewelry",
+        "href": "https://glamcarat.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Icebox",
+        "description": "Jewelry and Watches",
+        "href": "https://www.icebox.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Jens Hansen",
+        "description": "High Quality Jewelry including the ring from the \"The Lord of The Rings\" movie",
+        "href": "https://www.jenshansen.com/",
+        "location": "New Zealand",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Jewelry Affairs",
+        "description": "Jewelry",
+        "href": "https://www.jewelryaffairs.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Multycolored",
+        "description": "Jewelry, Shirts and Decoration",
+        "href": "https://www.multycolored.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Regent Jewelers",
+        "description": "Jewelry, Engagement Rings and Watches",
+        "href": "https://regentjewelers.net/",
+        "location": "USA",
+        "method": "Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "Merch",
+    "entries": [
+      {
+        "name": "AUDL Store",
+        "description": "Official Merch Store for the American Ultimate Disc League",
+        "href": "https://shop.theaudl.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "BlockchainStuff",
+        "description": "Crypto merch, Shirts, Hoodies, Socks, Caps, Mugs, Clocks",
+        "href": "https://www.blockchainstuff.nl/",
+        "location": "Netherlands",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Bulldoge Apparel",
+        "description": "Doge(coin) merch, Shirts, Necklace, Mugs, Stickers",
+        "href": "https://bulldogeofficial.wixsite.com/shop",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "CoinVibe",
+        "description": "Crypto Merch, Key Chain, Stickers",
+        "href": "https://www.coinvibe.net/",
+        "location": "Germany",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CryptoHolic",
+        "description": "Crypto Merch, Shirts, Hoodies, Mugs, Face Masks and much more",
+        "href": "https://www.cryptoholicshop.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Dallas Mavericks Shop",
+        "description": "Official Merch Store for NBA Team \"Dallas Mavericks\"",
+        "href": "https://dallasmavs.shop/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Houston Rockets Shop",
+        "description": "Official Merch Store for NBA Team \"Houston Rockets\"",
+        "href": "https://rocketsshop.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Ninetees Kid",
+        "description": "Various Merch, Shirts, Hoodies, Caps, Key Tags",
+        "href": "https://nineteeskid.net/",
+        "location": "Germany",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Olympian Bitcoin",
+        "description": "Crypto Merch, Shirts, Pillows, Mugs, Hats, Socks",
+        "href": "https://olympianbitcoin.store/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ruffi0",
+        "description": "ruffi0 Merch, Shirts, Bags, Stickers and more",
+        "href": "https://ruffi0.com/shop/",
+        "location": "USA",
+        "method": "NowPayments"
+      },
+      {
+        "name": "Springrates Merch",
+        "description": "Springrates/Dogecar Merch, Shirts, Hats, Stickers and more",
+        "href": "https://merch.springrates.com/",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Such Doge Mart",
+        "description": "Doge(coin) Merch, Shirts, Stickers, Mugs",
+        "href": "https://suchdogemart.com/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "x25 Esports",
+        "description": "x25 Merch, Jersey, Shirts, Mousepad",
+        "href": "https://esports.x25.rs/shop/",
+        "location": "Serbia",
+        "method": "Plisio"
+      }
+    ]
+  },
+  {
+    "title": "Pets",
+    "entries": [
+      {
+        "name": "Chewbysnacks",
+        "description": "Homemade Dog Treats",
+        "href": "https://chewbysnacks.com/",
+        "location": "Canada",
+        "method": "CryptoWoo"
+      },
+      {
+        "name": "Finn",
+        "description": "Dog Nutrition Products",
+        "href": "https://www.petfinn.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "HSC Canada",
+        "description": "Dog and Cat Accessories, Beds, Feeders, Toys and more",
+        "href": "https://hsccanada.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Pawfect Pals",
+        "description": "Dog Accessories, Toys, Leads, Beds and more",
+        "href": "https://www.pawfect-pals.com.au/",
+        "location": "Australia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "PuppySnackers",
+        "description": "Homemade Dog Treats",
+        "href": "https://puppysnackers.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Woofo Empawrium",
+        "description": "New Zealand based Dog Accessories Shop",
+        "href": "https://www.woofo.nz/",
+        "location": "New Zealand",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Smoking",
+    "entries": [
+      {
+        "name": "BitVape",
+        "description": "Australian high rated JUUL store",
+        "href": "https://bitvape.com.au/",
+        "location": "Australia",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "Dr. Dabber",
+        "description": "Vaporizers and Accessories",
+        "href": "https://www.drdabber.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Frontier Vapor",
+        "description": "Vape Accessories, E-Liquid",
+        "href": "https://www.frontiervapor.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "RX Vape",
+        "description": "Vape Products, Vape Juice, DIY",
+        "href": "https://rxvape.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Texas T Extracts",
+        "description": "Vape Juice",
+        "href": "https://texastextracts.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VapePENstore",
+        "description": "Vape Products",
+        "href": "http://vapepenssstore.com/",
+        "location": "USA",
+        "method": "GoUrl"
+      }
+    ]
+  },
+  {
+    "title": "Tech Stores",
+    "entries": [
+      {
+        "name": "Daria Microphones",
+        "description": "Microphones",
+        "href": "https://dariamicrophones.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "DasKeyboard",
+        "description": "Keyboards and accessories",
+        "href": "https://shop.daskeyboard.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Digitech4All",
+        "description": "Greek Online Tech Store",
+        "href": "https://digitech4all.eu/",
+        "location": "Greece",
+        "method": "CoinGate"
+      },
+      {
+        "name": "DirectVoltage",
+        "description": "Lasers, 3DPrinting, Robotics, CNC, Arduino, Solar cells and more",
+        "href": "https://directvoltage.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Dorset",
+        "description": "Wide Variety of Tech Articles",
+        "href": "https://dorset.tech/shop/",
+        "location": "UK",
+        "method": "NowPayments"
+      },
+      {
+        "name": "FastTech",
+        "description": "Wide Variety of Tech Articles",
+        "href": "https://www.fasttech.com/",
+        "location": "Hong Kong",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "FilamentOne",
+        "description": "3D Printers and accessories",
+        "href": "https://www.filamentone.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Flashquark",
+        "description": "Keyboards and accessories",
+        "href": "https://flashquark.com/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "IncheonBitcoinShop",
+        "description": "ASIC Miners, Printers, Kitchen Supplies and much more",
+        "href": "https://incheonbitcoin.shop/",
+        "location": "South Korea",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "MiniPC.eu",
+        "description": "Mini PCs",
+        "href": "https://minipc.eu/",
+        "location": "Netherlands",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Newegg",
+        "description": "Computer and Electronics store",
+        "href": "https://www.newegg.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Omnitype",
+        "description": "Keyboards and accessories",
+        "href": "https://omnitype.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Pi-Supply",
+        "description": "Raspberry Pi and accessories",
+        "href": "https://uk.pi-supply.com/",
+        "location": "UK",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Scan UK",
+        "description": "PC components and more",
+        "href": "https://www.scan.co.uk/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "StakeBox",
+        "description": "Staking and mining hardware, accessories, hardware wallets, digital security devices and more",
+        "href": "https://www.stakebox.org/",
+        "location": "UK",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Webhallen",
+        "description": "Swedish Tech Store",
+        "href": "https://www.webhallen.com/",
+        "location": "Sweden",
+        "method": "Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "Traveling",
+    "entries": [
+      {
+        "name": "AirBaltic",
+        "description": "Flag carrier airline of Latvia. Dogecoin payment option for GREEN and GREEN plus tickets.",
+        "href": "https://www.airbaltic.com/en-US/index",
+        "location": "Latvia",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Amber Hotel",
+        "description": "Swiss Ski and Spa Hotel",
+        "href": "https://amberhotel.ch/",
+        "location": "Switzerland",
+        "method": "In Store Payment"
+      },
+      {
+        "name": "Crypto Cruise Deals",
+        "description": "Cruises",
+        "href": "https://cryptocruisedeals.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Crypto Turismo",
+        "description": "Flight and Hotel Booking",
+        "href": "https://cryptoturismo.com/",
+        "location": "Spain",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Fast Private Jet",
+        "description": "Private Jet Service",
+        "href": "https://www.fastprivatejet.com/en",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Jet Finder",
+        "description": "Private Jet Charter",
+        "href": "https://www.jetfinder.com/",
+        "location": "Canada",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Qeeq",
+        "description": "Car Rentals Worldwide",
+        "href": "https://www.qeeq.com/",
+        "location": "Ireland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Simple Jet",
+        "description": "Private Jet Charter",
+        "href": "https://www.simply-jet.ch/en/",
+        "location": "Switzerland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "The Yacht Break",
+        "description": "Sailing Holidays in Croatia",
+        "href": "https://theyachtbreak.com/",
+        "location": "Slovenia",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Travala",
+        "description": "Flight and Hotel Booking via BinancePay",
+        "href": "https://www.travala.com/",
+        "location": "UK",
+        "method": "Binance Pay"
+      },
+      {
+        "name": "VeniceJets",
+        "description": "Private Jet Charter",
+        "href": "https://www.venicejets.com/",
+        "location": "Italy",
+        "method": "Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "VPN/Proxy",
+    "entries": [
+      {
+        "name": "AirVPN",
+        "description": "VPN",
+        "href": "https://airvpn.org/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Anonine",
+        "description": "VPN",
+        "href": "https://anonine.com/",
+        "location": "Seychelles",
+        "method": "Cryptonator"
+      },
+      {
+        "name": "AzireVPN",
+        "description": "VPN",
+        "href": "https://azirevpn.com/",
+        "location": "Sweden",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Borderless VPN",
+        "description": "VPN",
+        "href": "https://borderlessvpn.io/",
+        "location": "Norway",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CactusVPN",
+        "description": "VPN",
+        "href": "https://www.cactusvpn.com/",
+        "location": "Moldova",
+        "method": "CoinGate"
+      },
+      {
+        "name": "CoinVPN",
+        "description": "VPN",
+        "href": "https://coinvpn.io/",
+        "location": "Hong Kong",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Cryptostorm",
+        "description": "VPN",
+        "href": "https://cryptostorm.is/",
+        "location": "Iceland",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "CyberGhost",
+        "description": "VPN",
+        "href": "https://www.cyberghostvpn.com/en_US/",
+        "location": "Romania",
+        "method": "Bitpay"
+      },
+      {
+        "name": "ExpressVPN",
+        "description": "VPN",
+        "href": "https://www.expressvpn.com/",
+        "location": "British Virgin Islands",
+        "method": "Bitpay"
+      },
+      {
+        "name": "FrootVPN",
+        "description": "VPN",
+        "href": "https://frootvpn.com/",
+        "location": "Sweden",
+        "method": "Cryptonator"
+      },
+      {
+        "name": "Hide.me",
+        "description": "VPN",
+        "href": "https://hide.me/en/",
+        "location": "Malaysia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "HideMy.name",
+        "description": "VPN",
+        "href": "https://hidemyna.me/",
+        "location": "Belize",
+        "method": "Cryptonator"
+      },
+      {
+        "name": "Ivacy",
+        "description": "VPN",
+        "href": "https://www.ivacy.com/",
+        "location": "Singapore",
+        "method": "Bitpay/CoinGate"
+      },
+      {
+        "name": "LeVPN",
+        "description": "VPN",
+        "href": "https://www.le-vpn.com/",
+        "location": "Hong Kong",
+        "method": "CoinGate"
+      },
+      {
+        "name": "LiquidVPN",
+        "description": "VPN",
+        "href": "https://www.liquidvpn.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Perfect Privacy",
+        "description": "VPN",
+        "href": "https://www.perfect-privacy.com/en/",
+        "location": "Switzerland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Private Internet Access",
+        "description": "VPN",
+        "href": "https://www.privateinternetaccess.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Proxied Network",
+        "description": "Proxy",
+        "href": "https://proxied.network/",
+        "location": "Australia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "SlickVPN",
+        "description": "VPN",
+        "href": "https://www.slickvpn.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Surfshark",
+        "description": "VPN",
+        "href": "https://surfshark.com/",
+        "location": "British Virgin Islands",
+        "method": "Coinpayments/CoinGate"
+      },
+      {
+        "name": "TorGuard",
+        "description": "VPN",
+        "href": "https://torguard.net/",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "VPN Access",
+        "description": "VPN",
+        "href": "https://vpn.ac/",
+        "location": "Romania",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VPNAnon",
+        "description": "VPN",
+        "href": "https://vpnanon.net/",
+        "location": "Iceland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VPNArea",
+        "description": "VPN",
+        "href": "https://vpnarea.com/front/home",
+        "location": "Bulgaria",
+        "method": "Bitpay"
+      },
+      {
+        "name": "VPNShazam",
+        "description": "VPN",
+        "href": "https://www.vpnshazam.com/",
+        "location": "Palestine",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VPNSurf",
+        "description": "VPN",
+        "href": "https://vpn.surf/",
+        "location": "Lithuania",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VPNTunnel",
+        "description": "VPN",
+        "href": "https://vpntunnel.com/",
+        "location": "USA",
+        "method": "Cryptonator"
+      },
+      {
+        "name": "WideVPN",
+        "description": "VPN",
+        "href": "https://www.widevpn.com/",
+        "location": "Romania",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Xeovo",
+        "description": "VPN",
+        "href": "https://xeovo.com/",
+        "location": "Finland",
+        "method": "Coinpayments"
+      }
+    ]
+  },
+  {
+    "title": "Watches",
+    "entries": [
+      {
+        "name": "Cozy Handmade",
+        "description": "Watches, Handmade Leather Watch Straps and Leather Wallets",
+        "href": "https://www.cozy.sg/",
+        "location": "Singapore",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "IFL Watches",
+        "description": "Watches and Accessories",
+        "href": "https://iflwatches.com/",
+        "location": "Sweden",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Pita Barcelona",
+        "description": "Custom Made Luxury Watches",
+        "href": "https://www.pita.es/",
+        "location": "Spain",
+        "method": "Cointopay"
+      },
+      {
+        "name": "Project O",
+        "description": "Futuristic Watches",
+        "href": "https://project-o-concept.com/en/",
+        "location": "France",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Timepiece Bank",
+        "description": "Luxury Watches",
+        "href": "https://www.timepiecebank.com/",
+        "location": "Belgium",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Urwerk",
+        "description": "High Quality Swiss Watches",
+        "href": "https://urwerk.shop/",
+        "location": "Switzerland",
+        "method": "Bitpay"
+      }
+    ]
+  },
+  {
+    "title": "Web Hosting",
+    "entries": [
+      {
+        "name": "97cents",
+        "description": "Web Hosting",
+        "href": "http://www.97cents.net/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "AbacoHosting",
+        "description": "Web Hosting, Reseller-Hosting, Business Email, SSL Certificates",
+        "href": "https://abacohosting.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "AltusHost",
+        "description": "Web Hosting, Dedicated Servers, Website Builder, SSL Certificates",
+        "href": "https://www.altushost.com/",
+        "location": "Netherlands",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Bacloud",
+        "description": "Web Hosting, SSL Certificates",
+        "href": "https://www.bacloud.com/en",
+        "location": "Lithuania",
+        "method": "CoinGate"
+      },
+      {
+        "name": "BeeHosting",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://beehosting.pro/",
+        "location": "Estonia",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Bytesized Hosting",
+        "description": "Web Hosting, VPN",
+        "href": "https://bytesized-hosting.com/",
+        "location": "Netherlands",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Bithost.io",
+        "description": "Web Hosting",
+        "href": "https://bithost.io/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Centohost",
+        "description": "Web Hosting, Reseller-Hosting",
+        "href": "https://www.centohost.com/",
+        "location": "Bosnia and Herzegovina",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Cinfu",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://www.cinfu.com/",
+        "location": "Seychelles",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Coin.Host",
+        "description": "Web Hosting, DDOS Protection",
+        "href": "https://coin.host/",
+        "location": "Switzerland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CoinHost.io",
+        "description": "Web Hosting, Domain Service",
+        "href": "http://coinhost.io/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Crowncloud",
+        "description": "Web Hosting, Reseller-Hosting",
+        "href": "https://crowncloud.net/",
+        "location": "Australia",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "CryptoCloudHosting",
+        "description": "Web Hosting",
+        "href": "https://cryptocloudhosting.org/",
+        "location": "UK",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "DeinServerHost",
+        "description": "Web Hosting, Gameserver, vServer, Rootserver, Domain Service",
+        "href": "https://deinserverhost.de/",
+        "location": "Germany",
+        "method": "CoinGate"
+      },
+      {
+        "name": "EuroHoster",
+        "description": "Web Hosting, Dedicated Servers, Domain Service, SSL Certificates",
+        "href": "https://eurohoster.org/",
+        "location": "Bulgaria",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Evolution Host",
+        "description": "Web Hosting, Gameserver, VDS Hosting, DDOS Protection",
+        "href": "https://evolution-host.com/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Flokinet.is",
+        "description": "Web Hosting, Dedicated Servers, Teamspeak, Voip, DDOS Protection",
+        "href": "https://flokinet.is/",
+        "location": "Iceland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Gandi",
+        "description": "Web Hosting, Domain Service",
+        "href": "https://www.gandi.net/en-US",
+        "location": "France",
+        "method": "Bitpay"
+      },
+      {
+        "name": "GeeksHosted",
+        "description": "Web Hosting, Dedicated Servers, SEO Services",
+        "href": "https://www.geekshosted.com/",
+        "location": "Romania",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Ginernet",
+        "description": "Web Hosting, Reseller-Hosting, Domain Service",
+        "href": "https://ginernet.com/en/",
+        "location": "Spain",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "GlowHost",
+        "description": "Web Hosting, Domain Service, SSL Certificates",
+        "href": "https://glowhost.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "HawkHost",
+        "description": "Web Hosting, Domain Service, SSL Certificates",
+        "href": "https://www.hawkhost.com/",
+        "location": "Canada",
+        "method": "Bitpay"
+      },
+      {
+        "name": "HosterBox",
+        "description": "Web Hosting, Reseller-Hosting, Dedicated Servers",
+        "href": "https://hosterbox.com/",
+        "location": "Canada",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Hosterium",
+        "description": "Web Hosting, Dedicated Servers, Domain Service",
+        "href": "https://hosterium.com/",
+        "location": "Slovakia",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Host Havoc",
+        "description": "Web Hosting, Game Servers",
+        "href": "https://hosthavoc.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hosting.co.uk",
+        "description": "Web Hosting, Reseller-Hosting, Dedicated Servers, SSL Certificates, VPN, SEO Services",
+        "href": "https://www.hosting.co.uk/",
+        "location": "UK",
+        "method": "Coingate"
+      },
+      {
+        "name": "Hosting24",
+        "description": "Web Hosting, Reseller-Hosting, Domain Service",
+        "href": "https://www.hosting24.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hostinger",
+        "description": "Web Hosting, Online Store and Website Builder, Email Service, Domain Service, Minecraft Hosting",
+        "href": "https://www.hostinger.com/",
+        "location": "Lithuania",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hosting SSi",
+        "description": "Venezuelan Web Hosting, Reseller-Hosting, Domain Service",
+        "href": "https://www.hostingssi.com/",
+        "location": "Venezuela",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hostiso",
+        "description": "Web Hosting, uVPS, VPN, SEO Services",
+        "href": "https://hostiso.com/",
+        "location": "Switzerland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hostkey",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://hostkey.com/",
+        "location": "Netherlands",
+        "method": "Bitpay"
+      },
+      {
+        "name": "HostMeNow",
+        "description": "Web Hosting, SSL Certificates",
+        "href": "https://hostmenow.org/",
+        "location": "UK",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hostsailor",
+        "description": "Web Hosting, Dedicated Servers, Reseller-Hosting, SSL Certificates",
+        "href": "https://hostsailor.com/",
+        "location": "UAE",
+        "method": "CoinGate"
+      },
+      {
+        "name": "HostStage",
+        "description": "Web Hosting, SSL Certificates",
+        "href": "https://www.host-stage.net/",
+        "location": "France",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Hostwinds",
+        "description": "Web Hosting, Reseller-Hosting, SSL Certificates",
+        "href": "https://www.hostwinds.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Hostzealot",
+        "description": "Web Hosting, Dedicated Servers, SSL Certificates",
+        "href": "https://www.hostzealot.com/",
+        "location": "Bulgaria",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "IDF Private Hosting",
+        "description": "Web Hosting, Seedbox Servers",
+        "href": "https://www.idfnv.com/en/",
+        "location": "Seychelles",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Impreza",
+        "description": "Web Hosting, Offshore Hosting, TOR Hosting",
+        "href": "https://impreza.host/",
+        "location": "Seychelles",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Inception Hosting",
+        "description": "Web Hosting, Dedicated Servers, Domain Service",
+        "href": "https://inceptionhosting.com/",
+        "location": "UK",
+        "method": "CoinGate"
+      },
+      {
+        "name": "LuHoster",
+        "description": "Web Hosting, Domain Service",
+        "href": "https://www.luhoster.com/",
+        "location": "UK",
+        "method": "CoinGate"
+      },
+      {
+        "name": "LuxHosting",
+        "description": "Web Hosting, Domain Service, Website Builder, SSL Certificates",
+        "href": "https://luxhosting.lu/",
+        "location": "Luxembourg",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Maxko Hosting",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://www.maxko-hosting.com/",
+        "location": "Croatia",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Mean Servers",
+        "description": "Web Hosting, Dedicated Servers, SSL Certificates",
+        "href": "https://www.meanservers.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Motov",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://www.motov.net/",
+        "location": "Bulgaria",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Namecheap",
+        "description": "Web Hosting, Domain Service, VPN",
+        "href": "https://www.namecheap.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Neoserv",
+        "description": "Slovenian Web Host",
+        "href": "https://www.neoserv.si/",
+        "location": "Slovenia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Privex",
+        "description": "Private Cloud Hosting",
+        "href": "https://www.privex.io/",
+        "location": "Belize",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "QHoster",
+        "description": "Web Hosting, Reseller-Hosting, Dedicated Servers, SSL Certificates",
+        "href": "https://www.qhoster.com/",
+        "location": "Uruguay",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Routerhosting",
+        "description": "Web Hosting",
+        "href": "https://www.routerhosting.com/",
+        "location": "New Zealand",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "SCOHosting",
+        "description": "Web Hosting, Domain Service, Dedicated Servers",
+        "href": "https://scohostings.com/",
+        "location": "UK",
+        "method": "Bitpay/CoinGate"
+      },
+      {
+        "name": "Snel",
+        "description": "Web Hosting, Domain Service, Reseller-Hosting, Dedicated Servers",
+        "href": "https://www.snel.com/",
+        "location": "Netherlands",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Super Byte Hosting",
+        "description": "Web Hosting, Domain Service, Reseller-Hosting, Dedicated Servers",
+        "href": "https://www.superbytehosting.com/",
+        "location": "India",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "THCservers",
+        "description": "Web Hosting, Domain Service, Reseller-Hosting, Online Store Builder, SSL Certificates",
+        "href": "https://www.thcservers.com/",
+        "location": "Romania",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "TMT Hosting",
+        "description": "Web Hosting, Domain Service, Dedicated Servers",
+        "href": "https://tmthosting.net/",
+        "location": "UK",
+        "method": "CryptocurrencyCheckout"
+      },
+      {
+        "name": "USHost247",
+        "description": "Web Hosting, Domain Service, SSL Certificates, VPN, Website Builder",
+        "href": "https://ushost247.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ValueHosted",
+        "description": "Web Hosting, Reseller-Hosting, SSL Certificates, DDOS Protection",
+        "href": "https://www.valuehosted.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "VantageVPS",
+        "description": "Web Hosting, Domain Service",
+        "href": "https://www.vantagevps.com/",
+        "location": "Hong Kong",
+        "method": "CoinGate"
+      },
+      {
+        "name": "WDMSH",
+        "description": "Web Hosting, Dedicated Servers, Shoutcast Streaming",
+        "href": "https://www.wdmsh.com/",
+        "location": "Netherlands",
+        "method": "CoinGate"
+      },
+      {
+        "name": "Web4Africa",
+        "description": "Web Hosting, Domain Service, SSL Certificates",
+        "href": "https://web4africa.com/",
+        "location": "South Africa",
+        "method": "CoinGate"
+      },
+      {
+        "name": "XetHost",
+        "description": "Web Hosting, Dedicated Servers",
+        "href": "https://xethost.com/",
+        "location": "Hungary",
+        "method": "CoinGate"
+      },
+      {
+        "name": "ZamaHost",
+        "description": "Web Hosting, Dedicated Servers, Domain Service, SSL Certificates",
+        "href": "https://www.zamahost.com/",
+        "location": "UK",
+        "method": "CoinGate"
+      }
+    ]
+  },
+  {
+    "title": "Misc",
+    "entries": [
+      {
+        "name": "1BillionSubscribers",
+        "description": "Water-Proof Paper Boat",
+        "href": "https://www.1billionsubscribers.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "A86",
+        "description": "3D-printed miniature figures",
+        "href": "https://a86.cz/",
+        "location": "Czech Republic",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Aloha Tuners",
+        "description": "Cute Instrument Tuners",
+        "href": "https://alohatuners.com/",
+        "location": "Hawaii",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Atlantis",
+        "description": "General Online Store, Clothing, Electronics, Pet Supplies, Health Care and more",
+        "href": "https://atlantis.icu/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "AYR Gamers Guild",
+        "description": "3D printed miniatures, terrain and gaming accessories",
+        "href": "https://ayrgamersguild.com/",
+        "location": "Canada",
+        "method": "GoUrl"
+      },
+      {
+        "name": "Bandicam",
+        "description": "Screen Recording Software",
+        "href": "https://www.bandicam.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Beliani",
+        "description": "Furniture and Accessories",
+        "href": "https://www.beliani.co.uk/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "BlockchainAdventures",
+        "description": "\"Toshi to the moon\" book and merch",
+        "href": "https://blockchain-adventures.com/shop/",
+        "location": "USA",
+        "method": "GoUrl"
+      },
+      {
+        "name": "Boost Athletics",
+        "description": "Gym Apparel and Equipment",
+        "href": "https://boostonlineshop.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "BP Fragrance",
+        "description": "Dutch perfumes shop",
+        "href": "https://bpfragrance.nl/",
+        "location": "Netherlands",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Break Store",
+        "description": "French Mega Store",
+        "href": "https://breakstore.fr/",
+        "location": "France",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Carrozza Surfboards",
+        "description": "Surfboards, Accessories and Apparel",
+        "href": "https://www.carrozzasurfboards.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Chip.tax",
+        "description": "Full-service firm",
+        "href": "https://chip.tax/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Circular Calendar",
+        "description": "The Circular Wall Calendar",
+        "href": "https://circular-calendar.com/",
+        "location": "Germany",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CleanItSupply",
+        "description": "Cleaning Supplies",
+        "href": "https://www.cleanitsupply.com/t/Dogecoin-Bitcoin-Process.aspx",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Coinality",
+        "description": "Jobs for crypto",
+        "href": "https://coinality.com/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "CoolStuffJapan",
+        "description": "Japanese store, food, snacks, cushions, toys and more",
+        "href": "https://www.coolstuffjapan.com/",
+        "location": "Japan",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "CR Construction",
+        "description": "Home Inspection company located in Santa Clarita, LA/California",
+        "href": "https://www.carlreese.com/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "CryptoReads",
+        "description": "Digital Books",
+        "href": "https://cryptoreads.net/",
+        "location": "Iceland",
+        "method": "PawCommerce"
+      },
+      {
+        "name": "DogecoinList",
+        "description": "Craigslist Dogecoin Edition",
+        "href": "https://www.dogecoinlist.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ExpressBitcoinPostage",
+        "description": "Shipping Labels from UPS, USPS and Hongkong Post",
+        "href": "https://expressbitcoinpostage.com/",
+        "location": "Hong Kong",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Galaxus",
+        "description": "Swiss Home Supply Store",
+        "href": "https://www.galaxus.ch/en",
+        "location": "Switzerland",
+        "method": "Coinify"
+      },
+      {
+        "name": "Gluecksmagie",
+        "description": "German lucky charms store",
+        "href": "https://gluecksmagie.de/",
+        "location": "Germany",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "GreenBelt Outdoors",
+        "description": "Camping, Kayaking and more",
+        "href": "https://greenbeltoutdoors.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Idoneus",
+        "description": "Luxury Assets, Goods & Services",
+        "href": "https://portfolio.idoneus.io/",
+        "location": "Switzerland",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Just BIBS",
+        "description": "Pacifiers",
+        "href": "https://www.justbibs.com.au/",
+        "location": "Australia",
+        "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "Kalimbera",
+        "description": "Kalimba/Thumb Piano store",
+        "href": "https://kalimbera.com/",
+        "location": "Ireland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "KawaiiCrypto",
+        "description": "Cute Dogecoin/Crypto Stickers",
+        "href": "https://kawaiicrypto.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Kivaka",
+        "description": "Bodypiercing-Studio in Aurora, Illinois. Book an appointment online and pay with Dogecoin.",
+        "href": "https://www.kivaka.com/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Kronos Advanced Technologies",
+        "description": "Air purifier and filter",
+        "href": "https://1800safeair.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "KUMA Knives",
+        "description": "Damascus steel knives",
+        "href": "https://kumaknives.com/",
+        "location": "Denmark",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "LivingRoomOfSatoshi",
+        "description": "Pay basically every bill in Australia with Dogecoin",
+        "href": "https://www.livingroomofsatoshi.com/",
+        "location": "Australia",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Long Beach Neon",
+        "description": "LED and Neon Signs",
+        "href": "https://lbneon.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Longhouse Media",
+        "description": "Web Design, SEO and Marketing Consulting",
+        "href": "https://www.longhouse.co/",
+        "location": "Canada",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Lue's House of International Decor",
+        "description": "Decor Articles",
+        "href": "https://www.houseofinternationaldecor.com/shop/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Lush",
+        "description": "Handmade Cosmetics",
+        "href": "https://uk.lush.com/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Mighty Max Cart",
+        "description": "USA MADE Utility Carts",
+        "href": "https://mightymaxcart.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "MobiSun",
+        "description": "Solar Panels, Power Banks, Solar Generators",
+        "href": "https://www.mobisun.com/",
+        "location": "Netherlands",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Molecule Store",
+        "description": "Various Articles about molecules",
+        "href": "https://moleculestore.com/",
+        "location": "Switzerland",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "MPMSouvenir",
+        "description": "Italian gift shop",
+        "href": "https://www.mpmsouvenir.com/",
+        "location": "Italy",
+        "method": "CoinGate"
+      },
+      {
+        "name": "MyLegalEdge",
+        "description": "Provider of online legal documents and forms",
+        "href": "https://www.mylegaledge.com/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "OceanKing",
+        "description": "Vitamin Supplements, Dairy Products, Manuka Honey and Skincare",
+        "href": "http://www.oceanking.com.au/",
+        "location": "Australia",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Round The Block",
+        "description": "Buy gift cards & pay basically every bill in Australia with Dogecoin",
+        "href": "https://roundtheblock.com.au/",
+        "location": "Australia",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Ryan London",
+        "description": "Leather goods store located in London",
+        "href": "https://ryanlondon.com/",
+        "location": "UK",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Shibe Mint",
+        "description": "Physical Dogecoins",
+        "href": "https://shibemint.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ShopOfThings",
+        "description": "Electronic Tech Parts",
+        "href": "https://shopofthings.ch/",
+        "location": "Switzerland",
+        "method": "CoinGate"
+      },
+      {
+        "name": "ShutUpAndTakeMyMoney",
+        "description": "Cool Gadgets and Geeky Products",
+        "href": "https://suatmm.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "SphinxGadgets",
+        "description": "Random Password Generator",
+        "href": "https://sphinxgadgets.com/",
+        "location": "USA",
+        "method": "Globee"
+      },
+      {
+        "name": "Squadron Soap",
+        "description": "Australian Shaving Soap",
+        "href": "https://squadronsoap.com.au/",
+        "location": "Australia",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "SSL Dragon",
+        "description": "SSL Certificates",
+        "href": "https://www.ssldragon.com/",
+        "location": "USA",
+        "method": "EncryptCoin"
+      },
+      {
+        "name": "Sunshine Soul",
+        "description": "Homemade Candles",
+        "href": "https://sunshinesoulcandles.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Team JB Hobbies",
+        "description": "Papercrafting, RC Cars and Chess Accessories",
+        "href": "https://teamjbhobbies.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ThaiBaM",
+        "description": "Coffee, Tea, Oils, Balms etc.",
+        "href": "http://thaibam.net/",
+        "location": "Thailand",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "The Dogemoon Shop",
+        "description": "3D Printed Custom Dogemoon Lamp",
+        "href": "https://thedogemoon.shop/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Top Loader Sports",
+        "description": "Sports and Doge Trading Cards",
+        "href": "https://www.toploadersports.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "TormentBox",
+        "description": "Various prank articles like glitter letters etc.",
+        "href": "https://tormentbox.com/",
+        "location": "USA",
+        "method": "Manual Payment"
+      },
+      {
+        "name": "Trick Mugs",
+        "description": "Mugs that change their look when filled up",
+        "href": "https://trickmugs.com/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Twitch.tv",
+        "description": "Subscriptions and Premium Currency via Dogecoin",
+        "href": "https://www.twitch.tv/",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
+        "name": "USAStrong",
+        "description": "US-made Mega Store, clothing, home supplies, pet supplies and more",
+        "href": "https://usastrong.io/",
+        "location": "USA",
+        "method": "Globee"
+      },
+      {
+        "name": "WikiLeaks Shop",
+        "description": "Official Shirts, Mugs, Stickers, Posters, etc.",
+        "href": "https://wikileaks.shop/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "WildGears",
+        "description": "Drawing Gears",
+        "href": "https://shop.wildgears.com/",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "ZenMarket",
+        "description": "Japanese Proxy Buying Service",
+        "href": "https://zenmarket.jp/en/",
+        "location": "Japan",
+        "method": "Manual Payment"
+      }
+    ]
+  }
+]
