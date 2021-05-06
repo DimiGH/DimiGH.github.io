@@ -87,9 +87,18 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 15px;
-		color: #FF6699;
+		font-size: 12px;
+		border-radius: 12px;
+		color: #000000;
+		border: 2px solid #000000;
+		background-color: #FFCC00;
 		text-align: center;
+		font-weight: bold;
+		opacity: 0.8;
+	}
+	.hide-Button:hover {
+		background-color: #FFE786;
+		color: #000000;
 	}
 	</style>
 
@@ -112,7 +121,7 @@
 				document.getElementById(element.title + " Div Button").innerHTML = "Show"
 			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
-			document.getElementById("HideAllButton").innerHTML = "Show All"
+			document.getElementById("HideAllButton").innerHTML = "Show All Categories"
 		}
 		function showAll () {
 			app.categories.forEach(element => {
@@ -121,7 +130,7 @@
 				document.getElementById(element.title + " Div Button").innerHTML = "Hide"
 			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
-			document.getElementById("HideAllButton").innerHTML = "Hide All"
+			document.getElementById("HideAllButton").innerHTML = "Hide All Categories"
 		}
 	</Script>
 </head>
@@ -155,7 +164,7 @@
 		</h4>
 
 		<!-- Hide All Button-->
-		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All</button>
+		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All Categories</button>
 
 		<!-- Spotlight -->
 		<div class="category">
