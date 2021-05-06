@@ -87,9 +87,13 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: 15px;
-		color: #FF6699;
+		font-size: 14px;
+		border-radius: 12px;
+		color: #000000;
+		border: 2px solid #000000;
+		background-color: #FFCC00;
 		text-align: center;
+		font-weight: bold;
 	}
 	</style>
 
@@ -112,7 +116,7 @@
 				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Show"
 			}
 			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
-			document.getElementById("HideAllButton").innerHTML = "Show All"
+			document.getElementById("HideAllButton").innerHTML = "Show All Categories"
 		}
 		function showAll () {
 			for (i = 0; i < categoryNames.length; i++) {
@@ -121,7 +125,7 @@
 				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Hide"
 			}
 			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
-			document.getElementById("HideAllButton").innerHTML = "Hide All"
+			document.getElementById("HideAllButton").innerHTML = "Hide All Categories"
 		}
 	</Script>
 </head>
@@ -155,7 +159,7 @@
 		</h4>
 
 		<!-- Hide All Button-->
-		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All</button>
+		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All Categories</button>
 
 		<!-- Spotlight -->
 		<div class="category">
