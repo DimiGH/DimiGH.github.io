@@ -106,20 +106,20 @@
 			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide"
 		}
 		function hideAll () {
-			for (i = 0; i < categoryNames.length; i++) {
-				document.getElementById(categoryNames[i] + " Div").style.display = "none";
-				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "showDiv('" + categoryNames[i] + "')");
-				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Show"
-			}
+			app.categories.forEach(element => {
+				document.getElementById(element.title + " Div").style.display = "none";
+				document.getElementById(element.title + " Div Button").setAttribute("onclick", "showDiv('" + element.title + "')");
+				document.getElementById(element.title + " Div Button").innerHTML = "Show"
+			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
 			document.getElementById("HideAllButton").innerHTML = "Show All"
 		}
 		function showAll () {
-			for (i = 0; i < categoryNames.length; i++) {
-				document.getElementById(categoryNames[i] + " Div").style.removeProperty("display");
-				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "hideDiv('" + categoryNames[i] + "')");
-				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Hide"
-			}
+			app.categories.forEach(element => {
+				document.getElementById(element.title + " Div").style.removeProperty("display");
+				document.getElementById(element.title + " Div Button").setAttribute("onclick", "hideDiv('" + element.title + "')");
+				document.getElementById(element.title + " Div Button").innerHTML = "Hide"
+			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
 			document.getElementById("HideAllButton").innerHTML = "Hide All"
 		}
@@ -257,13 +257,6 @@
 				.then(response => response.json())
 		}
 	})
-
-	categoryNames = [];
-	document.body.onload = function(){
-		app.categories.forEach(element => {
-			categoryNames.push(element.title)
-		});
-	};
 	</script>
 </body>
 </html>
