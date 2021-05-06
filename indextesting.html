@@ -107,30 +107,30 @@
 		function hideDiv (whichDiv) {
 			document.getElementById(whichDiv + " Div").style.display = "none";
 			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "showDiv('" + whichDiv + "')");
-			document.getElementById(whichDiv + " Div Button").innerHTML = "Show"
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Show &#xbb;"
 		}
 		function showDiv(whichDiv) {
 			document.getElementById(whichDiv + " Div").style.removeProperty("display");
 			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "hideDiv('" + whichDiv + "')");
-			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide"
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide &#xab;"
 		}
 		function hideAll () {
 			app.categories.forEach(element => {
 				document.getElementById(element.title + " Div").style.display = "none";
 				document.getElementById(element.title + " Div Button").setAttribute("onclick", "showDiv('" + element.title + "')");
-				document.getElementById(element.title + " Div Button").innerHTML = "Show"
+				document.getElementById(element.title + " Div Button").innerHTML = "Show &#xbb;"
 			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
-			document.getElementById("HideAllButton").innerHTML = "Show All Categories"
+			document.getElementById("HideAllButton").innerHTML = "Show All Categories &#xbb;"
 		}
 		function showAll () {
 			app.categories.forEach(element => {
 				document.getElementById(element.title + " Div").style.removeProperty("display");
 				document.getElementById(element.title + " Div Button").setAttribute("onclick", "hideDiv('" + element.title + "')");
-				document.getElementById(element.title + " Div Button").innerHTML = "Hide"
+				document.getElementById(element.title + " Div Button").innerHTML = "Hide &#xab;"
 			})
 			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
-			document.getElementById("HideAllButton").innerHTML = "Hide All Categories"
+			document.getElementById("HideAllButton").innerHTML = "Hide All Categories &#xab;"
 		}
 	</Script>
 </head>
@@ -164,7 +164,7 @@
 		</h4>
 
 		<!-- Hide All Button-->
-		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All Categories</button>
+		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All Categories &#xab;</button>
 
 		<!-- Spotlight -->
 		<div class="category">
