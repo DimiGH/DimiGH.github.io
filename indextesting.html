@@ -95,30 +95,30 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 	<Script>
-		function hideDiv (whichDiv, whichDivButton) {
-			document.getElementById(whichDiv).style.display = "none";
-			document.getElementById(whichDivButton).setAttribute("onclick", "showDiv('" + whichDiv + "', '" + whichDivButton + "')");
-			document.getElementById(whichDivButton).innerHTML = "Show"
+		function hideDiv (whichDiv) {
+			document.getElementById(whichDiv + " Div").style.display = "none";
+			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "showDiv('" + whichDiv + "')");
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Show"
 		}
-		function showDiv(whichDiv, whichDivButton) {
-			document.getElementById(whichDiv).style.removeProperty("display");
-			document.getElementById(whichDivButton).setAttribute("onclick", "hideDiv('" + whichDiv + "', '" + whichDivButton + "')");
-			document.getElementById(whichDivButton).innerHTML = "Hide"
+		function showDiv(whichDiv) {
+			document.getElementById(whichDiv + " Div").style.removeProperty("display");
+			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "hideDiv('" + whichDiv + "')");
+			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide"
 		}
 		function hideAll () {
-			for (i = 0; i < sectionDivs.length; i++) {
-				document.getElementById(sectionDivs[i]).style.display = "none";
-				document.getElementById(sectionDivs[i] + " Button").setAttribute("onclick", "showDiv('" + sectionDivs[i] + "', '" + sectionDivs[i] + " Button')");
-				document.getElementById(sectionDivs[i] + " Button").innerHTML = "Show"
+			for (i = 0; i < categoryNames.length; i++) {
+				document.getElementById(categoryNames[i] + " Div").style.display = "none";
+				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "showDiv('" + categoryNames[i] + "')");
+				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Show"
 			}
 			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
 			document.getElementById("HideAllButton").innerHTML = "Show All"
 		}
 		function showAll () {
-			for (i = 0; i < sectionDivs.length; i++) {
-				document.getElementById(sectionDivs[i]).style.removeProperty("display");
-				document.getElementById(sectionDivs[i] + " Button").setAttribute("onclick", "hideDiv('" + sectionDivs[i] + "', '" + sectionDivs[i] + " Button')");
-				document.getElementById(sectionDivs[i] + " Button").innerHTML = "Hide"
+			for (i = 0; i < categoryNames.length; i++) {
+				document.getElementById(categoryNames[i] + " Div").style.removeProperty("display");
+				document.getElementById(categoryNames[i] + " Div Button").setAttribute("onclick", "hideDiv('" + categoryNames[i] + "')");
+				document.getElementById(categoryNames[i] + " Div Button").innerHTML = "Hide"
 			}
 			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
 			document.getElementById("HideAllButton").innerHTML = "Hide All"
@@ -193,7 +193,7 @@
 			</a>
 
 			<!-- Hide Category Button-->
-			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + ' Div&quot;, &quot;' + category.title + ' Div Button&quot;)'" :id="category.title + ' Div Button'">Hide</button>
+			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + ' Div&quot;)'" :id="category.title + ' Div Button'">Hide</button>
 
 			<!-- Site links -->
 			<ul :id="category.title + ' Div'">
@@ -258,10 +258,10 @@
 		}
 	})
 
-	sectionDivs = [];
+	categoryNames = [];
 	document.body.onload = function(){
 		app.categories.forEach(element => {
-			sectionDivs.push(element.title + " Div")
+			categoryNames.push(element.title)
 		});
 	};
 	</script>
