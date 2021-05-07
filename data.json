@@ -291,6 +291,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Little Cubs Clothing",
+        "description": "Custom Kids Caps and Tshirts",
+        "href": "https://www.instagram.com/littlecubs_clothing/",
+        "location": "UK",
+        "method": "via DM inquiry"
+      },
+      {
         "name": "Masks by Sharon",
         "description": "Custom Made Face Masks",
         "href": "https://www.masksbysharon.com/",
@@ -578,6 +585,12 @@
         "method": "D5wHD2pX8bEKmL5DBBGqV3mjMizjNcam1e"
       },
       {
+        "name": "American Cancer Society",
+        "description": "Supporting cancer research",
+        "href": "https://www.cancer.org/involved/donate/more-ways-to-give/donate-cryptocurrency.html",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "Assertive Kids Foundation",
         "description": "Anti-Bullying",
         "href": "https://assertivekids.org/",
@@ -600,6 +613,12 @@
         "description": "Organization dedicated to finding cures for Crohn's disease and ulcerative colitis",
         "href": "https://www.crohnscolitisfoundation.org/donate/donate-cryptocurrency",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Crypto Kids Camp",
+        "description": "Educating youth about cryptocurrency technology",
+        "href": "https://www.cryptokidscamp.org/donate",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "DogecoinSocksForTheHomeless",
@@ -680,6 +699,12 @@
         "method": "DPF4dBYNrF5exg2mZ5S1px1oS41UsbVzg2"
       },
       {
+        "name": "NoKidHungry",
+        "description": "Fighting child hunger in the United States",
+        "href": "https://www.nokidhungry.org/crypto",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "Nyan.cat",
         "description": "Creator of Nyan Cat",
         "href": "http://www.nyan.cat/index.php?cat=nyandoge",
@@ -689,6 +714,12 @@
         "name": "One Tail at a Time",
         "description": "Support for homeless animals",
         "href": "https://www.onetail.org/dogecoin/",
+        "method": "DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS"
+      },
+      {
+        "name": "Orangutan Outreach",
+        "description": "Protecting and taking care of orangutans in the wild",
+        "href": "https://redapes.org/cryptorangutan/",
         "method": "DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS"
       },
       {
@@ -722,6 +753,24 @@
         "method": "via coinpayments"
       },
       {
+        "name": "Save The Children",
+        "description": "Supporting Children in Need Worldwide",
+        "href": "https://files.savethechildren.org/cryptocurrency-donation/",
+        "method": "via TheGivingBlock"
+      },
+      {
+        "name": "SELF",
+        "description": "Solar Electric Light Fund, providing people with access to electric energy",
+        "href": "https://www.self.org/donate/cryptocurrency/",
+        "method": "via TheGivingBlock"
+      },
+      {
+        "name": "Signal Technology Foundation",
+        "description": "End-to-End encrypted private messenger",
+        "href": "https://signal.org/donate/#cryptocurrency",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "Son of a Saint",
         "description": "Supporting fatherless boys",
         "href": "https://sonofasaint.org/cryptocurrency/",
@@ -750,6 +799,12 @@
         "description": "Protecting children from sexual abuse",
         "href": "https://www.thorn.org/donate/",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Transgender Legal Defense & Education Fund",
+        "description": "Fighting against discrimination of transgender people",
+        "href": "https://transgenderlegal.org/support-us/donate-crypto/",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "University of Illinois",
@@ -1193,6 +1248,13 @@
         "href": "https://regentjewelers.net/",
         "location": "USA",
         "method": "Bitpay"
+      },
+      {
+        "name": "TrueFacet",
+        "description": "Luxury Jewelry, Watches, Handbags and more",
+        "href": "https://www.truefacet.com",
+        "location": "USA",
+        "method": "Bitpay"
       }
     ]
   },
@@ -1282,6 +1344,13 @@
         "href": "https://suchdogemart.com/",
         "location": "USA",
         "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "To The Moon Products",
+        "description": "Crypto Merch, Shirts, Stickers, Mugs and more",
+        "href": "https://tothemoonproducts.com",
+        "location": "Canada",
+        "method": "Coinpayments"
       },
       {
         "name": "x25 Esports",
@@ -2451,9 +2520,9 @@
         "method": "Bitpay"
       },
       {
-        "name": "Just BIBS",
+        "name": "Just BIBS Dummies",
         "description": "Pacifiers",
-        "href": "https://www.justbibs.com.au/",
+        "href": "https://www.justdummies.com.au/",
         "location": "Australia",
         "method": "Bitpay/Coinpayments"
       },
@@ -2568,6 +2637,13 @@
         "href": "http://www.oceanking.com.au/",
         "location": "Australia",
         "method": "Manual Payment"
+      },
+      {
+        "name": "One Stop Case",
+        "description": "Phone Cases and Accessories",
+        "href": "https://onestopcase.com",
+        "location": "USA",
+        "method": "Coinpayments"
       },
       {
         "name": "Round The Block",
