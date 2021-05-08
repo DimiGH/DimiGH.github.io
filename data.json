@@ -15,6 +15,13 @@
         "href": "https://lynxartcollection.com/",
         "location": "USA",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Smart Sassery",
+        "description": "Wall Art, Decorations and more",
+        "href": "https://smartsassery.rbf.wtf",
+        "location": "USA",
+        "method": "NowPayments"
       }
     ]
   },
@@ -205,6 +212,13 @@
         "href": "https://www.vanassibara.com/",
         "location": "UK",
         "method": "CoinGate"
+      },
+      {
+        "name": "DogeLord",
+        "description": "Crypto Apparel",
+        "href": "https://dogelord.com",
+        "location": "USA",
+        "method": "Bitpay/Coinpayments"
       },
       {
         "name": "DogeSwag",
@@ -597,6 +611,12 @@
         "method": "DKyLXgCCgBSPbBujg1YbjRNfrhxFtnVGQk"
       },
       {
+        "name": "Bethany Kids",
+        "description": "Supporting children in africa through pediatric surgery, rehabilitation, public education, spiritual ministry and training health professionals",
+        "href": "https://bethanykids.org/crypto/",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "CARE",
         "description": "Supporting people in need worldwide",
         "href": "https://www.care.org/get-involved/ways-to-give/cryptocurrency/",
@@ -607,6 +627,12 @@
         "description": "Preserve and protect the Cleveland Metroparks",
         "href": "https://www.clevelandmetroparks.com/parks/support/donate/donate-with-bitcoin/$25-bitcoin-donation",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Code To Inspire",
+        "description": "First Coding School For Women In Afghanistan",
+        "href": "https://www.codetoinspire.org/donate-crypto/",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "Crohn's & Colitis Foundation",
@@ -705,10 +731,22 @@
         "method": "via TheGivingBlock"
       },
       {
+        "name": "Notes For Notes",
+        "description": "Provides access to high quality, recording studio environments to young musicians for free",
+        "href": "https://www.notesfornotes.org/donate",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "Nyan.cat",
         "description": "Creator of Nyan Cat",
         "href": "http://www.nyan.cat/index.php?cat=nyandoge",
         "method": "D6aG2swnBPnZVQ8xSChx87XEMgeDwruHLG"
+      },
+      {
+        "name": "Ocean Defenders",
+        "description": "Removing trash from the oceans",
+        "href": "https://www.oceandefenders.org/ways-to-give/donate-cryptocurrency.html",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "One Tail at a Time",
@@ -807,10 +845,28 @@
         "method": "via TheGivingBlock"
       },
       {
+        "name": "Ugandan Water Project",
+        "description": "Providing safe and accessible drinking water to communities in Uganda",
+        "href": "https://ugandanwaterproject.com/crypto/",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "University of Illinois",
         "description": "Donate to the maintaining of the University of Illinois",
         "href": "https://uif.uillinois.edu/cryptocurrency",
         "method": "via Bitpay"
+      },
+      {
+        "name": "US4Warriors",
+        "description": "Supporting veterans, active duty military, and their families",
+        "href": "https://www.us4warriors.org/crypto4warriors",
+        "method": "via TheGivingBlock"
+      },
+      {
+        "name": "Water Wells For Africa",
+        "description": "Providing Water Wells In Rural Africa",
+        "href": "https://waterwellsforafrica.org/cryptocurrency/",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "WikiMedia Foundation",
@@ -1441,7 +1497,7 @@
       },
       {
         "name": "Texas T Extracts",
-        "description": "Vape Juice",
+        "description": "Vape Juice, use coupon code 'shibe' for 10% off",
         "href": "https://texastextracts.com/",
         "location": "USA",
         "method": "Coinpayments"
@@ -2214,6 +2270,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "MonsterHost",
+        "description": "Web Hosting, Dedicated Servers, SSL Certificates, VPN",
+        "href": "https://monsterhost.com",
+        "location": "Luxembourg",
+        "method": "CoinGate"
+      },
+      {
         "name": "Motov",
         "description": "Web Hosting, Dedicated Servers",
         "href": "https://www.motov.net/",
@@ -2560,6 +2623,13 @@
         "href": "https://kumaknives.com/",
         "location": "Denmark",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Lil Mook",
+        "description": "Lil Mook Rap Artist Store",
+        "href": "http://lilmook.com/lookbook/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
       },
       {
         "name": "LivingRoomOfSatoshi",
