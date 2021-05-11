@@ -647,6 +647,12 @@
         "method": "via TheGivingBlock"
       },
       {
+        "name": "Cure JM Foundation",
+        "description": "Helping to find a cure and better treatments for Juvenile Myositis (JM) and to improve the lives of families affected by JM.",
+        "href": "https://www.curejm.org/donate/crypto.php",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "DogecoinSocksForTheHomeless",
         "description": "Socks for homeless people in LA",
         "href": "https://www.dogecoinmultisig.org/multisigmain/index.html?payspot=9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y#payspot",
@@ -657,6 +663,12 @@
         "description": "Dogecoin Folding At Home team",
         "href": "https://dogecoinfah.com/",
         "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
+      },
+      {
+        "name": "FORCE",
+        "description": "Supporting individuals and families facing hereditary cancer",
+        "href": "https://www.facingourrisk.org/donate/cryptocurrency",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "GiveDirectly",
@@ -813,6 +825,12 @@
         "description": "Supporting fatherless boys",
         "href": "https://sonofasaint.org/cryptocurrency/",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Surfrider Foundation",
+        "description": "Protection and enjoyment of the world’s ocean, waves and beaches",
+        "href": "https://www.surfrider.org/crypto",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "The Humane League",
@@ -1343,6 +1361,13 @@
         "description": "Crypto Merch, Key Chain, Stickers",
         "href": "https://www.coinvibe.net/",
         "location": "Germany",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Crypto Burning Shop",
+        "description": "Crypto Merch, Shirts, Wall Art, Face Masks. Burns coins of the merch you buy.",
+        "href": "https://cryptoburningshop.com/",
+        "location": "Switzerland",
         "method": "Coinpayments"
       },
       {
