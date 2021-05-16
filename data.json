@@ -256,6 +256,13 @@
         "method": "GoUrl"
       },
       {
+        "name": "FENLAND WorkWear",
+        "description": "Workwear, Gymwear, Casual Wear, Sports Wear, School Wear and more",
+        "href": "http://www.fenlandworkwear.co.uk",
+        "location": "UK",
+        "method": "Bitpay after Checkout"
+      },
+      {
         "name": "Frank & Beans",
         "description": "Underwear",
         "href": "https://www.frankandbeans.com.au/",
@@ -647,6 +654,12 @@
         "method": "via TheGivingBlock"
       },
       {
+        "name": "Cure JM Foundation",
+        "description": "Helping to find a cure and better treatments for Juvenile Myositis (JM) and to improve the lives of families affected by JM.",
+        "href": "https://www.curejm.org/donate/crypto.php",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "DogecoinSocksForTheHomeless",
         "description": "Socks for homeless people in LA",
         "href": "https://www.dogecoinmultisig.org/multisigmain/index.html?payspot=9vnaTWu71XWimFCW3hctSxryQgYg7rRZ7y#payspot",
@@ -657,6 +670,12 @@
         "description": "Dogecoin Folding At Home team",
         "href": "https://dogecoinfah.com/",
         "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
+      },
+      {
+        "name": "FORCE",
+        "description": "Supporting individuals and families facing hereditary cancer",
+        "href": "https://www.facingourrisk.org/donate/cryptocurrency",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "GiveDirectly",
@@ -813,6 +832,12 @@
         "description": "Supporting fatherless boys",
         "href": "https://sonofasaint.org/cryptocurrency/",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Surfrider Foundation",
+        "description": "Protection and enjoyment of the world’s ocean, waves and beaches",
+        "href": "https://www.surfrider.org/crypto",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "The Humane League",
@@ -1346,6 +1371,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Crypto Burning Shop",
+        "description": "Crypto Merch, Shirts, Wall Art, Face Masks. Burns coins of the merch you buy.",
+        "href": "https://cryptoburningshop.com/",
+        "location": "Switzerland",
+        "method": "Coinpayments"
+      },
+      {
         "name": "CryptoHolic",
         "description": "Crypto Merch, Shirts, Hoodies, Mugs, Face Masks and much more",
         "href": "https://www.cryptoholicshop.com/",
@@ -1358,6 +1390,13 @@
         "href": "https://dallasmavs.shop/",
         "location": "USA",
         "method": "Bitpay"
+      },
+      {
+        "name": "Guy Fieri Store",
+        "description": "Official Merch Store for Guy Fieri",
+        "href": "https://www.guyfieristore.com",
+        "location": "USA",
+        "method": "Coinpayments"
       },
       {
         "name": "Houston Rockets Shop",
@@ -1414,6 +1453,32 @@
         "href": "https://esports.x25.rs/shop/",
         "location": "Serbia",
         "method": "Plisio"
+      }
+    ]
+  },
+  {
+    "title": "Music",
+    "entries": [
+      {
+        "name": "Daria Microphones",
+        "description": "Microphones",
+        "href": "https://dariamicrophones.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Lil Mook",
+        "description": "Lil Mook Rap Artist Store",
+        "href": "http://lilmook.com/lookbook/",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+	  {
+        "name": "The BoomCase",
+        "description": "Rechargeable Vintage Suitcase BoomBox",
+        "href": "https://store.theboomcase.com",
+        "location": "USA",
+        "method": "Coinpayments"
       }
     ]
   },
@@ -1514,13 +1579,6 @@
   {
     "title": "Tech Stores",
     "entries": [
-      {
-        "name": "Daria Microphones",
-        "description": "Microphones",
-        "href": "https://dariamicrophones.com/",
-        "location": "USA",
-        "method": "Coinpayments"
-      },
       {
         "name": "DasKeyboard",
         "description": "Keyboards and accessories",
@@ -2625,13 +2683,6 @@
         "method": "Coinpayments"
       },
       {
-        "name": "Lil Mook",
-        "description": "Lil Mook Rap Artist Store",
-        "href": "http://lilmook.com/lookbook/",
-        "location": "USA",
-        "method": "MyCryptoCheckout"
-      },
-      {
         "name": "LivingRoomOfSatoshi",
         "description": "Pay basically every bill in Australia with Dogecoin",
         "href": "https://www.livingroomofsatoshi.com/",
@@ -2714,6 +2765,13 @@
         "href": "https://onestopcase.com",
         "location": "USA",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Reminisce Media",
+        "description": "Converting VHS, Beta, Mini DV, 8mm film, mini dvd to DVD or digital file service",
+        "href": "https://www.facebook.com/ReminisceMedia",
+        "location": "USA",
+        "method": "Manual Payment"
       },
       {
         "name": "Round The Block",
