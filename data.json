@@ -582,22 +582,28 @@
     "title": "Donating",
     "entries": [
       {
-        "name": "Animal Neotropical",
-        "description": "Nature and animal protection",
-        "href": "https://aneotropical.weebly.com/donations.html",
-        "method": "D5ivRQwT4TU8CEjNBhorpMKSe8bVkMYURQ"
+        "name": "Air Care Alliance",
+        "description": "Supporting thousands of people each year with medical transportation, animal rescue, disaster response, environmental support, and many other reasons",
+        "href": "https://www.aircarealliance.org/donate-cryptocurrency/",
+        "method": "via TheGivingBlock"
       },
-      {
-        "name": "archive.org",
-        "description": "Internet archive",
-        "href": "https://archive.org/donate/cryptocurrency/",
-        "method": "via changelly"
-      },
-      {
+	  {
         "name": "Alex's Lemonade Stand Foundation",
         "description": "Foundation for childhood cancer",
         "href": "https://www.alexslemonade.org/donate-cryptocurrency",
         "method": "via Bitpay"
+      },
+      {
+        "name": "American Cancer Society",
+        "description": "Supporting cancer research",
+        "href": "https://www.cancer.org/involved/donate/more-ways-to-give/donate-cryptocurrency.html",
+        "method": "via TheGivingBlock"
+      },
+	  {
+        "name": "Animal Neotropical",
+        "description": "Nature and animal protection",
+        "href": "https://aneotropical.weebly.com/donations.html",
+        "method": "D5ivRQwT4TU8CEjNBhorpMKSe8bVkMYURQ"
       },
       {
         "name": "AntiWokeSamaritans",
@@ -606,10 +612,10 @@
         "method": "D5wHD2pX8bEKmL5DBBGqV3mjMizjNcam1e"
       },
       {
-        "name": "American Cancer Society",
-        "description": "Supporting cancer research",
-        "href": "https://www.cancer.org/involved/donate/more-ways-to-give/donate-cryptocurrency.html",
-        "method": "via TheGivingBlock"
+        "name": "archive.org",
+        "description": "Internet archive",
+        "href": "https://archive.org/donate/cryptocurrency/",
+        "method": "via changelly"
       },
       {
         "name": "Assertive Kids Foundation",
@@ -672,6 +678,12 @@
         "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
       },
       {
+        "name": "Eve's Place",
+        "description": "Supporting victims of domestic, sexual and teen dating abuse primarily in the state of Arizona",
+        "href": "https://www.evesplace.org/donate-cryptocurrency",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "FORCE",
         "description": "Supporting individuals and families facing hereditary cancer",
         "href": "https://www.facingourrisk.org/donate/cryptocurrency",
@@ -694,6 +706,12 @@
         "description": "Creating safe, sustainable and prospering places in conflict zones",
         "href": "https://www.greenfieldcities.org/private-funding/",
         "method": "DG1Q8MBkQms8QAfJ39DZ3ACpWKt4h5hZ9j"
+      },
+	  {
+        "name": "Hope For Paws",
+        "description": "Hope for Paws rescues animals facing death or danger through abuse or abandonment",
+        "href": "https://www.hopeforpaws.org/donate_crypto",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "Humane Society Tampa",
@@ -730,6 +748,12 @@
         "description": "Open Source and free Office Software",
         "href": "https://www.libreoffice.org/donate/",
         "method": "via CoinGate"
+      },
+      {
+        "name": "Malala Fund",
+        "description": "Supporting the work of educators and advocates and helps bolster girls’ secondary education around the world",
+        "href": "https://malala.org/donate/cryptocurrency",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "Mozilla Foundation",
