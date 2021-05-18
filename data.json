@@ -410,6 +410,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "TopCryptee",
+        "description": "Crypto Shirts",
+        "href": "https://topcryptee.com",
+        "location": "Lithuania",
+        "method": "Coinpayments"
+      },
+      {
         "name": "zeroconfs",
         "description": "Crypto Clothing, Mugs, Hats",
         "href": "https://www.zeroconfs.com/",
@@ -1116,6 +1123,13 @@
         "method": "Manual Payment"
       },
       {
+        "name": "CDKeys.com",
+        "description": "Steam/PSN/Nintendo Keys, Gift Cards",
+        "href": "https://www.cdkeys.com",
+        "location": "UK",
+        "method": "Coinify"
+      },
+      {
         "name": "CJS CD Keys",
         "description": "Steam/Origin/Uplay Games/Keys",
         "href": "https://www.cjs-cdkeys.com/",
@@ -1536,6 +1550,13 @@
         "href": "https://www.pawfect-pals.com.au/",
         "location": "Australia",
         "method": "Coinpayments"
+      },
+      {
+        "name": "PetsCareCampus",
+        "description": "Pet Accessories, Toys, Leads, Beds and more",
+        "href": "https://petscarecampus.com",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
       },
       {
         "name": "PuppySnackers",
