@@ -436,6 +436,12 @@
         "method": "Bitpay"
       },
       {
+        "name": "Billfodl",
+        "description": "Private Key Offline Backup and Hardware Wallet Shop",
+        "href": "https://privacypros.io",
+        "method": "Globee"
+      },
+      {
         "name": "Coinstop.io",
         "description": "Authorised Trezor, Ledger, Billfodl & Bitbox dealer",
         "href": "https://coinstop.io/",
@@ -1451,6 +1457,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "OneStopDogeShop",
+        "description": "Doge/coin Merch, Shirts, Hoodies, Socks, Mugs and more",
+        "href": "https://onestopdogeshop.com",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
         "name": "Olympian Bitcoin",
         "description": "Crypto Merch, Shirts, Pillows, Mugs, Hats, Socks",
         "href": "https://olympianbitcoin.store/",
@@ -2219,6 +2232,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Green Webpage",
+        "description": "Web Hosting, Dedicated Servers, Domain Service, SSL Certificates",
+        "href": "https://greenwebpage.com",
+        "location": "Romania",
+        "method": "CoinGate"
+      },
+      {
         "name": "HawkHost",
         "description": "Web Hosting, Domain Service, SSL Certificates",
         "href": "https://www.hawkhost.com/",
@@ -2649,6 +2669,13 @@
         "href": "https://www.dogecoinlist.com/",
         "location": "USA",
         "method": "Coinpayments"
+      },
+      {
+        "name": "DogeDealz",
+        "description": "Dogecoin Marketplace",
+        "href": "https://www.dogedealz.com",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
       },
       {
         "name": "ExpressBitcoinPostage",
