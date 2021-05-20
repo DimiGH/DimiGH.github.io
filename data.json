@@ -1089,6 +1089,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "The Roasting House",
+        "description": "Coffee and Tea",
+        "href": "https://roastinghouse.co.uk",
+        "location": "UK",
+        "method": "MyCryptoCheckout"
+      },
+      {
         "name": "WackySauces",
         "description": "Hot Sauces",
         "href": "https://wackysauces.com/",
@@ -1425,6 +1432,13 @@
         "name": "CryptoHolic",
         "description": "Crypto Merch, Shirts, Hoodies, Mugs, Face Masks and much more",
         "href": "https://www.cryptoholicshop.com/",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Crypto Kristal Apparel Co",
+        "description": "Doge/coin Merch, Shirts, Stickers, Mugs, Face Masks and much more",
+        "href": "https://cryptokristalapparelco.com",
         "location": "USA",
         "method": "Coinpayments"
       },
@@ -2049,6 +2063,13 @@
         "description": "Watches and Accessories",
         "href": "https://iflwatches.com/",
         "location": "Sweden",
+        "method": "Bitpay"
+      },
+      {
+        "name": "Jomashop",
+        "description": "Luxury Watches, Jewelry and more",
+        "href": "https://www.jomashop.com",
+        "location": "USA",
         "method": "Bitpay"
       },
       {
