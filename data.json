@@ -582,12 +582,6 @@
         "description": "7 different coins, no fees, website widget, mobile app",
         "href": "https://prodoge.com/",
         "method": "Worldwide supported"
-      },
-      {
-        "name": "SwirlPay",
-        "description": "18 different coins, p2p, no fees",
-        "href": "https://swirlpay.io/",
-        "method": "Worldwide supported"
       }
     ]
   },
@@ -942,13 +936,6 @@
     "title": "Food",
     "entries": [
       {
-        "name": "Blockchain Coffee",
-        "description": "Coffee",
-        "href": "https://www.blockchaincoffee.space/",
-        "location": "Mexico",
-        "method": "Coinpayments"
-      },
-      {
         "name": "BringTheBeers",
         "description": "Beers delivered in the Southern New Hampshire area",
         "href": "https://www.bringthebeers.com/",
@@ -961,13 +948,6 @@
         "href": "https://www.btc-wine.com/",
         "location": "France",
         "method": "Bitpay"
-      },
-      {
-        "name": "Coffeeur",
-        "description": "Coffee",
-        "href": "https://coffeeur.com/",
-        "location": "USA",
-        "method": "Coinpayments"
       },
       {
         "name": "CoffeeZyme",
@@ -984,9 +964,23 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Dogebeans",
+        "description": "Coffee",
+        "href": "https://dogebeans.com",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
+      },
+      {
         "name": "DrApis",
         "description": "Raw Portuguese Bee Honey",
         "href": "http://drapis.com/",
+        "location": "Portugal",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Fresh Baked Cookie Company",
+        "description": "Cookie Mixes",
+        "href": "https://freshbakedcompany.com",
         "location": "Portugal",
         "method": "Coinpayments"
       },
@@ -1010,13 +1004,6 @@
         "href": "https://idgaf.lol/doge",
         "location": "USA",
         "method": "Plisio"
-      },
-      {
-        "name": "Inserrata",
-        "description": "Italian Wine and Oil",
-        "href": "https://inserrata.it/en/",
-        "location": "Italy",
-        "method": "Bitpay"
       },
       {
         "name": "La-Boutique",
@@ -1368,13 +1355,6 @@
         "method": "Bitpay"
       },
       {
-        "name": "Multycolored",
-        "description": "Jewelry, Shirts and Decoration",
-        "href": "https://www.multycolored.com/",
-        "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
         "name": "Regent Jewelers",
         "description": "Jewelry, Engagement Rings and Watches",
         "href": "https://regentjewelers.net/",
@@ -1394,6 +1374,13 @@
     "title": "Merch",
     "entries": [
       {
+        "name": "AboveWallStreet",
+        "description": "Doge(coin) merch, Shirts, Mugs, Hats, Stickers",
+        "href": "https://abovewallstreet.com",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+	  {
         "name": "AUDL Store",
         "description": "Official Merch Store for the American Ultimate Disc League",
         "href": "https://shop.theaudl.com/",
@@ -1562,13 +1549,6 @@
         "description": "Dog Nutrition Products",
         "href": "https://www.petfinn.com/",
         "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "HSC Canada",
-        "description": "Dog and Cat Accessories, Beds, Feeders, Toys and more",
-        "href": "https://hsccanada.com/",
-        "location": "Canada",
         "method": "Coinpayments"
       },
       {
@@ -1774,6 +1754,13 @@
         "href": "https://amberhotel.ch/",
         "location": "Switzerland",
         "method": "In Store Payment"
+      },
+      {
+        "name": "Cielo Aviation",
+        "description": "Private Jet Charter",
+        "href": "https://cielo-aviation.com",
+        "location": "Italy",
+        "method": "Bitpay"
       },
       {
         "name": "Crypto Cruise Deals",
@@ -2016,13 +2003,6 @@
         "description": "VPN",
         "href": "https://www.vpnshazam.com/",
         "location": "Palestine",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "VPNSurf",
-        "description": "VPN",
-        "href": "https://vpn.surf/",
-        "location": "Lithuania",
         "method": "Coinpayments"
       },
       {
@@ -2573,13 +2553,6 @@
         "method": "Bitpay"
       },
       {
-        "name": "Atlantis",
-        "description": "General Online Store, Clothing, Electronics, Pet Supplies, Health Care and more",
-        "href": "https://atlantis.icu/",
-        "location": "Canada",
-        "method": "Coinpayments"
-      },
-      {
         "name": "AYR Gamers Guild",
         "description": "3D printed miniatures, terrain and gaming accessories",
         "href": "https://ayrgamersguild.com/",
@@ -2657,13 +2630,6 @@
         "method": "Manual Payment"
       },
       {
-        "name": "Coinality",
-        "description": "Jobs for crypto",
-        "href": "https://coinality.com/",
-        "location": "USA",
-        "method": "Manual Payment"
-      },
-      {
         "name": "CoolStuffJapan",
         "description": "Japanese store, food, snacks, cushions, toys and more",
         "href": "https://www.coolstuffjapan.com/",
@@ -2711,6 +2677,13 @@
         "href": "https://www.galaxus.ch/en",
         "location": "Switzerland",
         "method": "Coinify"
+      },
+      {
+        "name": "Glamnetic",
+        "description": "Lashes, Nails and more",
+        "href": "https://glamnetic.com",
+        "location": "USA",
+        "method": "Bitpay"
       },
       {
         "name": "Gluecksmagie",
@@ -2860,6 +2833,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Parfum Palais",
+        "description": "Perfume & Fragrances",
+        "href": "https://www.parfumpalais.com",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
         "name": "Reminisce Media",
         "description": "Converting VHS, Beta, Mini DV, 8mm film, mini dvd to DVD or digital file service",
         "href": "https://www.facebook.com/ReminisceMedia",
@@ -2934,13 +2914,6 @@
         "description": "Papercrafting, RC Cars and Chess Accessories",
         "href": "https://teamjbhobbies.com/",
         "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "ThaiBaM",
-        "description": "Coffee, Tea, Oils, Balms etc.",
-        "href": "http://thaibam.net/",
-        "location": "Thailand",
         "method": "Coinpayments"
       },
       {
