@@ -439,7 +439,8 @@
         "name": "Billfodl",
         "description": "Private Key Offline Backup and Hardware Wallet Shop",
         "href": "https://privacypros.io",
-        "method": "Globee"
+        "location": "USA",
+		"method": "Globee"
       },
       {
         "name": "Coinstop.io",
@@ -703,12 +704,6 @@
         "method": "DJbsZJVxMaRqY1tZXQDk8wZVjU5cJdxKKw"
       },
       {
-        "name": "Good Doge",
-        "description": "Supporting Animal Shelters",
-        "href": "https://www.gooddoge.com/",
-        "method": "DRRY838tP39h7tLteVqBkWLimkCCD7zydh"
-      },
-      {
         "name": "Greenfield Cities",
         "description": "Creating safe, sustainable and prospering places in conflict zones",
         "href": "https://www.greenfieldcities.org/private-funding/",
@@ -747,7 +742,7 @@
       {
         "name": "Landon Fund",
         "description": "Boys School",
-        "href": "https://www.landon.net/give/landonfund",
+        "href": "https://www.landon.net/give",
         "method": "via Bitpay"
       },
       {
@@ -1375,7 +1370,7 @@
     "entries": [
       {
         "name": "AboveWallStreet",
-        "description": "Doge(coin) merch, Shirts, Mugs, Hats, Stickers",
+        "description": "Doge/coin merch, Shirts, Mugs, Hats, Stickers",
         "href": "https://abovewallstreet.com",
         "location": "USA",
         "method": "Coinpayments"
@@ -1396,7 +1391,7 @@
       },
       {
         "name": "Bulldoge Apparel",
-        "description": "Doge(coin) merch, Shirts, Necklace, Mugs, Stickers",
+        "description": "Doge/coin merch, Shirts, Necklace, Mugs, Stickers",
         "href": "https://bulldogeofficial.wixsite.com/shop",
         "location": "USA",
         "method": "Manual Payment"
@@ -1451,6 +1446,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Jack Of Art Shop",
+        "description": "Doge And Various Merch, Shirts, Hoodies, Mugs and more",
+        "href": "https://jackof-artshop.com",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
         "name": "Ninetees Kid",
         "description": "Various Merch, Shirts, Hoodies, Caps, Key Tags",
         "href": "https://nineteeskid.net/",
@@ -1472,6 +1474,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Royal Doge",
+        "description": "Doge/coin Merch, Shirts, Stickers, Mugs",
+        "href": "https://www.royaldoge.com",
+        "location": "USA",
+        "method": "Coinpayments/NowPayments"
+      },
+      {
         "name": "ruffi0",
         "description": "ruffi0 Merch, Shirts, Bags, Stickers and more",
         "href": "https://ruffi0.com/shop/",
@@ -1487,7 +1496,7 @@
       },
       {
         "name": "Such Doge Mart",
-        "description": "Doge(coin) Merch, Shirts, Stickers, Mugs",
+        "description": "Doge/coin Merch, Shirts, Stickers, Mugs",
         "href": "https://suchdogemart.com/",
         "location": "USA",
         "method": "MyCryptoCheckout"
