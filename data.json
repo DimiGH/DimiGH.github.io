@@ -1561,6 +1561,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "LA School For Dogs",
+        "description": "Online Dog Training",
+        "href": "https://laschoolfordogs.com/online/",
+        "location": "USA",
+        "method": "WooCommerce Crypto Plugin"
+      },
+      {
         "name": "Pawfect Pals",
         "description": "Dog Accessories, Toys, Leads, Beds and more",
         "href": "https://www.pawfect-pals.com.au/",
