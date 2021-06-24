@@ -396,6 +396,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "The Bitcoin Wardrobe",
+        "description": "Bitcoin and Altcoin Clothes",
+        "href": "https://btcwardrobe.com",
+        "location": "Sweden",
+        "method": "Coinpayments"
+      },
+      {
         "name": "The Scarf Boutique",
         "description": "Silk Scarves",
         "href": "https://www.thescarfboutique.com/",
