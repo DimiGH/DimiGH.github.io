@@ -1116,8 +1116,7 @@
   },
   {
     "title": "Gaming",
-	"tag": "Gaming",
-    "entries": [
+	"entries": [
       {
         "name": "1stpal",
         "description": "Game Keys and Gift Cards",
@@ -1241,7 +1240,6 @@
   },
   {
     "title": "Gift Cards",
-	"tag": "Gift_Cards",
 	"entries": [
       {
         "name": "BitcoinGiftcards",
