@@ -10,6 +10,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Kyre Song",
+        "description": "Abstract Art",
+        "href": "https://kyresong.art",
+        "location": "Ukraine",
+        "method": "Coinpayments"
+      }, 
+	  {
         "name": "Lynx Art Collection",
         "description": "Crypto & Various Art",
         "href": "https://lynxartcollection.com/",
@@ -1008,6 +1015,13 @@
         "method": "Plisio"
       },
       {
+        "name": "KingoFood",
+        "description": "Italian Food and Beverages",
+        "href": "https://www.kingofood.com/en/",
+        "location": "Italy",
+        "method": "Coinpayments"
+      },
+      {
         "name": "La-Boutique",
         "description": "Canadian Coffee",
         "href": "https://www.la-boutique.ca/",
@@ -1041,6 +1055,13 @@
         "href": "https://www.nmteaco.com/",
         "location": "USA",
         "method": "Bitpay"
+      },
+      {
+        "name": "Perusona Coffee",
+        "description": "Coffee and accessories",
+        "href": "https://perusonacoffee.com",
+        "location": "USA",
+        "method": "Coinpayments"
       },
       {
         "name": "PexPeppers",
@@ -1219,7 +1240,8 @@
   },
   {
     "title": "Gift Cards",
-    "entries": [
+	"id": "Gift_Cards",
+	"entries": [
       {
         "name": "BitcoinGiftcards",
         "description": "Mainly Australian Gift Cards",
@@ -1952,13 +1974,6 @@
         "method": "CoinGate"
       },
       {
-        "name": "LiquidVPN",
-        "description": "VPN",
-        "href": "https://www.liquidvpn.com/",
-        "location": "USA",
-        "method": "Bitpay"
-      },
-      {
         "name": "Perfect Privacy",
         "description": "VPN",
         "href": "https://www.perfect-privacy.com/en/",
@@ -2389,6 +2404,13 @@
         "method": "CoinGate"
       },
       {
+        "name": "IncogNet",
+        "description": "Web Hosting, VPN",
+        "href": "https://incognet.io",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
         "name": "LuHoster",
         "description": "Web Hosting, Domain Service",
         "href": "https://www.luhoster.com/",
@@ -2484,6 +2506,13 @@
         "description": "Web Hosting, Domain Service, Reseller-Hosting, Dedicated Servers",
         "href": "https://www.superbytehosting.com/",
         "location": "India",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "Teklan Hosting",
+        "description": "Web Hosting, Dedicated Servers, VPN",
+        "href": "https://teklanhosting.co.uk",
+        "location": "UK",
         "method": "Coinpayments"
       },
       {
