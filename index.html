@@ -208,10 +208,10 @@
 			</a>
 
 			<!-- Hide Category Button-->
-			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.title + ' Div Button'">Hide &#xab;</button>
+			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.tag + ' Div Button'">Hide &#xab;</button>
 
 			<!-- Site links -->
-			<ul :id="category.title + ' Div'">
+			<ul :id="category.tag + ' Div'">
 				<li class="website" v-for="entry in category.entries">
 					<a
 						:href="entry.href"
