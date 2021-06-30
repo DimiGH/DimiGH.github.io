@@ -264,8 +264,12 @@
 		async created() {
 			this.categories = await fetch('./data.json')
 				.then(response => response.json())
-		if (location.hash) location.href = location.hash;
-		}
+		,
+		async updated() {
+			this.$nextTick(function () {
+        if (location.hash) location.href = location.hash;
+    })
+}
 	})
 	</script>
 </body>
