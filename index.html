@@ -264,12 +264,12 @@
 		async created() {
 			this.categories = await fetch('./data.json')
 				.then(response => response.json())
-		,
+		},
 		async updated() {
 			this.$nextTick(function () {
-        if (location.hash) location.href = location.hash;
-    })
-}
+				if (location.hash) location.href = location.hash;
+			})
+		}
 	})
 	</script>
 </body>
