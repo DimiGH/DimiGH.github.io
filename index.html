@@ -66,12 +66,6 @@
 		font-weight: bold;
 		margin: 32px 0 0 0;
 	}
-	.category-tag {
-		color: #FF6699 !important;
-		font-size: 25px;
-		font-weight: bold;
-		margin: 32px 0 0 0;
-	}
 	.category > ul {
 		margin: 0;
 		padding-inline-start: 0;
@@ -197,21 +191,21 @@
 		<!-- Categories -->
 		<div
 			v-for="category in categories"
-			:id="category.tag"
+			:id="category.title"
 			class="category"
 		>
 			<!-- Title -->
-			<a :href="'#' + category.tag">
+			<a :href="'#' + category.title">
 				<h3 class="category-title">
 					~ ~ ~ {{ category.title }} ~ ~ ~
 				</h3>
 			</a>
 
 			<!-- Hide Category Button-->
-			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.tag + ' Div Button'">Hide &#xab;</button>
+			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.title + ' Div Button'">Hide &#xab;</button>
 
 			<!-- Site links -->
-			<ul :id="category.tag + ' Div'">
+			<ul :id="category.title + ' Div'">
 				<li class="website" v-for="entry in category.entries">
 					<a
 						:href="entry.href"
