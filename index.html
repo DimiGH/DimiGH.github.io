@@ -66,6 +66,12 @@
 		font-weight: bold;
 		margin: 32px 0 0 0;
 	}
+	.category-tag {
+		color: #FF6699 !important;
+		font-size: 25px;
+		font-weight: bold;
+		margin: 32px 0 0 0;
+	}
 	.category > ul {
 		margin: 0;
 		padding-inline-start: 0;
@@ -191,7 +197,7 @@
 		<!-- Categories -->
 		<div
 			v-for="category in categories"
-			:id="category.title"
+			:id="category.tag"
 			class="category"
 		>
 			<!-- Title -->
