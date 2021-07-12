@@ -410,6 +410,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "The Profound Store",
+        "description": "Various Clothes",
+        "href": "https://www.theprofoundstore.com",
+        "location": "USA",
+        "method": "Coinpayments"
+      },
+      {
         "name": "The Scarf Boutique",
         "description": "Silk Scarves",
         "href": "https://www.thescarfboutique.com/",
@@ -1216,6 +1223,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Retro Replay",
+        "description": "Classic Video Games, Collectibles and more",
+        "href": "https://shopretroreplay.com",
+        "location": "Canada",
+        "method": "Coinpayments"
+      },
+      {
         "name": "Ruins of Chaos",
         "description": "War browsergame, with premium currency purchasable with Dogecoin and an integrated Dogecoin Faucet",
         "href": "https://ruinsofchaos.com/recruit.php?uniqid=421i",
@@ -1615,6 +1629,13 @@
         "href": "https://puppysnackers.com/",
         "location": "Canada",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Wag!",
+        "description": "Pet Care Service",
+        "href": "https://wagwalking.com",
+        "location": "USA",
+        "method": "Bitpay"
       },
       {
         "name": "Woofo Empawrium",
