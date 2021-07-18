@@ -284,6 +284,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Hippie Pants",
+        "description": "Thai Pants, Shirts, Bags and more",
+        "href": "https://hippie-pants.com",
+        "location": "Thailand",
+        "method": "Bitpay"
+      },
+      {
         "name": "HippTee",
         "description": "Crypto Shirts",
         "href": "https://hipptee.com/",
@@ -407,6 +414,13 @@
         "description": "Bitcoin and Altcoin Clothes",
         "href": "https://btcwardrobe.com",
         "location": "Sweden",
+        "method": "Coinpayments"
+      },
+      {
+        "name": "The House of COKY",
+        "description": "Womens Clothing",
+        "href": "https://www.thehouseofcoky.com",
+        "location": "USA",
         "method": "Coinpayments"
       },
       {
@@ -921,6 +935,12 @@
         "description": "Providing safe and accessible drinking water to communities in Uganda",
         "href": "https://ugandanwaterproject.com/crypto/",
         "method": "via TheGivingBlock"
+      },
+      {
+        "name": "United Way of Miami",
+        "description": "Supporting people from the Miami region in crisis",
+        "href": "https://unitedwaymiami.org",
+        "method": "via Bitpay"
       },
       {
         "name": "University of Illinois",
