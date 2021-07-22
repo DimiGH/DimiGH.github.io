@@ -97,6 +97,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Goza Towels",
+        "description": "Towels, Bed Sheets and Fabrics",
+        "href": "https://www.gozatowels.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Putnams",
         "description": "Mattresses, Pillows and more",
         "href": "https://www.putnams.co.uk/",
@@ -261,6 +268,13 @@
         "href": "https://elevenplus.shop/",
         "location": "Italy",
         "method": "GoUrl"
+      },
+      {
+        "name": "Epic Pants",
+        "description": "Gaming Gear and more",
+        "href": "https://epicpants.com",
+        "location": "USA",
+        "method": "MyCryptoCheckout"
       },
       {
         "name": "FENLAND WorkWear",
@@ -527,6 +541,12 @@
         "name": "BTCPay",
         "description": "14 different coins, self-hosted, open-source, wide variety of store plugins",
         "href": "https://btcpayserver.org/",
+        "method": "Worldwide supported"
+      },
+      {
+        "name": "Coinbase Commerce",
+        "description": "7 different coins, no fees, no KYC, no fiat conversion options",
+        "href": "https://commerce.coinbase.com/",
         "method": "Worldwide supported"
       },
       {
@@ -835,6 +855,12 @@
         "method": "DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS"
       },
       {
+        "name": "Operation Broken Silence",
+        "description": "Supporting people in Sudan",
+        "href": "https://operationbrokensilence.org",
+        "method": "via TheGivingBlock"
+      },
+      {
         "name": "Orangutan Outreach",
         "description": "Protecting and taking care of orangutans in the wild",
         "href": "https://redapes.org/cryptorangutan/",
@@ -1000,6 +1026,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "De Wine Spot",
+        "description": "Wine, Whiskey, Sake and more",
+        "href": "https://dewinespot.co",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Dogebeans",
         "description": "Coffee",
         "href": "https://dogebeans.com",
@@ -1098,6 +1131,13 @@
         "method": "Coinpayments/NowPayments"
       },
       {
+        "name": "Real Mad Honey",
+        "description": "Honey",
+        "href": "https://www.realmadhoney.com",
+        "location": "Netherlands",
+        "method": "MyCryptoCheckout"
+      },
+      {
         "name": "Shiba Coffee and Tea",
         "description": "Coffee and Tea",
         "href": "https://shibacoffeeandtea.com/",
@@ -1131,6 +1171,20 @@
         "href": "https://roastinghouse.co.uk",
         "location": "UK",
         "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "Tong Jerky",
+        "description": "Beef Jerky",
+        "href": "https://tongjerky.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
+        "name": "True Love Honey",
+        "description": "Honey",
+        "href": "https://www.truelovehoney.com",
+        "location": "USA",
+        "method": "Coinpayments"
       },
       {
         "name": "WackySauces",
@@ -1614,6 +1668,13 @@
         "href": "https://chewbysnacks.com/",
         "location": "Canada",
         "method": "CryptoWoo"
+      },
+	  {
+        "name": "Dazy Dog",
+        "description": "Luxury Memory Foam Dog Bed",
+        "href": "https://dazydog.com/",
+        "location": "Australia",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "Finn",
@@ -2666,6 +2727,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Billiards King",
+        "description": "Pool Sticks, Cues, Shafts and Accessories",
+        "href": "https://www.billiardsking.com",
+        "location": "USA",
+        "method": "Coinbase Commerce/Coinpayments"
+      },
+      {
         "name": "BlockchainAdventures",
         "description": "\"Toshi to the moon\" book and merch",
         "href": "https://blockchain-adventures.com/shop/",
@@ -2869,6 +2937,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Lushes Curtains",
+        "description": "Luxury Velvet Curtains",
+        "href": "https://www.lushescurtains.com/",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Mighty Max Cart",
         "description": "USA MADE Utility Carts",
         "href": "https://mightymaxcart.com/",
@@ -2888,6 +2963,13 @@
         "href": "https://moleculestore.com/",
         "location": "Switzerland",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Mothership",
+        "description": "Scooters, parts and accessories",
+        "href": "https://www.shopmothership.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "MPMSouvenir",
@@ -3000,6 +3082,13 @@
         "href": "https://teamjbhobbies.com/",
         "location": "USA",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Tenacious Toys",
+        "description": "Vinyl Art Toys and more",
+        "href": "https://www.tenacioustoys.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "The Dogemoon Shop",
