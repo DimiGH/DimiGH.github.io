@@ -172,6 +172,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Bobject Clothing",
+        "description": "Gaming and Motorcycling Shirts",
+        "href": "https://bobject.net/",
+        "location": "Canada",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Bonocler Eyewear",
         "description": "Swiss Glasses Store",
         "href": "https://bonocler.com/",
@@ -344,7 +351,13 @@
         "description": "Custom Kids Caps and Tshirts",
         "href": "https://www.instagram.com/littlecubs_clothing/",
         "location": "UK",
-        "method": "via DM inquiry"
+        
+      {
+        "name": "Lola Luna Lingerie",
+        "description": "Lingerie",
+        "href": "https://lolaluna-lingerie.com/",
+        "location": "France",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "Masks by Sharon",
@@ -681,10 +694,28 @@
         "method": "via changelly"
       },
       {
+        "name": "Arch Mission",
+        "description": "Archive humanity’s heritage for future generations",
+        "href": "https://www.archmission.org/donate",
+        "method": "via Coinbase Commerce"
+      },
+      {
         "name": "Assertive Kids Foundation",
         "description": "Anti-Bullying",
         "href": "https://assertivekids.org/",
         "method": "DKyLXgCCgBSPbBujg1YbjRNfrhxFtnVGQk"
+      },
+      {
+        "name": "Believe In Tomorrow Children's Foundation",
+        "description": "Supporting critically ill children and their families",
+        "href": "https://believeintomorrow.org/crypto/",
+        "method": "via TheGivingBlock"
+      },
+      {
+        "name": "BERI",
+        "description": "Improving human civilization’s long-term prospects for survival and flourishing",
+        "href": "https://existence.org/donating/",
+        "method": "via Bitpay"
       },
       {
         "name": "Bethany Kids",
@@ -739,6 +770,12 @@
         "description": "Dogecoin Folding At Home team",
         "href": "https://dogecoinfah.com/",
         "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
+      },
+      {
+        "name": "every.org",
+        "description": "Donate to over 1 million nonprofits in one place",
+        "href": "https://www.every.org/donate-crypto",
+        "method": "via Coinbase Commerce"
       },
       {
         "name": "Eve's Place",
@@ -813,6 +850,12 @@
         "method": "via TheGivingBlock"
       },
       {
+        "name": "MineTexas",
+        "description": "Texas based Minecraft community servers",
+        "href": "https://www.minetexas.com/",
+        "method": "via Coinbase Commerce"
+      },
+      {
         "name": "Mozilla Foundation",
         "description": "Organization to support and collectively lead the open source Mozilla project",
         "href": "https://wiki.mozilla.org/Donate_Bitcoin",
@@ -867,6 +910,18 @@
         "method": "DCbne9T6FknmjQipgpH1rhBDx2MBEQhFaS"
       },
       {
+        "name": "ProTechos",
+        "description": "Providing roof reconstruction and related vocational training throughout Puerto Rico",
+        "href": "https://www.protechos.org/",
+        "method": "via Coinbase Commerce"
+      },
+      {
+        "name": "Quickfolders",
+        "description": "Thunderbird extension",
+        "href": "https://quickfolders.org/donate.html",
+        "method": "via Coinbase Commerce"
+      },
+      {
         "name": "Rainforest Foundation US",
         "description": "Supporting people living in rainforests",
         "href": "https://rainforestfoundation.org/donate/cryptocurrency/",
@@ -919,6 +974,18 @@
         "description": "Supporting fatherless boys",
         "href": "https://sonofasaint.org/cryptocurrency/",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Stay Happy",
+        "description": "Supporting kids with cancer",
+        "href": "https://stayhappy.org",
+        "method": "via Coinbase Commerce"
+      },
+      {
+        "name": "Students For Liberty",
+        "description": "Educate, develop, and empower the next generation of leaders of liberty.",
+        "href": "https://studentsforliberty.org/donate/",
+        "method": "via TheGivingBlock"
       },
       {
         "name": "Surfrider Foundation",
