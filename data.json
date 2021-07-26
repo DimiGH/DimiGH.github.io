@@ -659,6 +659,12 @@
     "title": "Donating",
     "entries": [
       {
+        "name": "A Future For Veterans Foundation",
+        "description": "Supportive housing, education, job assistance and peer support to military veterans",
+        "href": "https://www.afutureforvets.org",
+        "method": "via Coinbase Commerce"
+      },
+	  {
         "name": "Air Care Alliance",
         "description": "Supporting thousands of people each year with medical transportation, animal rescue, disaster response, environmental support, and many other reasons",
         "href": "https://www.aircarealliance.org/donate-cryptocurrency/",
@@ -707,6 +713,12 @@
         "method": "DKyLXgCCgBSPbBujg1YbjRNfrhxFtnVGQk"
       },
       {
+        "name": "Ballet North",
+        "description": "Friendly, professional and creative dance school for children and adults",
+        "href": "https://www.balletnorth.com/",
+        "method": "via Coinbase Commerce"
+      },
+      {
         "name": "Believe In Tomorrow Children's Foundation",
         "description": "Supporting critically ill children and their families",
         "href": "https://believeintomorrow.org/crypto/",
@@ -723,6 +735,12 @@
         "description": "Supporting children in africa through pediatric surgery, rehabilitation, public education, spiritual ministry and training health professionals",
         "href": "https://bethanykids.org/crypto/",
         "method": "via TheGivingBlock"
+      },
+      {
+        "name": "Bonney Lake Food Bank",
+        "description": "Providing food and resources to individuals and families in need",
+        "href": "https://www.bonneylakefoodbank.org/",
+        "method": "via Coinbase Commerce"
       },
       {
         "name": "CARE",
