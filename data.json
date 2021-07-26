@@ -1273,6 +1273,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "UnicornBags",
+        "description": "Pre-filtered mushroom grow bags",
+        "href": "https://unicorngrowbag.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "WackySauces",
         "description": "Hot Sauces",
         "href": "https://wackysauces.com/",
