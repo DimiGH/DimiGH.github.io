@@ -249,13 +249,6 @@
         "method": "GoUrl"
       },
       {
-        "name": "DogeToMars",
-        "description": "Doge(coin) Shirts, Hats, Face Masks",
-        "href": "https://dogetomars.com/collections/all",
-        "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
         "name": "Doge Wares",
         "description": "Dogecoin Hat",
         "href": "https://www.dogewares.co.uk/",
@@ -282,13 +275,6 @@
         "href": "https://epicpants.com",
         "location": "USA",
         "method": "MyCryptoCheckout"
-      },
-      {
-        "name": "FENLAND WorkWear",
-        "description": "Workwear, Gymwear, Casual Wear, Sports Wear, School Wear and more",
-        "href": "http://www.fenlandworkwear.co.uk",
-        "location": "UK",
-        "method": "Bitpay after Checkout"
       },
       {
         "name": "Frank & Beans",
@@ -791,6 +777,12 @@
         "method": "DUCKvJPNT16USvJmWWEwchZpRVHZwm4zRW"
       },
       {
+        "name": "Electronic Frontier Foundation",
+        "description": "Digital rights group, protecting online privacy",
+        "href": "https://supporters.eff.org/donate/",
+        "method": "via Bitpay"
+      },
+      {
         "name": "every.org",
         "description": "Donate to over 1 million nonprofits in one place",
         "href": "https://www.every.org/donate-crypto",
@@ -807,6 +799,18 @@
         "description": "Supporting individuals and families facing hereditary cancer",
         "href": "https://www.facingourrisk.org/donate/cryptocurrency",
         "method": "via TheGivingBlock"
+      },
+      {
+        "name": "FREOPP",
+        "description": "Foundation for Research on Equal Opportunity",
+        "href": "https://freopp.org/donating-to-freopp-aea8cc04f074",
+        "method": "via Coinbase Commerce"
+      },
+      {
+        "name": "Georgia Tech Foundation",
+        "description": "Georgia Institute of Technology",
+        "href": "https://www.gtf.gatech.edu/give-with-crypto/",
+        "method": "via Bitpay"
       },
       {
         "name": "GiveDirectly",
@@ -1035,6 +1039,12 @@
         "description": "Protecting children from sexual abuse",
         "href": "https://www.thorn.org/donate/",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Tor Project",
+        "description": "Privacy and anonymity focused web browser",
+        "href": "https://donate.torproject.org/cryptocurrency/",
+        "method": "DJwRnafcjDbzqWM5vsCphuyQuTc2QB3a8F"
       },
       {
         "name": "Transgender Legal Defense & Education Fund",
@@ -1659,13 +1669,6 @@
         "description": "Doge And Various Merch, Shirts, Hoodies, Mugs and more",
         "href": "https://jackof-artshop.com",
         "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "Ninetees Kid",
-        "description": "Various Merch, Shirts, Hoodies, Caps, Key Tags",
-        "href": "https://nineteeskid.net/",
-        "location": "Germany",
         "method": "Coinpayments"
       },
       {
