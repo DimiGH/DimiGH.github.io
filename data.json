@@ -291,6 +291,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Happy Family Clothing",
+        "description": "Various Shirts and Towels",
+        "href": "https://happyfamilyclothing.net",
+        "location": "USA",
+        "method": "Coinbase Commerce/Coinpayments"
+      },
+      {
         "name": "Hippie Pants",
         "description": "Thai Pants, Shirts, Bags and more",
         "href": "https://hippie-pants.com",
@@ -1588,6 +1595,13 @@
     "title": "Merch",
     "entries": [
       {
+        "name": "69th Planet",
+        "description": "Doge/coin merch, Shirts, Mugs, Stickers",
+        "href": "https://69thplanet.com",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+	  {
         "name": "AboveWallStreet",
         "description": "Doge/coin merch, Shirts, Mugs, Hats, Stickers",
         "href": "https://abovewallstreet.com",
@@ -1846,6 +1860,13 @@
         "href": "https://www.frontiervapor.com/",
         "location": "USA",
         "method": "Coinpayments"
+      },
+      {
+        "name": "Not Blowing Smoke",
+        "description": "Vape Accessories, E-Liquid",
+        "href": "https://www.notblowingsmoke.com",
+        "location": "UK",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "RX Vape",
@@ -2912,6 +2933,13 @@
         "href": "https://www.dogedealz.com",
         "location": "USA",
         "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "EDC Keychains",
+        "description": "Keychains, Coins and Accessories",
+        "href": "https://edckanda.com",
+        "location": "USA",
+        "method": "Coinpayments"
       },
       {
         "name": "ExpressBitcoinPostage",
