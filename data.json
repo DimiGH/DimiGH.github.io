@@ -144,13 +144,6 @@
         "method": "MyCryptoCheckout"
       },
       {
-        "name": "Alive & More",
-        "description": "Artistic Clothes",
-        "href": "https://aliveandmore.com/",
-        "location": "UK",
-        "method": "Coinpayments"
-      },
-      {
         "name": "Atheist Shoes",
         "description": "Handmade, Bauhaus-inspired Shoes",
         "href": "https://atheist.shoes/",
@@ -200,6 +193,13 @@
         "method": "Swirl"
       },
       {
+        "name": "Civvies Apparel",
+        "description": "Repurposed Military Clothing, Donating 10% of their sales to veterans",
+        "href": "https://civviesapparel.com",
+        "location": "USA",
+        "method": "Bitpay"
+      },
+      {
         "name": "Coin Monster",
         "description": "Crypto Clothes",
         "href": "https://coinmonster.store/",
@@ -235,6 +235,13 @@
         "method": "CoinGate"
       },
       {
+        "name": "DogeGear",
+        "description": "Doge/coin Shirts, Hoodies and more",
+        "href": "https://dogegear.shop",
+        "location": "USA",
+        "method": "Coinbase Commerce/Coinpayments"
+      },
+      {
         "name": "DogeLord",
         "description": "Crypto Apparel",
         "href": "https://dogelord.com",
@@ -247,13 +254,6 @@
         "href": "https://dogeswag.com/shop/",
         "location": "USA",
         "method": "GoUrl"
-      },
-      {
-        "name": "Doge Wares",
-        "description": "Dogecoin Hat",
-        "href": "https://www.dogewares.co.uk/",
-        "location": "UK",
-        "method": "ProDoge"
       },
       {
         "name": "Eat Me Clothing",
@@ -361,6 +361,13 @@
         "method": "MyCryptoCheckout"
       },
       {
+        "name": "MTM Shoes",
+        "description": "Handmade to measure shoes",
+        "href": "https://mtmshoes.com/",
+        "location": "Cambodia",
+        "method": "MyCryptoCheckout"
+      },
+      {
         "name": "MyCoconutHeart",
         "description": "Womens Clothing",
         "href": "https://www.mycoconutheart.com/",
@@ -441,13 +448,6 @@
         "name": "The House of COKY",
         "description": "Womens Clothing",
         "href": "https://www.thehouseofcoky.com",
-        "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "The Profound Store",
-        "description": "Various Clothes",
-        "href": "https://www.theprofoundstore.com",
         "location": "USA",
         "method": "Coinpayments"
       },
@@ -1728,13 +1728,6 @@
         "method": "MyCryptoCheckout"
       },
       {
-        "name": "To The Moon Products",
-        "description": "Crypto Merch, Shirts, Stickers, Mugs and more",
-        "href": "https://tothemoonproducts.com",
-        "location": "Canada",
-        "method": "Coinpayments"
-      },
-      {
         "name": "x25 Esports",
         "description": "x25 Merch, Jersey, Shirts, Mousepad",
         "href": "https://esports.x25.rs/shop/",
@@ -2823,6 +2816,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Avon Valley",
+        "description": "Adventure and Wildlife Park",
+        "href": "https://www.avonvalley.co.uk",
+        "location": "UK",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "AYR Gamers Guild",
         "description": "3D printed miniatures, terrain and gaming accessories",
         "href": "https://ayrgamersguild.com/",
@@ -2835,6 +2835,13 @@
         "href": "https://www.bandicam.com/",
         "location": "USA",
         "method": "Bitpay"
+      },
+      {
+        "name": "BC24",
+        "description": "Longboards, Skateboards and more",
+        "href": "https://www.bc24.pl/en/",
+        "location": "Poland",
+        "method": "Coinpayments"
       },
       {
         "name": "Beliani",
@@ -2933,6 +2940,13 @@
         "href": "https://www.dogedealz.com",
         "location": "USA",
         "method": "MyCryptoCheckout"
+      },
+      {
+        "name": "Easyskinz",
+        "description": "Skins for Smartphones, Laptops, Consoles and more",
+        "href": "https://easyskinz.com",
+        "location": "UK",
+        "method": "Coinpayments"
       },
       {
         "name": "EDC Keychains",
@@ -3227,13 +3241,6 @@
         "href": "https://www.toploadersports.com/",
         "location": "USA",
         "method": "Coinpayments"
-      },
-      {
-        "name": "TormentBox",
-        "description": "Various prank articles like glitter letters etc.",
-        "href": "https://tormentbox.com/",
-        "location": "USA",
-        "method": "Manual Payment"
       },
       {
         "name": "Trick Mugs",
