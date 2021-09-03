@@ -29,11 +29,58 @@
 	<link rel="icon" href="./image/favicon.ico" />
 
 	<style>
+	* {
+		box-sizing: border-box;
+	}
+	
 	body {
-		font-family: 'Comic Sans MS', Verdana, sans-serif;
+		font-family: "Doge Sans", "Comic Sans MS", Verdana, sans-serif;
 		color: #FFCC00;
 		background-color: #323232;
+		margin: 0;
 	}
+
+	.header {
+		background-color: #3c3c3c;
+		padding-top: 10px;
+		padding-bottom: 1px;
+		text-align: center;
+	}
+
+	ul {
+     list-style-type: none;
+  margin: auto;
+  padding: 0;
+  height: auto;
+  max-width: 440px;
+  overflow: hidden;
+  background-color: #252525;
+}
+
+li {
+  float: left;
+  border-right:1px solid #494949;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #323232;
+}
+
+.active {
+  background-color: #323232;
+}
 
 	a:link {
 		color: #FFCC00;
@@ -52,225 +99,139 @@
 	}
 
 	a:active {
-		color: #FFFFFF;
+		color: #FFCC00;
 		text-decoration: underline;
 		text-shadow: 0 0 10px #FF6699;
 	}
+	
+	.icon-bar {
+  text-align: center;
+  }
 
-	.category {
-		text-align: center;
-	}
-	.category-title {
-		color: #FF6699 !important;
-		font-size: 25px;
-		font-weight: bold;
-		margin: 32px 0 0 0;
-	}
-	.category > ul {
-		margin: 0;
-		padding-inline-start: 0;
-	}
-	.website {
-		list-style-type: none;
-		margin: 2px 0 4px 0;
-	}
-	.website-title {
-		font-size: 15px;
-	}
-	.website-properties {
-		font-size: 10px
-	}
-	.website-description {
-		font-size: 13px;
-	}
-	.hide-Button {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		font-size: 12px;
-		border-radius: 12px;
-		color: #000000;
-		border: 2px solid #000000;
-		background-color: #FFCC00;
-		text-align: center;
-		font-weight: bold;
-		opacity: 0.8;
-	}
-	.hide-Button:hover {
-		background-color: #FFE786;
-		color: #000000;
-	}
+.icon-bar a:hover {
+  -webkit-filter: brightness(125%);
+  filter: brightness(125%);
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.foot {
+  background-color: #3c3c3c;
+}
+
+.background {
+    height: 100px;
+    width: 50%;
+    background: url(img) no-repeat top center;
+	margin-left: 1%;
+}
+
+.bannersmoll {
+ height: auto;
+ max-width: 100%;
+}
+
+.description {
+	color: #ffeea7;
+}
+
 	</style>
 
-	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-	<Script>
-		function hideDiv (whichDiv) {
-			document.getElementById(whichDiv + " Div").style.display = "none";
-			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "showDiv('" + whichDiv + "')");
-			document.getElementById(whichDiv + " Div Button").innerHTML = "Show &#xbb;"
-		}
-		function showDiv(whichDiv) {
-			document.getElementById(whichDiv + " Div").style.removeProperty("display");
-			document.getElementById(whichDiv + " Div Button").setAttribute("onclick", "hideDiv('" + whichDiv + "')");
-			document.getElementById(whichDiv + " Div Button").innerHTML = "Hide &#xab;"
-		}
-		function hideAll () {
-			app.categories.forEach(element => {
-				document.getElementById(element.title + " Div").style.display = "none";
-				document.getElementById(element.title + " Div Button").setAttribute("onclick", "showDiv('" + element.title + "')");
-				document.getElementById(element.title + " Div Button").innerHTML = "Show &#xbb;"
-			})
-			document.getElementById("HideAllButton").setAttribute("onclick", "showAll()");
-			document.getElementById("HideAllButton").innerHTML = "Show All Categories &#xbb;"
-		}
-		function showAll () {
-			app.categories.forEach(element => {
-				document.getElementById(element.title + " Div").style.removeProperty("display");
-				document.getElementById(element.title + " Div Button").setAttribute("onclick", "hideDiv('" + element.title + "')");
-				document.getElementById(element.title + " Div Button").innerHTML = "Hide &#xab;"
-			})
-			document.getElementById("HideAllButton").setAttribute("onclick", "hideAll()");
-			document.getElementById("HideAllButton").innerHTML = "Hide All Categories &#xab;"
-		}
-	</Script>
 </head>
 
-<body>
-	<div id="app">
-		<!-- Header -->
-		<h1 style="font-size: 15px; text-align: center;">
+<body class="Site">
+	<header>
+		
+	
+		<div class="header">
+			<h1 style="font-size: 15px; text-align: center;">
 			<a href="index.html">
-				<img src="./image/banner.png" alt="SpendYourDogecoins">
+			<img class="bannersmoll" src="./image/banner.png" alt="SpendYourDogecoins">
 			</a>
-		</h1>
-
+		
 		<!-- Navigation -->
-		<h2 style="font-size: 18px; text-align: center;">
-			<a href="index.html">Home</a> -
-			<a href="changelog.html">Changelog</a> -
-			<a href="about.html">FAQ</a> -
-			<a href="partners.html">Other Doge Stuff</a> -
-			<a href="graphics.html">Graphics</a> -
-			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank">Email</a> -
-			<a href="https://twitter.com/SpendYourDoge" target="_blank">Twitter</a>
-		</h2>
+		<ul>
+			<li><a class="active" href="index.html" style="text-decoration: none">Home</a></li>
+			<li><a href="directory.html" style="text-decoration: none">Directory</a></li>
+			<li><a href="changelog.html" style="text-decoration: none">Changelog</a></li>
+			<li><a href="about.html" style="text-decoration: none">About</a></li>
+			<li><a href="partners.html" style="text-decoration: none">Other Doge Stuff</a></li>
+		</ul>
+		
+		</h1>
+		</div>
+	</header>
 
+	<main class="Site-content">
+	<div id="app">
+		
+		
+		<!-- Description -->
+		<h4 style="font-size: 34px; text-align: center; text-decoration: underline;"><b>SpendYourDogecoins.cf</b></h4>
+		<div class="description" style="font-size: 20px; text-align: center;">
+			<b>The #1 Dogecoin Shop <a href="directory.html"><u>Directory</u></a>.<br>
+			Listing Shops and Charities that accept Dogecoin as payment option or for donations.<br>
+			For more information check the <a href="about.html"><u>About</u></a> section.
+			<br><br>
+			Do Only Good Everyday</b>
+		</div>
+		
 		<!-- Changelog -->
-		<h4 style="font-size: 11px; text-align: center; text-decoration: underline;">
+		<h4 style="font-size: 16px; text-align: center; text-decoration: none;">
 			<a href="changelog.html">
-				(Last time updated/checked: 08/17/2021)<br>
-				Total stores currently listed: {{ storeCount }}
+				<br>
+				<i>(Last time updated: 08/17/2021)</i><br>
+				<i>Total stores currently listed: 467</i>
 			</a>
 		</h4>
-
-		<!-- Hide All Button-->
-		<button class="hide-Button" onclick="hideAll()" id="HideAllButton">Hide All Categories &#xab;</button>
-
-		<!-- Spotlight -->
-		<div class="category">
-			<h3 class="category-title">
-				~ ~ ~ Spotlight ~ ~ ~
-			</h3>
-
-			<a href="https://www.dogedealz.com/" target="_blank"><b>DogeDealz</b></a>
-			<br>
-			<a href="https://www.dogedealz.com/" target="_blank"><img src="./image/dogedealz.png" alt="Dogedealz.com"></a>
-			<br>
-			Dogecoin Marketplace
-
-			<br>
-			<br>
-
-			<a href="https://www.bitrefill.com/buy/?code=GV7hU5BE" target="_blank"><b>Bitrefill</b></a>
-			<br>
-			<a href="https://www.bitrefill.com/buy/?code=GV7hU5BE" target="_blank"><img src="./image/bitrefill.png" alt="bitrefill.com"></a>
-			<br>
-			3000+ Worldwide Gift Cards including Walmart, Amazon, Apple, Steam, eBay, Uber and many more
-		</div>
-
-		<!-- Categories -->
-		<div
-			v-for="category in categories"
-			:id="category.title"
-			class="category"
-		>
-			<!-- Title -->
-			<a :href="'#' + category.title">
-				<h3 class="category-title">
-					~ ~ ~ {{ category.title }} ~ ~ ~
-				</h3>
-			</a>
-
-			<!-- Hide Category Button-->
-			<button class="hide-Button" :onclick="'hideDiv(&quot;' + category.title + '&quot;)'" :id="category.title + ' Div Button'">Hide &#xab;</button>
-
-			<!-- Site links -->
-			<ul :id="category.title + ' Div'">
-				<li class="website" v-for="entry in category.entries">
-					<a
-						:href="entry.href"
-						target="_blank"
-						:onClick="entry.restricted ? `return confirm('Please confirm that you are at least 18 years old before visiting this store')` : ''"
-					>
-						<b class="website-title">{{ entry.name }}</b>
-						<span class="website-properties">
-							({{ [entry.location, entry.method].filter(x => !!x).join(' - ') }})
-						</span>
-						<br>
-						<i class="website-description">{{ entry.description }}</i>
-					</a>
-				</li>
-			</ul>
-		</div>
-
 		<br>
 		<br>
-
-		<center><b>Disclaimer:</b></center>
-		<h4 style="font-size: 11px; text-align: center;">
-			All links are provided with the best of my knowledge. <br>Please make sure to check the shops listed here
-			yourself again, before spending your Dogecoins there. <br>In no way should the admin of this website be
-			responsible for any fraudulently activities from any listed shop.
-		</h4>
-
-		<h5 style="font-size: 9px; text-align: center;">
-			<a href="https://www.reddit.com/user/DimiFW/"><u>/u/DimiFW</u></a>
-			<br>
-			Donate: D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN
-		</h5>
+	
+		
 	</div>
+	</main>
+	
+	<div class="background">
+	<a href="https://www.dogecoin.com" target="_blank"><img src="./image/doge.png" height="100" width="100" onmouseover="this.src='./image/dogewow.png'" onmouseout="this.src='./image/doge.png'"></a>
+	</div>
+	
+	<footer class="foot">
+	
+	<!-- Social Media Buttons -->
+	<br>
+		<div class="icon-bar">
+			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank"><img src="./image/icons/email.png" alt="Email"></a>
+			<a href="https://twitter.com/SpendYourDoge" target="_blank"><img src="./image/icons/twitter.png" alt="Twitter"></a>
+			<a href="https://www.instagram.com/spendyourdogecoins/" target="_blank"><img src="./image/icons/instagram.png" alt="Instagram"></a>
+		</div>
+	
+			<div style="font-size: 13px; text-align: center;">
+			<span>&copy;</span> 2021 SpendYourDogecoins
+			<br>
+			Created by <a href="https://www.twitter.com/DimiFW/"><u>DimiFW</u></a>
+			<br><br>
+			Donate:
+			<br>D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN
+		</div>
 
-	<h5 style="text-align: center;">
+<div style="text-align: center; display:inline-block; float:right; position:relative; right: 5px; bottom: 50px;">
+		<a href="graphics.html" style="text-align: center;"><span>&#8226;</span><u><b>Banners</b></u><span>&#8226;</span></a>
+	</div>		
+		<br>
+		<div style="text-align: center;">
 		<script src="https://www.w3counter.com/tracker.js?id=136549"></script>
-	</h5>
-
-	<script>
-	const app = new Vue({
-		el: '#app',
-		data: {
-			categories: [],
-		},
-		computed: {
-			storeCount() {
-				let count = 0
-				for (const category of this.categories) {
-					for (const entry of category.entries) {
-						count++
-					}
-				}
-				return count
-			}
-		},
-		async created() {
-			this.categories = await fetch('./data.json')
-				.then(response => response.json())
-		},
-		async updated() {
-			this.$nextTick(function () {
-				if (location.hash) location.href = location.hash;
-			})
-		}
-	})
-	</script>
+		<br><br>
+	</div>
+		
+</footer>
 </body>
+
 </html>

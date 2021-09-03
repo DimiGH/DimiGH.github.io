@@ -1,83 +1,210 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+	<!-- COMMON TAGS -->
+	<meta charset="utf-8">
+	<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
 
-<!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
+	<!-- Search Engine -->
+	<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="keywords" content="Doge,Dogecoin,Shops,Stores,Pay,List,Directory" />
+	<meta name="author" content="DimiFW" />
+	<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
 
-<!-- Search Engine -->
-<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-<meta name="keywords" content="Doge,Dogecoin,Shops,Pay,List,Directory">
-<meta name="author" content="DimiFW">
-<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="SpendYourDogecoins.cf" />
+	<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+
+	<!-- for Twitter -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="https://www.spendyourdogecoins.cf" />
+	<meta name="twitter:title" content="SpendYourDogecoins" />
+	<meta name="twitter:description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="twitter:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="twitter:site" content="@SpendYourDoge" />
+	<meta name="twitter:creator" content="@DimiFW" />
+
+	<link rel="icon" href="./image/favicon.ico" />
+
+	<style>
+	* {
+		box-sizing: border-box;
+	}
 	
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="SpendYourDogecoins.cf">
-<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-
-	
-	<link rel="icon" href="/image/favicon.ico">
-
-    <style>
-
-
-        body {
-            font-family: 'Comic Sans MS', Verdana, sans-serif;
-            color: #FFCC00;
-            background-color: #323232;
-        }
-
-        a:link {
-            color: #FFCC00;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #FFCC00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #FFCC00;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-        }
-
-        a:active {
-            color: #FFFFFF;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-
+	body {
+		font-family: "Doge Sans", "Comic Sans MS", Verdana, sans-serif;
+		color: #FFCC00;
+		background-color: #323232;
+		margin: 0;
 	}
 
-    </style>
+	.header {
+		background-color: #3c3c3c;
+		padding-top: 10px;
+		padding-bottom: 1px;
+		text-align: center;
+	}
+
+	ul {
+     list-style-type: none;
+  margin: auto;
+  padding: 0;
+  height: auto;
+  max-width: 440px;
+  overflow: hidden;
+  background-color: #252525;
+}
+
+li {
+  float: left;
+  border-right:1px solid #494949;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #323232;
+}
+
+.active {
+  background-color: #323232;
+color: #FFCC00 !important;  
+}
+
+.menulinks {
+color: #FFCC00 !important;
+text-decoration: none;
+}
+
+	a:link {
+		color: #ffeea7;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: #ffeea7;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #ffeea7;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
+
+	a:active {
+		color: #ffeea7;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
+		
+	.icon-bar {
+  text-align: center;
+  }
+
+.icon-bar a:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(125%);
+  filter: brightness(125%);
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.foot {
+  background-color: #3c3c3c;
+}
+
+.background {
+    height: 100px;
+    width: 50%;
+    background: url(img) no-repeat top center;
+	margin-left: 1%;
+}
+
+.bannersmoll {
+	height: auto;
+	max-width: 100%;
+}
+
+.box {
+	padding: 10px;
+	padding-bottom: 1px;
+	background-color: #2b2b2b;
+}
+
+.Title {
+	padding-bottom: 10px;
+}
+
+.description {
+	font-size: 14px;
+	color: #ffeea7;
+}
+
+	</style>
 
 </head>
 
-<body>
+<body class="Site">
+	<header>
+			
+		<div class="header">
+			<h1 style="font-size: 15px; text-align: center;">
+			<a href="index.html">
+			<img class="bannersmoll" src="./image/banner.png" alt="SpendYourDogecoins">
+			</a>
+		
+		<!-- Navigation -->
+		<ul>
+			<li><a class="menulinks" href="index.html" style="text-decoration: none">Home</a></li>
+			<li><a class="menulinks" href="directory.html" style="text-decoration: none">Directory</a></li>
+			<li><a class="active" href="changelog.html" style="text-decoration: none">Changelog</a></li>
+			<li><a class="menulinks" href="about.html" style="text-decoration: none">About</a></li>
+			<li><a class="menulinks" href="partners.html" style="text-decoration: none">Other Doge Stuff</a></li>
+		</ul>
+		
+		</h1>
+		</div>
+	</header>
 
-    <h1 style="font-size: 15px; text-align: center;"><a href="index.html"><img src="/image/banner.png" alt="SpendYourDogecoins"><br></a></h1>
-    
-    <h2 style="font-size: 18px; text-align: center;"><a href="index.html">Home</a> - <a href="changelog.html">Changelog</a> - <a href="about.html">FAQ</a> - <a href="partners.html">Other Doge Stuff</a> - <a href="graphics.html">Graphics</a> - <a href="mailto:spendyourdogecoins@protonmail.com" target=”_blank”>Email</a> - <a href="https://twitter.com/SpendYourDoge" target=”_blank”>Twitter</a>
-	
-    <h4 style="font-size: 11px; text-align: center; text-decoration: underline;"><a href="changelog.html">(Last time updated/checked: 08/17/2021)<br>Total stores currently listed: 467</a></h1>	
-
-    <h3 style="font-size: 25px; color: #FF6699; text-align: center;">~ ~ ~ Changelog ~ ~ ~</h3>
+	<main class="Site-content">
+    <h3 style="font-size: 25px; color: #FF6699; text-align: center;"> Changelog </h3>
 
 	<div style="font-size: 15px; width: 50%; text-align: center; margin:0 auto;">
-	<u><b>08/17/2021</b></u><br> - Added <a href="https://www.avonvalley.co.uk" target=”_blank”><b><u>Avon Valley</b></u></a> , <a href="https://www.bc24.pl/en/" target=”_blank”><b><u>BC24</b></u></a> and <a href="https://easyskinz.com" target=”_blank”><b><u>Easyskinz</b></u></a> to misc category
+	<div style="display: inline-block; text-align: left;">
+	<u><b>08/17/2021</b></u><br> 
+	<div class="description">- Added <a href="https://www.avonvalley.co.uk" target=”_blank”><b><u>Avon Valley</b></u></a> , <a href="https://www.bc24.pl/en/" target=”_blank”><b><u>BC24</b></u></a> and <a href="https://easyskinz.com" target=”_blank”><b><u>Easyskinz</b></u></a> to misc category
 	<br>
 	- Added <a href="https://civviesapparel.com" target=”_blank”><b><u>Civvies Apparel</b></u></a> , <a href="https://dogegear.shop" target=”_blank”><b><u>DogeGear</b></u></a> and <a href="https://mtmshoes.com/" target=”_blank”><b><u>MTM Shoes</b></u></a> to clothing category
 	<br>
 	- Removed "Alive & More" , "Doge Wares" , "The Profound Store" , "To The Moon Products" and "TormentBox" which all seem offline
 	<br>
 	<br>
-	<u><b>08/08/2021</b></u><br> - Added <a href="https://www.notblowingsmoke.com" target=”_blank”><b><u>Not Blowing Smoke</b></u></a> to smoking category
+	</div>
+	<u><b>08/08/2021</b></u><br> 
+	<div class="description">- Added <a href="https://www.notblowingsmoke.com" target=”_blank”><b><u>Not Blowing Smoke</b></u></a> to smoking category
 	<br>
 	- Added <a href="https://happyfamilyclothing.net" target=”_blank”><b><u>Happy Family Clothing</b></u></a> to clothing category
 	<br>
@@ -86,22 +213,30 @@
 	- Added <a href="https://edckanda.com" target=”_blank”><b><u>EDC Keychains</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>07/29/2021</b></u><br> - Added <a href="https://supporters.eff.org/donate/" target=”_blank”><b><u>Electronic Frontier Foundation</b></u></a> , <a href="https://freopp.org/donating-to-freopp-aea8cc04f074" target=”_blank”><b><u>FREOPP</b></u></a> , <a href="https://www.gtf.gatech.edu/give-with-crypto/" target=”_blank”><b><u>Georgia Tech Foundation</b></u></a> and <a href="https://donate.torproject.org/cryptocurrency/" target=”_blank”><b><u>Tor Project</b></u></a> to donating category
+	</div>
+	<u><b>07/29/2021</b></u><br> 
+	<div class="description">- Added <a href="https://supporters.eff.org/donate/" target=”_blank”><b><u>Electronic Frontier Foundation</b></u></a> , <a href="https://freopp.org/donating-to-freopp-aea8cc04f074" target=”_blank”><b><u>FREOPP</b></u></a> , <a href="https://www.gtf.gatech.edu/give-with-crypto/" target=”_blank”><b><u>Georgia Tech Foundation</b></u></a> and <a href="https://donate.torproject.org/cryptocurrency/" target=”_blank”><b><u>Tor Project</b></u></a> to donating category
 	<br>
 	- Removed "DogeToMars" , "FENLAND Work Wear" and "Ninetees Kid" which all seem offline
 	<br>
 	<br>
-	<u><b>07/26/2021</b></u><br> - Added <a href="https://www.afutureforvets.org" target=”_blank”><b><u>A Future For Veterans Foundation</b></u></a> , <a href="https://www.bonneylakefoodbank.org/" target=”_blank”><b><u>Bonney Lake Food Bank</b></u></a> and <a href="https://www.balletnorth.com/" target=”_blank”><b><u>Ballet North</b></u></a> to donating category
+	</div>
+	<u><b>07/26/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.afutureforvets.org" target=”_blank”><b><u>A Future For Veterans Foundation</b></u></a> , <a href="https://www.bonneylakefoodbank.org/" target=”_blank”><b><u>Bonney Lake Food Bank</b></u></a> and <a href="https://www.balletnorth.com/" target=”_blank”><b><u>Ballet North</b></u></a> to donating category
 	<br>
 	- Added <a href="https://unicorngrowbag.com" target=”_blank”><b><u>UnicornBags</b></u></a> to food category
 	<br>
 	<br>
-	<u><b>07/25/2021</b></u><br> - Added <a href="https://bobject.net/" target=”_blank”><b><u>Bobject Clothing</b></u></a> and <a href="https://lolaluna-lingerie.com/" target=”_blank”><b><u>Lola Luna Lingerie</b></u></a> to clothing category
+	</div>
+	<u><b>07/25/2021</b></u><br>
+	<div class="description">- Added <a href="https://bobject.net/" target=”_blank”><b><u>Bobject Clothing</b></u></a> and <a href="https://lolaluna-lingerie.com/" target=”_blank”><b><u>Lola Luna Lingerie</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://www.archmission.org/donate" target=”_blank”><b><u>Arch Mission</b></u></a> , <a href="https://believeintomorrow.org/crypto/" target=”_blank”><b><u>Believe In Tomorrow Children's Foundation</b></u></a> , <a href="https://existence.org/donating/" target=”_blank”><b><u>BERI</b></u></a> , <a href="https://www.every.org/donate-crypto" target=”_blank”><b><u>every.org</b></u></a> , <a href="https://www.minetexas.com/" target=”_blank”><b><u>MineTexas</b></u></a> , <a href="https://www.protechos.org/" target=”_blank”><b><u>ProTechos</b></u></a> , <a href="https://quickfolders.org/donate.html" target=”_blank”><b><u>Quickfolders</b></u></a> , <a href="https://stayhappy.org" target=”_blank”><b><u>Stay Happy</b></u></a> and <a href="https://studentsforliberty.org/donate/" target=”_blank”><b><u>Students For Liberty</b></u></a> to donating category
 	<br>
 	<br>
-	<u><b>07/22/2021</b></u><br> - Added <a href="https://commerce.coinbase.com/" target=”_blank”><b><u>Coinbase Commerce</b></u></a> to dogecoin payment providers category
+	</div>
+	<u><b>07/22/2021</b></u><br>
+	<div class="description">- Added <a href="https://commerce.coinbase.com/" target=”_blank”><b><u>Coinbase Commerce</b></u></a> to dogecoin payment providers category
 	<br>
 	- Added <a href="https://www.gozatowels.com" target=”_blank”><b><u>Goza Towels</b></u></a> to beds category
 	<br>
@@ -116,12 +251,16 @@
 	- Added <a href="https://dazydog.com/" target=”_blank”><b><u>Dazy Dog</b></u></a> to pets category
 	<br>
 	<br>
-	<u><b>07/18/2021</b></u><br> - Added <a href="https://unitedwaymiami.org" target=”_blank”><b><u>United Way of Miami</b></u></a> to donating category
+	</div>
+	<u><b>07/18/2021</b></u><br>
+	<div class="description">- Added <a href="https://unitedwaymiami.org" target=”_blank”><b><u>United Way of Miami</b></u></a> to donating category
 	<br>
 	- Added <a href="https://hippie-pants.com" target=”_blank”><b><u>Hippie Pants</b></u></a> and <a href="https://www.thehouseofcoky.com" target=”_blank”><b><u>The House of COKY</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>07/12/2021</b></u><br> - Added <a href="https://shopretroreplay.com" target=”_blank”><b><u>Retro Replay</b></u></a> to gaming category
+	</div>
+	<u><b>07/12/2021</b></u><br>
+	<div class="description">- Added <a href="https://shopretroreplay.com" target=”_blank”><b><u>Retro Replay</b></u></a> to gaming category
 	<br>
 	- Added <a href="https://www.theprofoundstore.com" target=”_blank”><b><u>The Profound Store</b></u></a> to clothing category
 	<br>
@@ -130,7 +269,9 @@
 	- Removed "Boost Athletics" which seems offline
 	<br>
 	<br>
-	<u><b>06/30/2021</b></u><br> - Added <a href="https://incognet.io" target=”_blank”><b><u>IncogNet</b></u></a> and <a href="https://teklanhosting.co.uk" target=”_blank”><b><u>Teklan Hosting</b></u></a> to web hosting category
+	</div>
+	<u><b>06/30/2021</b></u><br>
+	<div class="description">- Added <a href="https://incognet.io" target=”_blank”><b><u>IncogNet</b></u></a> and <a href="https://teklanhosting.co.uk" target=”_blank”><b><u>Teklan Hosting</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://kyresong.art" target=”_blank”><b><u>Kyre Song</b></u></a> to art category
 	<br>
@@ -139,17 +280,23 @@
 	- Removed "LiquidVPN" which seems offline
 	<br>
 	<br>
-	<u><b>06/24/2021</b></u><br> - Added <a href="https://laschoolfordogs.com/online/" target=”_blank”><b><u>LA School For Dogs</b></u></a> to pets category
+	</div>
+	<u><b>06/24/2021</b></u><br>
+	<div class="description">- Added <a href="https://laschoolfordogs.com/online/" target=”_blank”><b><u>LA School For Dogs</b></u></a> to pets category
 	<br>
 	- Added <a href="https://btcwardrobe.com" target=”_blank”><b><u>The Bitcoin Wardrobe</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>06/22/2021</b></u><br> - Added <a href="https://jackof-artshop.com" target=”_blank”><b><u>Jack Of Art Shop</b></u></a> and <a href="https://www.royaldoge.com" target=”_blank”><b><u>Royal Doge</b></u></a> to merch category
+	</div>
+	<u><b>06/22/2021</b></u><br>
+	<div class="description">- Added <a href="https://jackof-artshop.com" target=”_blank”><b><u>Jack Of Art Shop</b></u></a> and <a href="https://www.royaldoge.com" target=”_blank”><b><u>Royal Doge</b></u></a> to merch category
 	<br>
 	- Removed "Good Doge" which seems offline
 	<br>
 	<br>
-	<u><b>06/10/2021</b></u><br> - Added <a href="https://abovewallstreet.com" target=”_blank”><b><u>AboveWallStreet</b></u></a> to merch category
+	</div>
+	<u><b>06/10/2021</b></u><br>
+	<div class="description">- Added <a href="https://abovewallstreet.com" target=”_blank”><b><u>AboveWallStreet</b></u></a> to merch category
 	<br>
 	- Added <a href="https://glamnetic.com" target=”_blank”><b><u>Glamnetic</b></u></a> and <a href="https://www.parfumpalais.com" target=”_blank”><b><u>Parfum Palais</b></u></a> to misc category
 	<br>
@@ -160,14 +307,18 @@
 	- Removed "Atlantis" , "Blockchain Coffee" , "Coffeur" , "Coinality" , "HSC Canada" , "Multycolored" , "SwirlPay" , "ThaiBaM" and "VPNSurf" which seem offline and "Inserrata" which doesn't sell anything anymore
 	<br>
 	<br>
-	<u><b>05/20/2021</b></u><br> - Added <a href="https://roastinghouse.co.uk" target=”_blank”><b><u>The Roasting House</b></u></a> to food category
+	</div>
+	<u><b>05/20/2021</b></u><br>
+	<div class="description">- Added <a href="https://roastinghouse.co.uk" target=”_blank”><b><u>The Roasting House</b></u></a> to food category
 	<br>
 	- Added <a href="https://www.jomashop.com" target=”_blank”><b><u>Jomashop</b></u></a> to watches category
 	<br>
 	- Added <a href="https://cryptokristalapparelco.com" target=”_blank”><b><u>Crypto Kristal Apparel Co</b></u></a> to merch category
 	<br>
 	<br>
-	<u><b>05/19/2021</b></u><br> - Added <a href="https://www.dogedealz.com" target=”_blank”><b><u>DogeDealz</b></u></a> to misc category
+	</div>
+	<u><b>05/19/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.dogedealz.com" target=”_blank”><b><u>DogeDealz</b></u></a> to misc category
 	<br>
 	- Added <a href="https://privacypros.io" target=”_blank”><b><u>Billfodl</b></u></a> to crypto hardware wallets category
 	<br>
@@ -176,17 +327,23 @@
 	- Added <a href="https://onestopdogeshop.com" target=”_blank”><b><u>OneStopDogeShop</b></u></a> to merch category
 	<br>
 	<br>
-	<u><b>05/18/2021</b></u><br> - Added <a href="https://www.cdkeys.com" target=”_blank”><b><u>CDKeys.com</b></u></a> to gaming category
+	</div>
+	<u><b>05/18/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.cdkeys.com" target=”_blank”><b><u>CDKeys.com</b></u></a> to gaming category
 	<br>
 	- Added <a href="https://topcryptee.com" target=”_blank”><b><u>TopCryptee</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://petscarecampus.com" target=”_blank”><b><u>PetsCareCampus</b></u></a> to pets category
 	<br>
 	<br>
-	<u><b>05/17/2021</b></u><br> - Added <a href="https://www.aircarealliance.org/donate-cryptocurrency/" target=”_blank”><b><u>Air Care Alliance</b></u></a> , <a href="https://www.evesplace.org/donate-cryptocurrency" target=”_blank”><b><u>Eve's Place</b></u></a> , <a href="https://www.hopeforpaws.org/donate_crypto/" target=”_blank”><b><u>Hope For Paws</b></u></a> and <a href="https://malala.org/donate/cryptocurrency" target=”_blank”><b><u>Malala Fund</b></u></a> to donating category
+	</div>
+	<u><b>05/17/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.aircarealliance.org/donate-cryptocurrency/" target=”_blank”><b><u>Air Care Alliance</b></u></a> , <a href="https://www.evesplace.org/donate-cryptocurrency" target=”_blank”><b><u>Eve's Place</b></u></a> , <a href="https://www.hopeforpaws.org/donate_crypto/" target=”_blank”><b><u>Hope For Paws</b></u></a> and <a href="https://malala.org/donate/cryptocurrency" target=”_blank”><b><u>Malala Fund</b></u></a> to donating category
 	<br>
 	<br>
-	<u><b>05/16/2021</b></u><br> - Added <a href="https://www.guyfieristore.com" target=”_blank”><b><u>Guy Fieri Store</b></u></a> to merch category
+	</div>
+	<u><b>05/16/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.guyfieristore.com" target=”_blank”><b><u>Guy Fieri Store</b></u></a> to merch category
 	<br>
 	- Added <a href="http://www.fenlandworkwear.co.uk" target=”_blank”><b><u>FENLAND WorkWear</b></u></a> to clothing category
 	<br>
@@ -197,12 +354,16 @@
 	- Created "Music" category
 	<br>
 	<br>
-	<u><b>05/11/2021</b></u><br> - Added <a href="https://www.curejm.org/donate/crypto.php" target=”_blank”><b><u>Cure JM Foundation</b></u></a> , <a href="https://www.facingourrisk.org/donate/cryptocurrency" target=”_blank”><b><u>FORCE</b></u></a> and <a href="https://www.surfrider.org/crypto" target=”_blank”><b><u>Surfrider Foundation</b></u></a> to donating category
+	</div>
+	<u><b>05/11/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.curejm.org/donate/crypto.php" target=”_blank”><b><u>Cure JM Foundation</b></u></a> , <a href="https://www.facingourrisk.org/donate/cryptocurrency" target=”_blank”><b><u>FORCE</b></u></a> and <a href="https://www.surfrider.org/crypto" target=”_blank”><b><u>Surfrider Foundation</b></u></a> to donating category
 	<br>
 	- Added <a href="https://cryptoburningshop.com/" target=”_blank”><b><u>Crypto Burning Shop</b></u></a> to merch category
 	<br>
 	<br>
-	<u><b>05/08/2021</b></u><br> - Added <a href="https://bethanykids.org/crypto/" target=”_blank”><b><u>Bethany Kids</b></u></a> , <a href="https://www.codetoinspire.org/donate-crypto/" target=”_blank”><b><u>Code To Inspire</b></u></a> , <a href="https://www.notesfornotes.org/donate" target=”_blank”><b><u>Notes For Notes</b></u></a> , <a href="https://www.oceandefenders.org/ways-to-give/donate-cryptocurrency.html" target=”_blank”><b><u>Ocean Defenders</b></u></a> , <a href="https://ugandanwaterproject.com/crypto/" target=”_blank”><b><u>Ugandan Water Project</b></u></a> , <a href="https://www.us4warriors.org/crypto4warriors" target=”_blank”><b><u>US4Warriors</b></u></a> and <a href="https://waterwellsforafrica.org/cryptocurrency/" target=”_blank”><b><u>Water Wells For Africa</b></u></a> to donating category
+	</div>
+	<u><b>05/08/2021</b></u><br>
+	<div class="description">- Added <a href="https://bethanykids.org/crypto/" target=”_blank”><b><u>Bethany Kids</b></u></a> , <a href="https://www.codetoinspire.org/donate-crypto/" target=”_blank”><b><u>Code To Inspire</b></u></a> , <a href="https://www.notesfornotes.org/donate" target=”_blank”><b><u>Notes For Notes</b></u></a> , <a href="https://www.oceandefenders.org/ways-to-give/donate-cryptocurrency.html" target=”_blank”><b><u>Ocean Defenders</b></u></a> , <a href="https://ugandanwaterproject.com/crypto/" target=”_blank”><b><u>Ugandan Water Project</b></u></a> , <a href="https://www.us4warriors.org/crypto4warriors" target=”_blank”><b><u>US4Warriors</b></u></a> and <a href="https://waterwellsforafrica.org/cryptocurrency/" target=”_blank”><b><u>Water Wells For Africa</b></u></a> to donating category
 	<br>
 	- Added <a href="https://smartsassery.rbf.wtf" target=”_blank”><b><u>Smart Sassery</b></u></a> to art category
 	<br>
@@ -213,7 +374,9 @@
 	- Added <a href="https://monsterhost.com" target=”_blank”><b><u>MonsterHost</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>05/07/2021</b></u><br> - Added <a href="https://www.cancer.org/involved/donate/more-ways-to-give/donate-cryptocurrency.html" target=”_blank”><b><u>American Cancer Society</b></u></a> , <a href="https://www.cryptokidscamp.org/donate" target=”_blank”><b><u>Crypto Kids Camp</b></u></a> , <a href="https://www.nokidhungry.org/crypto" target=”_blank”><b><u>NoKidHungry</b></u></a> , <a href="https://redapes.org/cryptorangutan/" target=”_blank”><b><u>Orangutan Outreach</b></u></a> , <a href="https://files.savethechildren.org/cryptocurrency-donation/" target=”_blank”><b><u>Save The Children</b></u></a> , <a href="https://www.self.org/donate/cryptocurrency/" target=”_blank”><b><u>SELF</b></u></a> , <a href="https://signal.org/donate/#cryptocurrency" target=”_blank”><b><u>Signal Technology Foundation</b></u></a> and <a href="https://transgenderlegal.org/support-us/donate-crypto/" target=”_blank”><b><u>Transgender Legal Defense & Education Fund</b></u></a> to donating category
+	</div>
+	<u><b>05/07/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.cancer.org/involved/donate/more-ways-to-give/donate-cryptocurrency.html" target=”_blank”><b><u>American Cancer Society</b></u></a> , <a href="https://www.cryptokidscamp.org/donate" target=”_blank”><b><u>Crypto Kids Camp</b></u></a> , <a href="https://www.nokidhungry.org/crypto" target=”_blank”><b><u>NoKidHungry</b></u></a> , <a href="https://redapes.org/cryptorangutan/" target=”_blank”><b><u>Orangutan Outreach</b></u></a> , <a href="https://files.savethechildren.org/cryptocurrency-donation/" target=”_blank”><b><u>Save The Children</b></u></a> , <a href="https://www.self.org/donate/cryptocurrency/" target=”_blank”><b><u>SELF</b></u></a> , <a href="https://signal.org/donate/#cryptocurrency" target=”_blank”><b><u>Signal Technology Foundation</b></u></a> and <a href="https://transgenderlegal.org/support-us/donate-crypto/" target=”_blank”><b><u>Transgender Legal Defense & Education Fund</b></u></a> to donating category
 	<br>
 	- Added <a href="https://www.truefacet.com" target=”_blank”><b><u>TrueFacet</b></u></a> to jewelry category
 	<br>
@@ -224,7 +387,9 @@
 	- Added <a href="https://onestopcase.com" target=”_blank”><b><u>One Stop Case</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>05/06/2021</b></u><br> - Added <a href="https://btcpayserver.org/" target=”_blank”><b><u>BTCPay</b></u></a> , <a href="https://cryptoprocessing.com/" target=”_blank”><b><u>Cryptoprocessing.com</b></u></a> , <a href="https://www.cryptowoo.com/" target=”_blank”><b><u>CryptoWoo.com</b></u></a> , <a href="https://mycryptocheckout.com/" target=”_blank”><b><u>MyCryptoCheckout.com</b></u></a> and <a href="https://pawcommerce.com/" target=”_blank”><b><u>PawCommerce.com</b></u></a> to dogecoin payment providers category
+	</div>
+	<u><b>05/06/2021</b></u><br>
+	<div class="description">- Added <a href="https://btcpayserver.org/" target=”_blank”><b><u>BTCPay</b></u></a> , <a href="https://cryptoprocessing.com/" target=”_blank”><b><u>Cryptoprocessing.com</b></u></a> , <a href="https://www.cryptowoo.com/" target=”_blank”><b><u>CryptoWoo.com</b></u></a> , <a href="https://mycryptocheckout.com/" target=”_blank”><b><u>MyCryptoCheckout.com</b></u></a> and <a href="https://pawcommerce.com/" target=”_blank”><b><u>PawCommerce.com</b></u></a> to dogecoin payment providers category
 	<br>
 	- Changed the menu layout
 	<br>
@@ -247,24 +412,32 @@
 	- Removed "8BitDo" , "AlmightyBoost" , "AviarHost" , "Badfish Supply" , "BitStore" , "Boatsters" , "Bullion79" , "CryptoVerge" , "CryptoShopper" , "CypherMarket" , "DeepWebVPN" , "Delphin Imperial" , "GPS Tracking Made Easy" , "Greitai" , "Handtrucks2Go" , "Hostdens" , "Hosting Idol" , "KALEIDOO" , "Peername" , "PEPship" , "PureVPN" , "Roche's Chemist" , "Royani" , "SaferVPN" , "Sakama" , "SugarTrends" , "Teecetera" , "Vape Crypto" , "Vapour Depot" and "Varle.lt" which all removed Crypto/Dogecoin as a payment option
 	<br>
 	<br>
-	<u><b>04/26/2021</b></u><br> - Added <a href="https://www.woofo.nz/" target=”_blank”><b><u>Woofo Empawrium</b></u></a> to pets category
+	</div>
+	<u><b>04/26/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.woofo.nz/" target=”_blank”><b><u>Woofo Empawrium</b></u></a> to pets category
 	<br>
 	- Added <a href="https://www.stakebox.org" target=”_blank”><b><u>StakeBox</b></u></a> to tech stores category
 	<br>
 	- Added <a href="https://coinstop.io" target=”_blank”><b><u>Coinstop.io</b></u></a> to crypto hardware wallets category
 	<br>
 	<br>
-	<u><b>04/25/2021</b></u><br> - Added <a href="https://bitcoingiftcards.com.au" target=”_blank”><b><u>BitcoinGiftcards</b></u></a> to gift cards category
+	</div>
+	<u><b>04/25/2021</b></u><br>
+	<div class="description">- Added <a href="https://bitcoingiftcards.com.au" target=”_blank”><b><u>BitcoinGiftcards</b></u></a> to gift cards category
 	<br>
 	- Added <a href="https://luxhosting.lu" target=”_blank”><b><u>LuxHosting</b></u></a> and <a href="https://www.superbytehosting.com" target=”_blank”><b><u>Super Byte Hosting</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>04/22/2021</b></u><br> - Added <a href="https://rocketsshop.com" target=”_blank”><b><u>Houston Rockets Shop</b></u></a> to merch category
+	</div>
+	<u><b>04/22/2021</b></u><br>
+	<div class="description">- Added <a href="https://rocketsshop.com" target=”_blank”><b><u>Houston Rockets Shop</b></u></a> to merch category
 	<br>
 	- Added <a href="https://bitvape.com.au" target=”_blank”><b><u>BitVape</b></u></a> and <a href="https://www.drdabber.com" target=”_blank”><b><u>Dr. Dabber</b></u></a> to smoking category
 	<br>
 	<br>
-	<u><b>04/20/2021</b></u><br> - Added <a href="https://www.amiibronfc.com" target=”_blank”><b><u>AmiiBro NFC</b></u></a> and <a href="https://www.accountwarehouse.com" target=”_blank”><b><u>Account Warehouse</b></u></a> to gaming category
+	</div>
+	<u><b>04/20/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.amiibronfc.com" target=”_blank”><b><u>AmiiBro NFC</b></u></a> and <a href="https://www.accountwarehouse.com" target=”_blank”><b><u>Account Warehouse</b></u></a> to gaming category
 	<br>
 	- Added <a href="https://shop.theaudl.com" target=”_blank”><b><u>AUDL Store</b></u></a> to merch category
 	<br>
@@ -273,7 +446,9 @@
 	- Removed "DogeWow" which has an expired security certificate, "DS Tec" & "Transflower" which seem offline and "SaffronStore" which doesn't accept crypto anymore
 	<br>
 	<br>
-	<u><b>04/18/2021</b></u><br> - Added <a href="https://kawaiicrypto.com/" target=”_blank”><b><u>KawaiiCrypto</b></u></a> back to misc category
+	</div>
+	<u><b>04/18/2021</b></u><br>
+	<div class="description">- Added <a href="https://kawaiicrypto.com/" target=”_blank”><b><u>KawaiiCrypto</b></u></a> back to misc category
 	<br>
 	- Added <a href="https://www.cozy.sg/" target=”_blank”><b><u>Cozy Handmade</b></u></a> to watches category
 	<br>
@@ -282,37 +457,51 @@
 	- Removed "CoinOK" which is offline
 	<br>
 	<br>
-	<u><b>04/16/2021</b></u><br> - Added <a href="https://popartily.com" target=”_blank”><b><u>PopArtily</b></u></a> to art category
+	</div>
+	<u><b>04/16/2021</b></u><br>
+	<div class="description">- Added <a href="https://popartily.com" target=”_blank”><b><u>PopArtily</b></u></a> to art category
 	<br>
 	- Created "Art" category
 	<br>
 	- Removed "Skinport" which doesn't accept crypto anymore
 	<br>
 	<br>
-	<u><b>04/14/2021</b></u><br> - Added <a href="https://merch.springrates.com" target=”_blank”><b><u>Springrates Merch</b></u></a> to merch category
+	</div>
+	<u><b>04/14/2021</b></u><br>
+	<div class="description">- Added <a href="https://merch.springrates.com" target=”_blank”><b><u>Springrates Merch</b></u></a> to merch category
 	<br>
 	<br>
-	<u><b>04/13/2021</b></u><br> - Added <a href="https://vpnanon.net" target=”_blank”><b><u>VPNAnon</b></u></a> to vpn category
+	</div>
+	<u><b>04/13/2021</b></u><br>
+	<div class="description">- Added <a href="https://vpnanon.net" target=”_blank”><b><u>VPNAnon</b></u></a> to vpn category
 	<br>
 	- Added <a href="https://mightymaxcart.com" target=”_blank”><b><u>Mighty Max Cart</b></u></a> to misc category
 	<br>
 	- Removed "EvoMiners" which seems offline and "JobGate" which changed their business model
 	<br>
 	<br>
-	<u><b>04/08/2021</b></u><br> - Added <a href="https://ruffi0.com/shop/" target=”_blank”><b><u>ruffi0</b></u></a> to merch category
+	</div>
+	<u><b>04/08/2021</b></u><br>
+	<div class="description">- Added <a href="https://ruffi0.com/shop/" target=”_blank”><b><u>ruffi0</b></u></a> to merch category
 	<br>
 	- Added "CryptoVerge" , "DrApis" and "Hodl2DMoon" back, which are all online again
 	<br>
 	- Removed "Crypto Cove" which seems offline
 	<br>
 	<br>
-	<u><b>04/04/2021</b></u><br> - Added <a href="https://www.1billionsubscribers.com" target=”_blank”><b><u>1BillionSubscribers</b></u></a> to misc category
+	</div>
+	<u><b>04/04/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.1billionsubscribers.com" target=”_blank”><b><u>1BillionSubscribers</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>04/02/2021</b></u><br> - Added <a href="https://coinremitter.com/" target=”_blank”><b><u>CoinRemitter.com</b></u></a> to dogecoin payment providers category
+	</div>
+	<u><b>04/02/2021</b></u><br>
+	<div class="description">- Added <a href="https://coinremitter.com/" target=”_blank”><b><u>CoinRemitter.com</b></u></a> to dogecoin payment providers category
 	<br>
 	<br>
-	<u><b>04/01/2021</b></u><br> - Added <a href="https://www.crayfishathiseafoods.com/shop" target=”_blank”><b><u>Henderson Inlet Crayfish</b></u></a> and <a href="https://www.la-boutique.ca" target=”_blank”><b><u>La-Boutique</b></u></a> to food category
+	</div>
+	<u><b>04/01/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.crayfishathiseafoods.com/shop" target=”_blank”><b><u>Henderson Inlet Crayfish</b></u></a> and <a href="https://www.la-boutique.ca" target=”_blank”><b><u>La-Boutique</b></u></a> to food category
 	<br>
 	- Added "CypherMarket" back to the list
 	<br>
@@ -321,43 +510,57 @@
 	- Removed "101Vape" which had to close because of US law changes
 	<br>
 	<br>
-	<u><b>03/28/2021</b></u><br> - Added <a href="https://alohatuners.com" target=”_blank”><b><u>Aloha Tuners</b></u></a> to misc category
+	</div>
+	<u><b>03/28/2021</b></u><br>
+	<div class="description">- Added <a href="https://alohatuners.com" target=”_blank”><b><u>Aloha Tuners</b></u></a> to misc category
 	<br>
 	- Added "The Skatepark Project" back to donating category
 	<br>
 	- Removed "Bitcou" which no longer accepts Dogecoin
 	<br>
 	<br>
-	<u><b>03/27/2021</b></u><br> - Added <a href="https://puppysnackers.com" target=”_blank”><b><u>PuppySnackers</b></u></a> to pets category
+	</div>
+	<u><b>03/27/2021</b></u><br>
+	<div class="description">- Added <a href="https://puppysnackers.com" target=”_blank”><b><u>PuppySnackers</b></u></a> to pets category
 	<br>	
 	- Added <a href="https://www.justbibs.com.au" target=”_blank”><b><u>Just BIBS</b></u></a> to misc category
 	<br>
 	- Added <a href="https://cryptocurrencycheckout.com" target=”_blank”><b><u>CryptocurrencyCheckout.com</b></u></a> to dogecoin payment providers category
 	<br>
 	<br>
-	<u><b>03/26/2021</b></u><br> - Added <a href="https://www.paylatertires.com/" target=”_blank”><b><u>Pay Later Tires</b></u></a> to automobile category	
+	</div>
+	<u><b>03/26/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.paylatertires.com/" target=”_blank”><b><u>Pay Later Tires</b></u></a> to automobile category	
 	<br>
 	- Added <a href="https://www.dogewares.co.uk" target=”_blank”><b><u>Doge Wares</b></u></a> and <a href="https://www.masksbysharon.com" target=”_blank”><b><u>Masks by Sharon</b></u></a> to clothing category	
 	<br>
 	<br>
-	<u><b>03/25/2021</b></u><br> - Added <a href="https://www.karamfoundation.org/pay-with-bitpay/" target=”_blank”><b><u>Karam Foundation</b></u></a> and <a href="https://www.landon.net/give/landonfund" target=”_blank”><b><u>Landon Fund</b></u></a> to donating category
+	</div>
+	<u><b>03/25/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.karamfoundation.org/pay-with-bitpay/" target=”_blank”><b><u>Karam Foundation</b></u></a> and <a href="https://www.landon.net/give/landonfund" target=”_blank”><b><u>Landon Fund</b></u></a> to donating category
 	<br>
 	- Added <a href="https://www.vantagevps.com" target=”_blank”><b><u>VantageVPS</b></u></a> to web hosting category
 	<br>
 	- Removed "XtremeSkins" which doesn't support Dogecoin payments anymore
 	<br>
 	<br>
-	<u><b>03/24/2021</b></u><br> - Added <a href="https://eurohoster.org" target=”_blank”><b><u>EuroHoster</b></u></a> , <a href="https://www.luhoster.com" target=”_blank”><b><u>LuHoster</b></u></a> and <a href="https://www.wdmsh.com" target=”_blank”><b><u>WDMSH</b></u></a> to web hosting category
+	</div>
+	<u><b>03/24/2021</b></u><br>
+	<div class="description">- Added <a href="https://eurohoster.org" target=”_blank”><b><u>EuroHoster</b></u></a> , <a href="https://www.luhoster.com" target=”_blank”><b><u>LuHoster</b></u></a> and <a href="https://www.wdmsh.com" target=”_blank”><b><u>WDMSH</b></u></a> to web hosting category
 	<br>
 	- Added <a href="http://www.poisonouspinups.com/store/" onClick="return confirm('Please confirm that you are at least 18 years old before visiting this store')" target=”_blank”><b><u>Poisonous Pinups</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>03/23/2021</b></u><br> - Added <a href="https://beehosting.pro" target=”_blank”><b><u>BeeHosting</b></u></a> , <a href="https://www.idfnv.com/en/" target=”_blank”><b><u>IDF Private Hosting</b></u></a> and <a href="https://scohostings.com" target=”_blank”><b><u>SCOHosting</b></u></a> to web hosting category
+	</div>
+	<u><b>03/23/2021</b></u><br>
+	<div class="description">- Added <a href="https://beehosting.pro" target=”_blank”><b><u>BeeHosting</b></u></a> , <a href="https://www.idfnv.com/en/" target=”_blank”><b><u>IDF Private Hosting</b></u></a> and <a href="https://scohostings.com" target=”_blank”><b><u>SCOHosting</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://www.jaykirby.com.au/" target=”_blank”><b><u>Jay Kirby</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>03/22/2021</b></u><br> - Added <a href="https://texastextracts.com" target=”_blank”><b><u>Texas T Extracts</b></u></a> to smoking category
+	</div>
+	<u><b>03/22/2021</b></u><br>
+	<div class="description">- Added <a href="https://texastextracts.com" target=”_blank”><b><u>Texas T Extracts</b></u></a> to smoking category
 	<br>
 	- Added <a href="https://www.petfinn.com" target=”_blank”><b><u>Finn</b></u></a> to pets category
 	<br>
@@ -366,7 +569,9 @@
 	- Created "Health Care" category
 	<br>
 	<br>
-	<u><b>03/21/2021</b></u><br> - Added <a href="https://cryptowardrobe.com/" target=”_blank”><b><u>CryptoWardrobe</b></u></a> and <a href="https://www.vanassibara.com" target=”_blank”><b><u>Diego Vanissabara</b></u></a> to clothing category
+	</div>
+	<u><b>03/21/2021</b></u><br>
+	<div class="description">- Added <a href="https://cryptowardrobe.com/" target=”_blank”><b><u>CryptoWardrobe</b></u></a> and <a href="https://www.vanassibara.com" target=”_blank”><b><u>Diego Vanissabara</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://project-o-concept.com/en/" target=”_blank”><b><u>Project O</b></u></a> to watches category
 	<br>
@@ -377,24 +582,32 @@
 	- Switched out the 2 sites in the spotlight section for the next few weeks again
 	<br>
 	<br>
-	<u><b>03/20/2021</b></u><br> - Added <a href="https://bytesized-hosting.com" target=”_blank”><b><u>Bytesized Hosting</b></u></a> , <a href="https://inceptionhosting.com" target=”_blank”><b><u>Inception Hosting</b></u></a> and <a href="https://inceptionhosting.com" target=”_blank”><b><u>ZamaHost</b></u></a> to web hosting category
+	</div>
+	<u><b>03/20/2021</b></u><br>
+	<div class="description">- Added <a href="https://bytesized-hosting.com" target=”_blank”><b><u>Bytesized Hosting</b></u></a> , <a href="https://inceptionhosting.com" target=”_blank”><b><u>Inception Hosting</b></u></a> and <a href="https://inceptionhosting.com" target=”_blank”><b><u>ZamaHost</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>03/19/2021</b></u><br> - Added <a href="https://www.onetail.org/dogecoin/" target=”_blank”><b><u>One Tail at a Time</b></u></a> to donating category
+	</div>
+	<u><b>03/19/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.onetail.org/dogecoin/" target=”_blank”><b><u>One Tail at a Time</b></u></a> to donating category
 	<br>
 	- Added <a href="https://dogetomars.com/collections/all" target=”_blank”><b><u>DogeToMars</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://trickmugs.com" target=”_blank”><b><u>Trick Mugs</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>03/18/2021</b></u><br> - Added <a href="https://proxied.network" target=”_blank”><b><u>Proxied Network</b></u></a> to vpn/proxy category
+	</div>
+	<u><b>03/18/2021</b></u><br>
+	<div class="description">- Added <a href="https://proxied.network" target=”_blank”><b><u>Proxied Network</b></u></a> to vpn/proxy category
 	<br>
 	- Added <a href="https://www.carrozzasurfboards.com" target=”_blank”><b><u>Carrozza Surfboards</b></u></a> and <a href="https://zenmarket.jp/en/" target=”_blank”><b><u>ZenMarket</b></u></a> to misc category
 	<br>
 	- Added <a href="https://aliveandmore.com" target=”_blank”><b><u>Alive & More</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>03/17/2021</b></u><br> - Added <a href="https://www.bestsleepcentre.com" target=”_blank”><b><u>Best Sleep Centre</b></u></a> , <a href="https://essentialsleepboutique.com" target=”_blank”><b><u>Essential Sleep</b></u></a> and <a href="https://www.putnams.co.uk" target=”_blank”><b><u>Putnams</b></u></a> to beds category
+	</div>
+	<u><b>03/17/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.bestsleepcentre.com" target=”_blank”><b><u>Best Sleep Centre</b></u></a> , <a href="https://essentialsleepboutique.com" target=”_blank”><b><u>Essential Sleep</b></u></a> and <a href="https://www.putnams.co.uk" target=”_blank”><b><u>Putnams</b></u></a> to beds category
 	<br>
 	- Added <a href="https://aliencarp.com" target=”_blank”><b><u>Alien Carp</b></u></a> and <a href="https://bonocler.com" target=”_blank”><b><u>Bonocler Eyewear</b></u></a> to clothing category
 	<br>
@@ -405,7 +618,9 @@
 	- Created "Beds" category
 	<br>
 	<br>
-	<u><b>03/16/2021</b></u><br> - Added <a href="https://www.jenshansen.com" target=”_blank”><b><u>Jens Hansen</b></u></a> and <a href="https://regentjewelers.net" target=”_blank”><b><u>Regent Jewelers</b></u></a> to jewelry category
+	</div>
+	<u><b>03/16/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.jenshansen.com" target=”_blank”><b><u>Jens Hansen</b></u></a> and <a href="https://regentjewelers.net" target=”_blank”><b><u>Regent Jewelers</b></u></a> to jewelry category
 	<br>
 	- Added <a href="https://www.cigarmanor.com" target=”_blank”><b><u>Cigar Manor</b></u></a> to smoking category
 	<br>
@@ -418,15 +633,21 @@
 	- Created "Watches" category
 	<br>
 	<br>
-	<u><b>03/15/2021</b></u><br> - Added <a href="https://akumuink.com" target=”_blank”><b><u>Akumu Ink</b></u></a> , <a href="https://www.culturekings.com.au" target=”_blank”><b><u>Culture Kings</b></u></a> , <a href="https://girlmeetsdress.com" target=”_blank”><b><u>Girl Meets Dress</b></u></a> , <a href="https://shop.storyv.com" target=”_blank”><b><u>Shop StoryV</b></u></a> , <a href="https://shopbeachwearonline.com/shop/" target=”_blank”><b><u>Siam Secrets Apparel</b></u></a> and <a href="https://www.thescarfboutique.com" target=”_blank”><b><u>The Scarf Boutique</b></u></a> to clothing category
+	</div>
+	<u><b>03/15/2021</b></u><br>
+	<div class="description">- Added <a href="https://akumuink.com" target=”_blank”><b><u>Akumu Ink</b></u></a> , <a href="https://www.culturekings.com.au" target=”_blank”><b><u>Culture Kings</b></u></a> , <a href="https://girlmeetsdress.com" target=”_blank”><b><u>Girl Meets Dress</b></u></a> , <a href="https://shop.storyv.com" target=”_blank”><b><u>Shop StoryV</b></u></a> , <a href="https://shopbeachwearonline.com/shop/" target=”_blank”><b><u>Siam Secrets Apparel</b></u></a> and <a href="https://www.thescarfboutique.com" target=”_blank”><b><u>The Scarf Boutique</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>03/14/2021</b></u><br> - Added <a href="https://cryptostorm.is" target=”_blank”><b><u>Cryptostorm</b></u></a> , <a href="https://www.liquidvpn.com" target=”_blank”><b><u>LiquidVPN</b></u></a> , <a href="https://vpn.ac" target=”_blank”><b><u>VPN Access</b></u></a> and <a href="https://vpnarea.com/front/home" target=”_blank”><b><u>VPN Area</b></u></a> to vpn category
+	</div>
+	<u><b>03/14/2021</b></u><br>
+	<div class="description">- Added <a href="https://cryptostorm.is" target=”_blank”><b><u>Cryptostorm</b></u></a> , <a href="https://www.liquidvpn.com" target=”_blank”><b><u>LiquidVPN</b></u></a> , <a href="https://vpn.ac" target=”_blank”><b><u>VPN Access</b></u></a> and <a href="https://vpnarea.com/front/home" target=”_blank”><b><u>VPN Area</b></u></a> to vpn category
 	<br>
 	- Added <a href="https://www.altushost.com" target=”_blank”><b><u>AltusHost</b></u></a> , <a href="https://glowhost.com" target=”_blank”><b><u>GlowHost</b></u></a> , <a href="https://www.hawkhost.com/" target=”_blank”><b><u>HawkHost</b></u></a> , <a href="https://www.hostingssi.com" target=”_blank”><b><u>Hosting SSi</b></u></a> , <a href="https://linevast.de" target=”_blank”><b><u>Linevast</b></u></a> and <a href="https://www.meanservers.com" target=”_blank”><b><u>Mean Servers</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>03/13/2021</b></u><br> - Added <a href="https://www.airbaltic.com/en-US/index" target=”_blank”><b><u>AirBaltic</b></u></a> and <a href="https://www.venicejets.com" target=”_blank”><b><u>VeniceJets</b></u></a> to traveling category
+	</div>
+	<u><b>03/13/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.airbaltic.com/en-US/index" target=”_blank”><b><u>AirBaltic</b></u></a> and <a href="https://www.venicejets.com" target=”_blank”><b><u>VeniceJets</b></u></a> to traveling category
 	<br>
 	- Added <a href="https://shop.daskeyboard.com" target=”_blank”><b><u>DasKeyboard</b></u></a> to tech category
 	<br>
@@ -437,10 +658,14 @@
 	- Removed "NinjaGameKeys" which is (temporarily?) closed
 	<br>
 	<br>
-	<u><b>03/12/2021</b></u><br> - Added <a href="https://www.le-vpn.com" target=”_blank”><b><u>LeVPN</b></u></a> , <a href="https://www.perfect-privacy.com/en/" target=”_blank”><b><u>Perfect Privacy</b></u></a> and <a href="https://www.slickvpn.com" target=”_blank”><b><u>SlickVPN</b></u></a> to vpn category
+	</div>
+	<u><b>03/12/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.le-vpn.com" target=”_blank”><b><u>LeVPN</b></u></a> , <a href="https://www.perfect-privacy.com/en/" target=”_blank”><b><u>Perfect Privacy</b></u></a> and <a href="https://www.slickvpn.com" target=”_blank”><b><u>SlickVPN</b></u></a> to vpn category
 	<br>
 	<br>
-	<u><b>03/11/2021</b></u><br> - Added <a href="https://bithost.io" target=”_blank”><b><u>Bithost.io</b></u></a> , <a href="https://www.geekshosted.com" target=”_blank”><b><u>GeeksHosted</b></u></a> and <a href="https://www.hosting24.com" target=”_blank”><b><u>Hosting24</b></u></a> to web hosting category
+	</div>
+	<u><b>03/11/2021</b></u><br>
+	<div class="description">- Added <a href="https://bithost.io" target=”_blank”><b><u>Bithost.io</b></u></a> , <a href="https://www.geekshosted.com" target=”_blank”><b><u>GeeksHosted</b></u></a> and <a href="https://www.hosting24.com" target=”_blank”><b><u>Hosting24</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://atlantis.icu" target=”_blank”><b><u>Atlantis</b></u></a> to misc category
 	<br>
@@ -451,12 +676,16 @@
 	- Went through the whole list and tried to give the descriptions a little bit more details.
 	<br>
 	<br>
-	<u><b>03/10/2021</b></u><br> - Added <a href="https://bulldogeofficial.wixsite.com/shop" target=”_blank”><b><u>Bulldoge Apparel</b></u></a> and <a href="https://hodl2dmoon.com" target=”_blank”><b><u>Hodl2DMoon</b></u></a> to merch category
+	</div>
+	<u><b>03/10/2021</b></u><br>
+	<div class="description">- Added <a href="https://bulldogeofficial.wixsite.com/shop" target=”_blank”><b><u>Bulldoge Apparel</b></u></a> and <a href="https://hodl2dmoon.com" target=”_blank”><b><u>Hodl2DMoon</b></u></a> to merch category
 	<br>
 	- Added clickable ID links to the categories. For example you can share https://www.spendyourdogecoins.cf/#Donating now and it will directly go to the Donating category.
 	<br>
 	<br>
-	<u><b>03/09/2021</b></u><br> - Added <a href="https://www.mpmsouvenir.com" target=”_blank”><b><u>MPMSouvenir</b></u></a> to misc category
+	</div>
+	<u><b>03/09/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.mpmsouvenir.com" target=”_blank”><b><u>MPMSouvenir</b></u></a> to misc category
 	<br>
 	- Added <a href="https://chewbysnacks.com/" target=”_blank”><b><u>Chewbysnacks</b></u></a> to pets category
 	<br>
@@ -465,7 +694,9 @@
 	- Removed "ImmunityProject" which removed the option to donate Dogecoin and "Great Find Collectibles" which is offline
 	<br>
 	<br>
-	<u><b>03/08/2021</b></u><br> - Added <a href="https://www.precizn.com" target=”_blank”><b><u>Precizn</b></u></a> and <a href="https://usastrong.io" target=”_blank”><b><u>USAStrong</b></u></a> to misc category
+	</div>
+	<u><b>03/08/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.precizn.com" target=”_blank”><b><u>Precizn</b></u></a> and <a href="https://usastrong.io" target=”_blank”><b><u>USAStrong</b></u></a> to misc category
 	<br>
 	- Added <a href="https://theyachtbreak.com" target=”_blank”><b><u>The Yacht Break</b></u></a> to traveling category
 	<br>
@@ -474,7 +705,9 @@
 	- Added <a href="https://mydogecoin.rocks" target=”_blank”><b><u>My Dogecoin Rocks</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>03/07/2021</b></u><br> - Added <a href="https://shop.safepal.io/" target=”_blank”><b><u>SafePal.io</b></u></a> to crypto hardware wallet category
+	</div>
+	<u><b>03/07/2021</b></u><br>
+	<div class="description">- Added <a href="https://shop.safepal.io/" target=”_blank”><b><u>SafePal.io</b></u></a> to crypto hardware wallet category
 	<br>
 	- Added <a href="https://nineteeskid.net" target=”_blank”><b><u>Ninetees Kids</b></u></a> and <a href="https://suchdogemart.com" target=”_blank”><b><u>Such Doge Mart</b></u></a> to merch category
 	<br>
@@ -487,7 +720,9 @@
 	- Created "Merch" category
 	<br>
 	<br>
-	<u><b>03/06/2021</b></u><br> - Added <a href="https://www.centohost.com/" target=”_blank”><b><u>Centohost</b></u></a> , <a href="https://www.gandi.net/en-US" target=”_blank”><b><u>Gandi</b></u></a> , <a href="https://hostkey.com" target=”_blank”><b><u>Hostkey</b></u></a> and <a href="https://www.namecheap.com" target=”_blank”><b><u>Namecheap</b></u></a> to web hosting category
+	</div>
+	<u><b>03/06/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.centohost.com/" target=”_blank”><b><u>Centohost</b></u></a> , <a href="https://www.gandi.net/en-US" target=”_blank”><b><u>Gandi</b></u></a> , <a href="https://hostkey.com" target=”_blank”><b><u>Hostkey</b></u></a> and <a href="https://www.namecheap.com" target=”_blank”><b><u>Namecheap</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://www.newegg.com" target=”_blank”><b><u>Newegg</b></u></a> , <a href="https://www.scan.co.uk" target=”_blank”><b><u>Scan UK</b></u></a> and <a href="https://www.webhallen.com" target=”_blank”><b><u>Webhallen</b></u></a> to tech category
 	<br>
@@ -516,37 +751,51 @@
 	- Removed "BitcoinLabels" which is offline
 	<br>
 	<br>
-	<u><b>03/05/2021</b></u><br> - Added <a href="https://hostiso.com" target=”_blank”><b><u>Hostiso</b></u></a> and <a href="https://www.maxko-hosting.com" target=”_blank”><b><u>Maxko Hosting</b></u></a> to web hosting category
+	</div>
+	<u><b>03/05/2021</b></u><br>
+	<div class="description">- Added <a href="https://hostiso.com" target=”_blank”><b><u>Hostiso</b></u></a> and <a href="https://www.maxko-hosting.com" target=”_blank”><b><u>Maxko Hosting</b></u></a> to web hosting category
 	<br>
 	- Removed "The FLYING RHINO MARKET" which is offline
 	<br>
 	<br>
-	<u><b>03/04/2021</b></u><br> - Added <a href="https://rainforestpartnership.org/donate/" target=”_blank”><b><u>Rainforest Partnership</b></u></a> to donating category
+	</div>
+	<u><b>03/04/2021</b></u><br>
+	<div class="description">- Added <a href="https://rainforestpartnership.org/donate/" target=”_blank”><b><u>Rainforest Partnership</b></u></a> to donating category
 	<br>
 	- Added <a href="https://www.hostzealot.com/" target=”_blank”><b><u>Hostzealot</b></u></a> and <a href="https://www.bacloud.com/en" target=”_blank”><b><u>Bacloud</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>03/03/2021</b></u><br> - Added <a href="https://web4africa.com" target=”_blank”><b><u>Web4Africa</b></u></a> and <a href="https://radwebhosting.com" target=”_blank”><b><u>RadWebHosting</b></u></a> to web hosting category
+	</div>
+	<u><b>03/03/2021</b></u><br>
+	<div class="description">- Added <a href="https://web4africa.com" target=”_blank”><b><u>Web4Africa</b></u></a> and <a href="https://radwebhosting.com" target=”_blank”><b><u>RadWebHosting</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>03/02/2021</b></u><br> - Added <a href="https://esports.x25.rs/shop/" target=”_blank”><b><u>x25 Esports</b></u></a> and <a href="https://www.blockchainstuff.nl" target=”_blank”><b><u>Blockchainstuff</b></u></a> to misc category
+	</div>
+	<u><b>03/02/2021</b></u><br>
+	<div class="description">- Added <a href="https://esports.x25.rs/shop/" target=”_blank”><b><u>x25 Esports</b></u></a> and <a href="https://www.blockchainstuff.nl" target=”_blank”><b><u>Blockchainstuff</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>03/01/2021</b></u><br> - Added <a href="https://anonine.com" target=”_blank”><b><u>Anonine</b></u></a> and <a href="https://frootvpn.com" target=”_blank”><b><u>FrootVPN</b></u></a> to vpn category
+	</div>
+	<u><b>03/01/2021</b></u><br>
+	<div class="description">- Added <a href="https://anonine.com" target=”_blank”><b><u>Anonine</b></u></a> and <a href="https://frootvpn.com" target=”_blank”><b><u>FrootVPN</b></u></a> to vpn category
 	<br>
 	- Changed "Partners" to "Other Doge stuff"
 	<br>
 	- Switched out the 2 spotlight websites for the next few weeks with 2 very much wow payment providers which can be a possible solution for you if you want to accept Dogecoin in your own store
 	<br>
 	<br>
-	<u><b>02/28/2021</b></u><br> - Added <a href="https://ginernet.com/en/" target=”_blank”><b><u>Ginernet</b></u></a> to web hosting category
+	</div>
+	<u><b>02/28/2021</b></u><br>
+	<div class="description">- Added <a href="https://ginernet.com/en/" target=”_blank”><b><u>Ginernet</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://vpntunnel.com" target=”_blank”><b><u>VPNTunnel</b></u></a> to vpn category
 	<br>
 	- Added <a href="https://mybrowseraddon.com" target=”_blank”><b><u>MyBrowserAddon</b></u></a> to donating category
 	<br>
 	<br>
-	<u><b>02/27/2021</b></u><br> - Added <a href="https://redditenhancementsuite.com/contribute/" target=”_blank”><b><u>Reddit Enhancement Suite</b></u></a> , <a href="https://rainforestfoundation.org/donate/cryptocurrency/" target=”_blank”><b><u>Rainforest Foundation</b></u></a> , <a href="https://kenneltocouch.org/pitbull-charity/" target=”_blank”><b><u>Kennel To Couch</b></u></a> and <a href="https://www.greenfieldcities.org/private-funding/" target=”_blank”><b><u>Greenfield Cities</b></u></a> to donating category
+	</div>
+	<u><b>02/27/2021</b></u><br>
+	<div class="description">- Added <a href="https://redditenhancementsuite.com/contribute/" target=”_blank”><b><u>Reddit Enhancement Suite</b></u></a> , <a href="https://rainforestfoundation.org/donate/cryptocurrency/" target=”_blank”><b><u>Rainforest Foundation</b></u></a> , <a href="https://kenneltocouch.org/pitbull-charity/" target=”_blank”><b><u>Kennel To Couch</b></u></a> and <a href="https://www.greenfieldcities.org/private-funding/" target=”_blank”><b><u>Greenfield Cities</b></u></a> to donating category
 	<br>
 	- Added <a href="https://bitcou.com/" target=”_blank”><b><u>Bitcou</b></u></a> to gift cards category
 	<br>
@@ -555,7 +804,9 @@
 	- Added <a href="https://greatfindcomics.com/" target=”_blank”><b><u>Great Find Collectibles</b></u></a> , <a href="https://sphinxgadgets.com" target=”_blank”><b><u>SphinxGadgets</b></u></a> and <a href="https://www.xtremeskins.co.uk" target=”_blank”><b><u>XtremeSkins</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>02/26/2021</b></u><br> - Added <a href="https://boostonlineshop.com" target=”_blank”><b><u>Boost Athletics</b></u></a> , <a href="https://www.dogecoinlist.com/" target=”_blank”><b><u>Dogecoinlist</b></u></a> , <a href="http://www.oceanking.com.au/" target=”_blank”><b><u>OceanKing</b></u></a> and <a href="https://glamcarat.com" target=”_blank”><b><u>Glamcarat</b></u></a> to misc category
+	</div>
+	<u><b>02/26/2021</b></u><br>
+	<div class="description">- Added <a href="https://boostonlineshop.com" target=”_blank”><b><u>Boost Athletics</b></u></a> , <a href="https://www.dogecoinlist.com/" target=”_blank”><b><u>Dogecoinlist</b></u></a> , <a href="http://www.oceanking.com.au/" target=”_blank”><b><u>OceanKing</b></u></a> and <a href="https://glamcarat.com" target=”_blank”><b><u>Glamcarat</b></u></a> to misc category
 	<br>
 	- Added <a href="https://www.cinfu.com/" target=”_blank”><b><u>Cinfu</b></u></a> to web hosting category
 	<br>
@@ -564,12 +815,16 @@
 	- Removed "KawaiiCrypto" which no longer accepts Dogecoin
 	<br>
 	<br>
-	<u><b>02/25/2021</b></u><br> - Added <a href="https://lbneon.com" target=”_blank”><b><u>Long Beach Neon</b></u></a> and <a href="https://teamjbhobbies.com" target=”_blank”><b><u>Team JB Hobbies</b></u></a> to misc category
+	</div>
+	<u><b>02/25/2021</b></u><br>
+	<div class="description">- Added <a href="https://lbneon.com" target=”_blank”><b><u>Long Beach Neon</b></u></a> and <a href="https://teamjbhobbies.com" target=”_blank”><b><u>Team JB Hobbies</b></u></a> to misc category
 	<br>
 	- Added <a href="https://theoceancleanup.com/donate/" target=”_blank”><b><u>The Ocean Cleanup</b></u></a> to donating category
 	<br>
 	<br>
-	<u><b>02/24/2021</b></u><br> - Added <a href="https://elevenplus.shop/" target=”_blank”><b><u>Elevenplus Shop</b></u></a> to clothing category
+	</div>
+	<u><b>02/24/2021</b></u><br>
+	<div class="description">- Added <a href="https://elevenplus.shop/" target=”_blank”><b><u>Elevenplus Shop</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://incheonbitcoin.shop/" target=”_blank”><b><u>IncheonBitcoinShop</b></u></a> and <a href="https://omnitype.com" target=”_blank”><b><u>Omnitype</b></u></a> to tech category
 	<br>
@@ -578,7 +833,9 @@
 	- Added <a href="https://www.multycolored.com/" target=”_blank”><b><u>Multycolored</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>02/23/2021</b></u><br> - Added <a href="https://www.zeroconfs.com/" target=”_blank”><b><u>zeroconfs</b></u></a> to clothing category
+	</div>
+	<u><b>02/23/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.zeroconfs.com/" target=”_blank”><b><u>zeroconfs</b></u></a> to clothing category
 	<br>
 	- Added <a href="https://www.libreoffice.org/donate/" target=”_blank”><b><u>LibreOffice</b></u></a> and <a href="https://saltlakecitymission.org/" target=”_blank”><b><u>Saltlake City Mission</b></u></a> to donating category
 	<br>
@@ -589,21 +846,27 @@
 	- Added <a href="https://crowncloud.net/" target=”_blank”><b><u>Crowncloud</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>02/22/2021</b></u><br> - Added <a href="https://kalimbera.com" target=”_blank”><b><u>Kalimbera</b></u></a> to misc category
+	</div>
+	<u><b>02/22/2021</b></u><br>
+	<div class="description">- Added <a href="https://kalimbera.com" target=”_blank”><b><u>Kalimbera</b></u></a> to misc category
 	<br>
 	- Added <a href="https://directvoltage.com/" target=”_blank”><b><u>DirectVoltage</b></u></a> to tech category
 	<br>
 	- Added <a href="https://kandykorn.shop" target=”_blank”><b><u>Kandykorn.Shop</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>02/21/2021</b></u><br> - Added <a href="https://flashquark.com" target=”_blank”><b><u>Flashquark</b></u></a> to tech category
+	</div>
+	<u><b>02/21/2021</b></u><br>
+	<div class="description">- Added <a href="https://flashquark.com" target=”_blank”><b><u>Flashquark</b></u></a> to tech category
 	<br>
 	- Added <a href="https://squadronsoap.com.au" target=”_blank”><b><u>Squadron Soap</b></u></a> to misc category
 	<br>
 	- Added <a href="https://www.gmdice.com" target=”_blank”><b><u>GMDice</b></u></a> to gaming category
 	<br>
 	<br>
-	<u><b>02/20/2021</b></u><br> - Added New Twitter Account Link: <a href="https://twitter.com/SpendYourDoge" target=”_blank”><b><u>SpendYourDoge</b></u></a>
+	</div>
+	<u><b>02/20/2021</b></u><br>
+	<div class="description">- Added New Twitter Account Link: <a href="https://twitter.com/SpendYourDoge" target=”_blank”><b><u>SpendYourDoge</b></u></a>
 	<br>
 	- Created "Pets" category
 	<br>
@@ -614,7 +877,9 @@
 	- Removed "Vaposhop" which is offline
 	<br>
 	<br>
-	<u><b>02/19/2021</b></u><br> - Added <a href="https://ayrgamersguild.com/" target=”_blank”><b><u>AYR Gamers Guild</b></u></a> , <a href="https://badfishsupply.com/" target=”_blank”><b><u>Badfish Supply</b></u></a> , <a href="https://www.mylegaledge.com/" target=”_blank”><b><u>MyLegalEdge</b></u></a> , <a href="https://gluecksmagie.de/" target=”_blank”><b><u>Gluecksmagie</b></u></a> , <a href="https://suatmm.com/" target=”_blank”><b><u>ShutUpAndTakeMyMoney</b></u></a> and <a href="https://urpuphub.com/" target=”_blank”><b><u>YourPubHub</b></u></a> to misc category
+	</div>
+	<u><b>02/19/2021</b></u><br>
+	<div class="description">- Added <a href="https://ayrgamersguild.com/" target=”_blank”><b><u>AYR Gamers Guild</b></u></a> , <a href="https://badfishsupply.com/" target=”_blank”><b><u>Badfish Supply</b></u></a> , <a href="https://www.mylegaledge.com/" target=”_blank”><b><u>MyLegalEdge</b></u></a> , <a href="https://gluecksmagie.de/" target=”_blank”><b><u>Gluecksmagie</b></u></a> , <a href="https://suatmm.com/" target=”_blank”><b><u>ShutUpAndTakeMyMoney</b></u></a> and <a href="https://urpuphub.com/" target=”_blank”><b><u>YourPubHub</b></u></a> to misc category
 	<br>
 	- Added <a href="https://www.specialtysodas.com/" target=”_blank”><b><u>Specialty Sodas</b></u></a> and <a href="https://wackysauces.com/" target=”_blank”><b><u>WackySauces</b></u></a> to food category
 	<br>
@@ -623,7 +888,9 @@
 	- Removed "KIS Shoes" and "Onwadan Foundation" which are offline
 	<br>
 	<br>
-	<u><b>02/18/2021</b></u><br> - Added <a href="https://deinserverhost.de/" target=”_blank”><b><u>DeinServerHost</b></u></a> , <a href="https://impreza.host/" target=”_blank”><b><u>Impreza</b></u></a> , <a href="https://rockhoster.com/" target=”_blank”><b><u>RockHoster</b></u></a> and <a href="https://evolution-host.com/" target=”_blank”><b><u>Evolution Host</b></u></a> to web hosting category
+	</div>
+	<u><b>02/18/2021</b></u><br>
+	<div class="description">- Added <a href="https://deinserverhost.de/" target=”_blank”><b><u>DeinServerHost</b></u></a> , <a href="https://impreza.host/" target=”_blank”><b><u>Impreza</b></u></a> , <a href="https://rockhoster.com/" target=”_blank”><b><u>RockHoster</b></u></a> and <a href="https://evolution-host.com/" target=”_blank”><b><u>Evolution Host</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://1stpal.com/" target=”_blank”><b><u>1stpal</b></u></a> , <a href="https://gamerall.com/" target=”_blank”><b><u>Gamerall</b></u></a> , <a href="https://www.monster.tech/" target=”_blank”><b><u>Monster.Tech</b></u></a> , <a href="https://www.torn.com" target=”_blank”><b><u>Torn.com</b></u></a> and <a href="https://skinport.com/" target=”_blank”><b><u>Skinport</b></u></a> to gaming category
 	<br>
@@ -638,20 +905,28 @@
 	- Added <a href="https://lemillesime.paris" target=”_blank”><b><u>Le Millesime Paris</b></u></a> to food category
 	<br>
 	<br>
-	<u><b>02/17/2021</b></u><br> - Added <a href="https://cryptoreads.net" target=”_blank”><b><u>CryptoReads</b></u></a> , <a href="https://a86.cz/" target=”_blank”><b><u>A86</b></u></a> , <a href="https://chip.tax" target=”_blank”><b><u>Chip.tax</b></u></a> and <a href="https://www.cov.care" target=”_blank”><b><u>Cov.Care</b></u></a> to misc category
+	</div>
+	<u><b>02/17/2021</b></u><br>
+	<div class="description">- Added <a href="https://cryptoreads.net" target=”_blank”><b><u>CryptoReads</b></u></a> , <a href="https://a86.cz/" target=”_blank”><b><u>A86</b></u></a> , <a href="https://chip.tax" target=”_blank”><b><u>Chip.tax</b></u></a> and <a href="https://www.cov.care" target=”_blank”><b><u>Cov.Care</b></u></a> to misc category
 	<br>
 	- Added <a href="https://thestonkshop.com" target=”_blank”><b><u>The Stonk Shop</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>02/15/2021</b></u><br> - Added <a href="https://metallicdicegames.com/" target=”_blank”><b><u>MetallicDiceGames</b></u></a> to gaming category
+	</div>
+	<u><b>02/15/2021</b></u><br>
+	<div class="description">- Added <a href="https://metallicdicegames.com/" target=”_blank”><b><u>MetallicDiceGames</b></u></a> to gaming category
 	<br>
 	- Added <a href="http://www.nyan.cat/index.php?cat=nyandoge" target=”_blank”><b><u>Nyan.cat</b></u></a> to donating category 
 	<br>
 	<br>
-	<u><b>02/14/2021</b></u><br> - Added <a href="https://www.coolstuffjapan.com/" target=”_blank”><b><u>CoolStuffJapan</b></u></a> and <a href="https://shop.wildgears.com/" target=”_blank”><b><u>WildGears</b></u></a> to misc category
+	</div>
+	<u><b>02/14/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.coolstuffjapan.com/" target=”_blank”><b><u>CoolStuffJapan</b></u></a> and <a href="https://shop.wildgears.com/" target=”_blank”><b><u>WildGears</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>02/13/2021</b></u><br> - Added <a href="https://greenwitchseed.ca" target=”_blank”><b><u>The Green Witch Seed</b></u></a> , <a href="https://devbrew.coffee" target=”_blank”><b><u>Devbrew Coffee</b></u></a> and <a href="https://shibacoffeeandtea.com" target=”_blank”><b><u>Shiba Coffee and Tea</b></u></a> to food category
+	</div>
+	<u><b>02/13/2021</b></u><br>
+	<div class="description">- Added <a href="https://greenwitchseed.ca" target=”_blank”><b><u>The Green Witch Seed</b></u></a> , <a href="https://devbrew.coffee" target=”_blank”><b><u>Devbrew Coffee</b></u></a> and <a href="https://shibacoffeeandtea.com" target=”_blank”><b><u>Shiba Coffee and Tea</b></u></a> to food category
 	<br>
 	- Added <a href="https://ushost247.com/" target=”_blank”><b><u>USHost247</b></u></a> to hosting category
 	<br>
@@ -662,14 +937,18 @@
 	- Added <a href="https://www.strangergamesbst.com" target=”_blank”><b><u>Stranger Games</b></u></a> to gaming category
 	<br>
 	<br>
-	<u><b>02/12/2021</b></u><br> - Added new "Dogecoin Payment Providers" category, including <a href="https://coingate.com" target=”_blank”><b><u>CoinGate</b></u></a> , <a href="https://www.coinpayments.net" target=”_blank”><b><u>Coinpayments</b></u></a> , <a href="https://account.nowpayments.io/create-account/?link_id=2878097166" target=”_blank”><b><u>NowPayments</b></u></a> and <a href="https://paykassa.pro/en/" target=”_blank”><b><u>PayKassa</b></u></a>
+	</div>
+	<u><b>02/12/2021</b></u><br>
+	<div class="description">- Added new "Dogecoin Payment Providers" category, including <a href="https://coingate.com" target=”_blank”><b><u>CoinGate</b></u></a> , <a href="https://www.coinpayments.net" target=”_blank”><b><u>Coinpayments</b></u></a> , <a href="https://account.nowpayments.io/create-account/?link_id=2878097166" target=”_blank”><b><u>NowPayments</b></u></a> and <a href="https://paykassa.pro/en/" target=”_blank”><b><u>PayKassa</b></u></a>
 	<br>
 	- Added <a href="https://airvpn.org" target=”_blank”><b><u>AirVPN</b></u></a> and <a href="https://coinvpn.io" target=”_blank”><b><u>CoinVPN</b></u></a> to VPN category
 	<br>
 	- Added <a href="https://psawear.de" target=”_blank”><b><u>PSAwear</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>02/10/2021</b></u><br> - Added <a href="https://coingate.com/gift-cards/all" target=”_blank”><b><u>CoinGate</b></u></a> , <a href="https://japangiftcard.com" target=”_blank”><b><u>JapanGiftCard</b></u></a> and <a href="https://www.turgame.com" target=”_blank”><b><u>TurGame</b></u></a> to gift card category
+	</div>
+	<u><b>02/10/2021</b></u><br>
+	<div class="description">- Added <a href="https://coingate.com/gift-cards/all" target=”_blank”><b><u>CoinGate</b></u></a> , <a href="https://japangiftcard.com" target=”_blank”><b><u>JapanGiftCard</b></u></a> and <a href="https://www.turgame.com" target=”_blank”><b><u>TurGame</b></u></a> to gift card category
 	<br>
 	- Added <a href="https://xethost.com" target=”_blank”><b><u>XetHost</b></u></a>, <a href="https://hostingidol.com" target=”_blank”><b><u>Hosting Idol</b></u></a> , <a href="https://www.hostinger.com/" target=”_blank”><b><u>Hostinger</b></u></a> and <a href="https://www.host-stage.net" target=”_blank”><b><u>HostStage</b></u></a> to web hosting category 
 	<br>
@@ -680,23 +959,33 @@
 	- Added <a href="https://digitech4all.eu" target=”_blank”><b><u>Digitech4All</b></u></a> to tech stores category
 	<br>
 	<br>
-	<u><b>02/09/2021</b></u><br> - Added <a href="https://www.facebook.com/VehicleCleansing/" target=”_blank”><b><u>ShineAuto</b></u></a> to automobile category, <a href="https://nutellafordoge.com/" target=”_blank”><b><u>NutellaForDoge</b></u></a> to food category and <a href="https://coin.host/" target=”_blank”><b><u>coin.host</b></u></a> to web hosting category
+	</div>
+	<u><b>02/09/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.facebook.com/VehicleCleansing/" target=”_blank”><b><u>ShineAuto</b></u></a> to automobile category, <a href="https://nutellafordoge.com/" target=”_blank”><b><u>NutellaForDoge</b></u></a> to food category and <a href="https://coin.host/" target=”_blank”><b><u>coin.host</b></u></a> to web hosting category
 	<br>
 	<br>
-	<u><b>02/08/2021</b></u><br> - Added <a href="https://www.gooddoge.com" target=”_blank”><b><u>Good Doge (Animal Shelters)</b></u></a> to donating category, <a href="https://1337.fashion/" target=”_blank”><b><u>1337 Fashion</b></u></a> to clothing category and <a href="https://www.kivaka.com/" target=”_blank”><b><u>Kivaka</b></u></a> to misc category
+	</div>
+	<u><b>02/08/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.gooddoge.com" target=”_blank”><b><u>Good Doge (Animal Shelters)</b></u></a> to donating category, <a href="https://1337.fashion/" target=”_blank”><b><u>1337 Fashion</b></u></a> to clothing category and <a href="https://www.kivaka.com/" target=”_blank”><b><u>Kivaka</b></u></a> to misc category
 	<br>
 	- Added "MyCoconutHeart" back to clothing category
 	<br>
 	- Added "Bitrefill" to the spotlight section, because it is much wow. Removed the "Dogecoin Stuff" category and moved the sites/stores in more fitting categories.
 	<br>
 	<br>
-	<u><b>02/07/2021</b></u><br> - Added <a href="https://hostmenow.org/" target=”_blank”><b><u>HostMeNow</b></u></a> to webhost category, <a href="https://expressbitcoinpostage.com/" target=”_blank”><b><u>ExpressBitcoinPostage</b></u></a> to misc category, <a href="https://evominers.com/" target=”_blank”><b><u>EvoMiners</b></u></a> to tech category and <a href="https://www.ninjagamekeys.com/" target=”_blank”><b><u>NinjaGameKeys</b></u></a> to gaming category
+	</div>
+	<u><b>02/07/2021</b></u><br>
+	<div class="description">- Added <a href="https://hostmenow.org/" target=”_blank”><b><u>HostMeNow</b></u></a> to webhost category, <a href="https://expressbitcoinpostage.com/" target=”_blank”><b><u>ExpressBitcoinPostage</b></u></a> to misc category, <a href="https://evominers.com/" target=”_blank”><b><u>EvoMiners</b></u></a> to tech category and <a href="https://www.ninjagamekeys.com/" target=”_blank”><b><u>NinjaGameKeys</b></u></a> to gaming category
 	<br>
 	<br>
-	<u><b>02/06/2021</b></u><br> - Had to move webhost and domain service after InfinityFree suspended my account because i was hosting crypto stuff. "spendyourdogecoins.rf.gd" is now "spendyourdogecoins.cf"
+	</div>
+	<u><b>02/06/2021</b></u><br>
+	<div class="description">- Had to move webhost and domain service after InfinityFree suspended my account because i was hosting crypto stuff. "spendyourdogecoins.rf.gd" is now "spendyourdogecoins.cf"
 	<br>
 	<br>
-	<u><b>02/05/2021</b></u><br> - Added <a href="https://ruinsofchaos.com/recruit.php?uniqid=421i" target=”_blank”><b><u>Ruins Of Chaos</b></u></a>
+	</div>
+	<u><b>02/05/2021</b></u><br>
+	<div class="description">- Added <a href="https://ruinsofchaos.com/recruit.php?uniqid=421i" target=”_blank”><b><u>Ruins Of Chaos</b></u></a>
 	<br>
 	- Added "Automobile" category
 	<br>
@@ -705,55 +994,77 @@
 	- Removed "ArgoMall" because they changed their business model and are not an online store anymore.
 	<br>
 	<br>
-	<u><b>02/03/2021</b></u><br> - Added <a href="https://kumaknives.com" target=”_blank”><b><u>KUMA Knives</b></u></a> to misc category
+	</div>
+	<u><b>02/03/2021</b></u><br>
+	<div class="description">- Added <a href="https://kumaknives.com" target=”_blank”><b><u>KUMA Knives</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>02/02/2021</b></u><br> - Added <a href="https://odeclothing.com/" target=”_blank”><b><u>Ode Clothing</b></u></a> to clothing category, <a href="https://1800safeair.com/" target=”_blank”><b><u>Kronos Advanced Technologies</b></u></a> and <a href="https://ksportusa.com/" target=”_blank”><b><u>Ksport USA</b></u></a> to misc category and <a href="https://twitter.com/GiveDirectly/status/1356251465107566598" target=”_blank”><b><u>GiveDirectly</b></u></a> to donating category
+	</div>
+	<u><b>02/02/2021</b></u><br>
+	<div class="description">- Added <a href="https://odeclothing.com/" target=”_blank”><b><u>Ode Clothing</b></u></a> to clothing category, <a href="https://1800safeair.com/" target=”_blank”><b><u>Kronos Advanced Technologies</b></u></a> and <a href="https://ksportusa.com/" target=”_blank”><b><u>Ksport USA</b></u></a> to misc category and <a href="https://twitter.com/GiveDirectly/status/1356251465107566598" target=”_blank”><b><u>GiveDirectly</b></u></a> to donating category
 	<br>
 	- Added "Travala" back to traveling category, accepting dogecoin again "soon"
 	<br>
 	- Removed "MyCoconutHeart" which is offline
 	<br>
 	<br>
-	<u><b>01/29/2021</b></u><br> - Added <a href="https://www.longhouse.co/" target=”_blank”><b><u>Longhouse Media</b></u></a> to misc category
+	</div>
+	<u><b>01/29/2021</b></u><br>
+	<div class="description">- Added <a href="https://www.longhouse.co/" target=”_blank”><b><u>Longhouse Media</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>01/17/2021</b></u><br> - Added <a href="https://pepship.com" target=”_blank”><b><u>PEPship</b></u></a> to misc category
+	</div>
+	<u><b>01/17/2021</b></u><br>
+	<div class="description">- Added <a href="https://pepship.com" target=”_blank”><b><u>PEPship</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>01/16/2021</b></u><br> - Added <a href="https://cryptolife.shop/en/" target=”_blank”><b><u>CryptoLife</b></u></a> and <a href="https://www.galaxus.ch/en" target=”_blank”><b><u>Galaxus</b></u></a> to misc category, <a href="https://www.teecetera.at/" target=”_blank”><b><u>Teecetera</b></u></a> to food category and <a href="https://mrchrissyhosting.co.uk/" target=”_blank”><b><u>MrChrissyHosting</b></u></a> to web hosting category
+	</div>
+	<u><b>01/16/2021</b></u><br>
+	<div class="description">- Added <a href="https://cryptolife.shop/en/" target=”_blank”><b><u>CryptoLife</b></u></a> and <a href="https://www.galaxus.ch/en" target=”_blank”><b><u>Galaxus</b></u></a> to misc category, <a href="https://www.teecetera.at/" target=”_blank”><b><u>Teecetera</b></u></a> to food category and <a href="https://mrchrissyhosting.co.uk/" target=”_blank”><b><u>MrChrissyHosting</b></u></a> to web hosting category
 	<br>
 	- Removed "WhaleApparel", "Trippki" and "HODL fuel", wich are offline
 	<br>
 	- Removed "Tor Project" because they no longer accept Dogecoin donations
 	<br>
 	<br>
-	<u><b>07/26/2020</b></u><br>- Added <a href="https://www.cryptoholicshop.com/" target=”_blank”><b><u>CryptoHolic</b></u></a> to misc category, <a href="https://www.suasa.net.br/en/" target=”_blank”><b><u>Suasa</b></u></a> to food category and <a href="https://www.coinsbee.com/en/" target=”_blank”><b><u>CoinsBee</b></u></a> to gift cards category
+	</div>
+	<u><b>07/26/2020</b></u><br>
+	<div class="description">- Added <a href="https://www.cryptoholicshop.com/" target=”_blank”><b><u>CryptoHolic</b></u></a> to misc category, <a href="https://www.suasa.net.br/en/" target=”_blank”><b><u>Suasa</b></u></a> to food category and <a href="https://www.coinsbee.com/en/" target=”_blank”><b><u>CoinsBee</b></u></a> to gift cards category
 	<br>
 	- Removed "cocomfy", "thedotascene", "MoreStamps", "247bits", "Crypto Posters" and "CryptoUniverse", wich are offline
 	<br>
 	<br>
-	<u><b>03/17/2020</b></u><br>- Added <a href="https://airbrushcustoms.net/" target=”_blank”><b><u>AirbrushCustoms</b></u></a> to clothing category and <a href="https://naturalpetshop.com.au" target=”_blank”><b><u>NaturalPetShop</b></u></a> to misc category
+	</div>
+	<u><b>03/17/2020</b></u><br>
+	<div class="description">- Added <a href="https://airbrushcustoms.net/" target=”_blank”><b><u>AirbrushCustoms</b></u></a> to clothing category and <a href="https://naturalpetshop.com.au" target=”_blank”><b><u>NaturalPetShop</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>03/05/2020</b></u><br>- Replaced "CRYPTOiSH" with their new shop <a href="https://blockchainkicks.com/" target=”_blank”><u><b>"blockchainkicks"</b></u></a>
+	</div>
+	<u><b>03/05/2020</b></u><br>
+	<div class="description">- Replaced "CRYPTOiSH" with their new shop <a href="https://blockchainkicks.com/" target=”_blank”><u><b>"blockchainkicks"</b></u></a>
 	<br>
 	- Added <a href="https://www.coinvibe.net/" target=”_blank”><u><b>"Coinvibe"</b></u></a> back to misc category and also added <a href="https://black.boatsters.com/" target=”_blank”><u><b>"Boatsters"</b></u></a> to misc category
 	<br>
 	- Removed "MyCryptoGear" and "CryptoContactLenses", both seem offline. Also removed "Travala" which changed their payment provider and doesn't accept dogecoin for now
 	<br>
 	<br>
-	<u><b>12/30/2019</b></u><br>- Added <a href="https://the-flyingrhino-market.com/" target=”_blank”><u><b>"THE FLYINGRHINO MARKET"</b></u></a> to clothing category
+	</div>
+	<u><b>12/30/2019</b></u><br>
+	<div class="description">- Added <a href="https://the-flyingrhino-market.com/" target=”_blank”><u><b>"THE FLYINGRHINO MARKET"</b></u></a> to clothing category
 	<br>
 	- Removed "CoinVibe", which shows a phishing warning and "CryptoLife", which seems offline
 	<br>
 	<br>
-	<u><b>11/27/2019</b></u><br>- Added <a href="https://www.ultragate.net/j/" target=”_blank”><u><b>"Jobgate"</b></u></a> to misc category
+	</div>
+	<u><b>11/27/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.ultragate.net/j/" target=”_blank”><u><b>"Jobgate"</b></u></a> to misc category
 	<br>
 	- Removed "Kimchisocks", "CryptoPet" and "Topshelftoker", all shops currently offline
 	<br>
 	<br>
-	<u><b>09/08/2019</b></u><br>- Added <a href="https://www.snel.com/" target=”_blank”><u><b>"Snel"</b></u></a> to web hosting category
+	</div>
+	<u><b>09/08/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.snel.com/" target=”_blank”><u><b>"Snel"</b></u></a> to web hosting category
 	<br>
 	- Added <a href="https://bitcars.eu/" target=”_blank”><u><b>BitCars</b></u></a>, <a href="https://olympianbitcoin.store/" target=”_blank”><u><b>"Olympian Bitcoin"</b></u></a>, <a href="https://www.mobisun.com/" target=”_blank”><u><b>"MobiSun"</b></u></a>, <a href="https://uk.pi-supply.com/" target=”_blank”><u><b>"Pi-Supply"</b></u></a> and <a href="https://gpstrackingmadeeasy.com/" target=”_blank”><u><b>"GPS Tracking Made Easy"</b></u></a> to misc category
 	<br>
@@ -762,73 +1073,111 @@
 	- Added <a href="https://101vape.com/" target=”_blank”><u><b>"101Vape"</b></u></a>, <a href="https://rxvape.com/" target=”_blank”><u><b>"RX Vape"</b></u></a> and <a href="https://vapecrypto.com/" target=”_blank”><u><b>"Vape Crypto"</b></u></a> to smoking category
 	<br>
 	<br>
-	<u><b>09/07/2019</b></u><br>- Added <a href="https://clockworkcrypto.com/" target=”_blank”><u><b>"ClockworkCrypto"</b></u></a> to clothing category
+	</div>
+	<u><b>09/07/2019</b></u><br>
+	<div class="description">- Added <a href="https://clockworkcrypto.com/" target=”_blank”><u><b>"ClockworkCrypto"</b></u></a> to clothing category
 	<br>
 	- Removed "Bookcoinshop", "NeverFiat" and "CryptoAndProud", all sites are offline
 	<br>
 	<br>
-	<u><b>08/20/2019</b></u><br>- Added <a href="https://www.mycoconutheart.com/" target=”_blank”><u><b>"MyCoconutHeart"</b></u></a> to clothing category
+	</div>
+	<u><b>08/20/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.mycoconutheart.com/" target=”_blank”><u><b>"MyCoconutHeart"</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>07/29/2019</b></u><br>- Added <a href="https://www.privex.io/" target=”_blank”><b><u>"Privex"</u></b></a> to web hosting category
+	</div>
+	<u><b>07/29/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.privex.io/" target=”_blank”><b><u>"Privex"</u></b></a> to web hosting category
 	<br>
 	<br>
-	<u><b>07/24/2019</b></u><br>- Added <a href="http://www.onwadanfoundation.org/donate/" target=”_blank”><u><b>"Onwadan Foundation"</u></b></a> to donation category
+	</div>
+	<u><b>07/24/2019</b></u><br>
+	<div class="description">- Added <a href="http://www.onwadanfoundation.org/donate/" target=”_blank”><u><b>"Onwadan Foundation"</u></b></a> to donation category
 	<br>
 	- Removed "FiatEctomy" and "Giacobbe & Co", both sites are offline
 	<br>
 	<br>
-	<u><b>07/19/2019</b></u><br>- Added <a href="https://tormentbox.com/" target=”_blank”><b><u>"TormentBox"</b></u></a> to misc category
+	</div>
+	<u><b>07/19/2019</b></u><br>
+	<div class="description">- Added <a href="https://tormentbox.com/" target=”_blank”><b><u>"TormentBox"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>07/15/2019</b></u><br>- Added <a href="https://www.etsy.com/shop/kaleidoo" target=”_blank”><b><u>"KALEIDOO"</b></u></a> to clothing category
+	</div>
+	<u><b>07/15/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.etsy.com/shop/kaleidoo" target=”_blank”><b><u>"KALEIDOO"</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>07/05/2019</b></u><br>- Added "morestamps.global" back into the directory
+	</div>
+	<u><b>07/05/2019</b></u><br>
+	<div class="description">- Added "morestamps.global" back into the directory
 	<br>
 	- Removed "buywithcoins.online" and "suchlist.com", both sites currently give out an unsecure connection warning
 	<br>
 	<br>
-	<u><b>05/23/2019</b></u><br>- Added <a href="https://bitstore.tech/" target=”_blank”><u><b>"BitStore"</b></u></a> to misc category
+	</div>
+	<u><b>05/23/2019</b></u><br>
+	<div class="description">- Added <a href="https://bitstore.tech/" target=”_blank”><u><b>"BitStore"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>05/18/2019</b></u><br>- Added <a href="https://www.cryptobantam.com/" target=”_blank”><u><b>"CryptoBantam"</b></u></a> to clothing category
+	</div>
+	<u><b>05/18/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.cryptobantam.com/" target=”_blank”><u><b>"CryptoBantam"</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>05/17/2019</b></u><br>- Removed "crypto-coffee.com" and "morestamps.global", both are (currently?) offline
+	</div>
+	<u><b>05/17/2019</b></u><br>
+	<div class="description">- Removed "crypto-coffee.com" and "morestamps.global", both are (currently?) offline
 	<br>
 	<br>
-	<u><b>05/08/2019</b></u><br>- Changed the address for CoinCards.ca to <a href="https://www.coincards.com/" target=”_blank”><u><b>"coincards.com"</b></u></a>
+	</div>
+	<u><b>05/08/2019</b></u><br>
+	<div class="description">- Changed the address for CoinCards.ca to <a href="https://www.coincards.com/" target=”_blank”><u><b>"coincards.com"</b></u></a>
 	<br>
 	- Added <a href="https://cryptocontactlenses.com/" target=”_blank”><u><b>"CryptoContactLenses"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>05/03/2019</b></u><br>- Added <a href="https://www.kryptothreadz.com/" target=”_blank”><u><b>"Krypto Threadz"</b></u></a> to clothing category
+	</div>
+	<u><b>05/03/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.kryptothreadz.com/" target=”_blank”><u><b>"Krypto Threadz"</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>05/02/2019</b></u><br>- Added <a href="https://www.crwnlifestyle.co/collections" target=”_blank”><u><b>"CrownLifestyle"</b></u></a> to clothing category
+	</div>
+	<u><b>05/02/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.crwnlifestyle.co/collections" target=”_blank”><u><b>"CrownLifestyle"</b></u></a> to clothing category
 	<br>
 	<br>
-	<u><b>05/01/2019</b></u><br>- Added <a href="https://tpvsyregistradoras.es/es/" target=”_blank”><u><b>"DS Tec"</b></u></a> to tech category
+	</div>
+	<u><b>05/01/2019</b></u><br>
+	<div class="description">- Added <a href="https://tpvsyregistradoras.es/es/" target=”_blank”><u><b>"DS Tec"</b></u></a> to tech category
 	<br>
 	- Added <a href="https://almightyboost.com/" target=”_blank”><u><b>"AlmightyBoost"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>04/28/2019</b></u><br>- Added <a href="https://peername.com/" target=”_blank”><u><b>"Peername"</b></u></a> and <a href="https://www.coinvibe.net/" target=”_blank”><u><b>"Coinvibe"</b></u></a> to misc category
+	</div>
+	<u><b>04/28/2019</b></u><br>
+	<div class="description">- Added <a href="https://peername.com/" target=”_blank”><u><b>"Peername"</b></u></a> and <a href="https://www.coinvibe.net/" target=”_blank”><u><b>"Coinvibe"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>04/27/2019</b></u><br>- Added <a href="https://bookcoinshop.com/" target=”_blank”><u><b>"Bookcoin"</b></u></a> to misc category
+	</div>
+	<u><b>04/27/2019</b></u><br>
+	<div class="description">- Added <a href="https://bookcoinshop.com/" target=”_blank”><u><b>"Bookcoin"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>04/26/2019</b></u><br>- Added <a href="https://www.247bits.com/" target=”_blank”><u><b>"247bits"</b></u></a> to misc category
+	</div>
+	<u><b>04/26/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.247bits.com/" target=”_blank”><u><b>"247bits"</b></u></a> to misc category
 	<br>
 	<br>
-	<u><b>04/25/2019</b></u><br>- Added <a href="https://bitcoin.travel/" target=”_blank”><u><b>"Bitcoin.travel"</b></u></a> to travel category
+	</div>
+	<u><b>04/25/2019</b></u><br>
+	<div class="description">- Added <a href="https://bitcoin.travel/" target=”_blank”><u><b>"Bitcoin.travel"</b></u></a> to travel category
 	<br>
 	- Added Twitter Profile Link
 	<br>
 	<br>
-	<b><u>04/24/2019</b></u><br>- Added <a href="https://surfshark.com/" target=”_blank”><u><b>"Surfshark"</b></u></a> , <a href="https://www.blackvpn.com/" target=”_blank”><u><b>"BlackVPN"</b></u></a> , <a href="https://www.safervpn.com/" target=”_blank”><u><b>"SaferVPN"</b></u></a> , <a href="https://www.cactusvpn.com/" target=”_blank”><u><b>"CactusVPN"</b></u></a> and <a href="https://hidemyna.me/" target=”_blank”><u><b>"HideMy.name"</b></u></a> to VPN category
+	</div>
+	<b><u>04/24/2019</b></u><br>
+	<div class="description">- Added <a href="https://surfshark.com/" target=”_blank”><u><b>"Surfshark"</b></u></a> , <a href="https://www.blackvpn.com/" target=”_blank”><u><b>"BlackVPN"</b></u></a> , <a href="https://www.safervpn.com/" target=”_blank”><u><b>"SaferVPN"</b></u></a> , <a href="https://www.cactusvpn.com/" target=”_blank”><u><b>"CactusVPN"</b></u></a> and <a href="https://hidemyna.me/" target=”_blank”><u><b>"HideMy.name"</b></u></a> to VPN category
 	<br>
 	- Added <a href="https://www.greitai.lt/en/" target=”_blank”><u><b>"Greitai"</b></u></a> to Travel category
 	<br>
@@ -836,23 +1185,61 @@
 	<br>
 	- Added <a href="https://www.gamesonly.at/" target=”_blank”><u><b>"Gamesonly.at"</b></u></a> to Gaming category
 	<br><br>
-	<u><b>04/23/2019</b></u><br>- Added "Tech Stores" category and added <a href="https://www.argomall.com/" target=”_blank”><b><u>"ArgoMall"</u></b></a> to tech stores category
+	</div>
+	<u><b>04/23/2019</b></u><br>
+	<div class="description">- Added "Tech Stores" category and added <a href="https://www.argomall.com/" target=”_blank”><b><u>"ArgoMall"</u></b></a> to tech stores category
 	<br>
 	<br>
-	<u><b>04/22/2019</b></u><br>- Added <a href="https://www.hodlfuel.com/" target=”_blank”><b><u>"HODL Fuel"</b></u></a> to food category
+	</div>
+	<u><b>04/22/2019</b></u><br>
+	<div class="description">- Added <a href="https://www.hodlfuel.com/" target=”_blank”><b><u>"HODL Fuel"</b></u></a> to food category
 	<br>
 	<br>
-        <u><b>04/21/2019</b></u><br>- Made website public
-        <br><br>
+	</div>
+	<u><b>04/21/2019</b></u><br>
+	<div class="description">- Made website public
+    <br>
+	<br>
+	</div>
     </div>
-	
+	</div>
     <br>
 <br>
+</main>
 
+<div class="background">
+	<a href="https://www.dogecoin.com" target="_blank"><img src="./image/doge.png" height="100" width="100" onmouseover="this.src='./image/dogewow.png'" onmouseout="this.src='./image/doge.png'"></a>
+	</div>
+	
+<footer class="foot">
+	
+	<!-- Social Media Buttons -->
+	<br>
+		<div class="icon-bar">
+			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank"><img src="./image/icons/email.png" alt="Email"></a>
+			<a href="https://twitter.com/SpendYourDoge" target="_blank"><img src="./image/icons/twitter.png" alt="Twitter"></a>
+			<a href="https://www.instagram.com/spendyourdogecoins/" target="_blank"><img src="./image/icons/instagram.png" alt="Instagram"></a>
+		</div>
+	
+			<div style="font-size: 13px; text-align: center;">
+			<span>&copy;</span> 2021 SpendYourDogecoins
+			<br>
+			Created by <a href="https://www.twitter.com/DimiFW/"><u>DimiFW</u></a>
+			<br><br>
+			Donate:
+			<br>D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN
+		</div>
 
-<h5 style="font-size: 9px; text-align: center;"><a href="https://www.reddit.com/user/DimiFW/"><u>/u/DimiFW</u></a><br>Donate: D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN</h5>
-<h5 style="text-align: center;"><script src="https://www.w3counter.com/tracker.js?id=136549"></script></h5>
-</div>
+<div style="text-align: center; display:inline-block; float:right; position:relative; right: 5px; bottom: 50px;">
+		<a href="graphics.html" style="text-align: center;"><span>&#8226;</span><u><b>Banners</b></u><span>&#8226;</span></a>
+	</div>		
+		<br>
+		<div style="text-align: center;">
+		<script src="https://www.w3counter.com/tracker.js?id=136549"></script>
+		<br><br>
+	</div>
+		
+</footer>
 </body>
 
 </html>

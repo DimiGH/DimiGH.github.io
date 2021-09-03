@@ -1,105 +1,230 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
 <!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
+	<meta charset="utf-8">
+	<title>SpendYourDogecoins - Dogecoin Shop Directory</title>
 
-<!-- Search Engine -->
-<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-<meta name="keywords" content="Doge,Dogecoin,Shops,Pay,List,Directory">
-<meta name="author" content="DimiFW">
-<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
+	<!-- Search Engine -->
+	<meta name="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="keywords" content="Doge,Dogecoin,Shops,Stores,Pay,List,Directory" />
+	<meta name="author" content="DimiFW" />
+	<meta property="og:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="SpendYourDogecoins.cf" />
+	<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+
+	<!-- for Twitter -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="https://www.spendyourdogecoins.cf" />
+	<meta name="twitter:title" content="SpendYourDogecoins" />
+	<meta name="twitter:description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more." />
+	<meta name="twitter:image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png" />
+	<meta name="twitter:site" content="@SpendYourDoge" />
+	<meta name="twitter:creator" content="@DimiFW" />
+
+	<link rel="icon" href="./image/favicon.ico" />
+
+    	<style>
+	* {
+		box-sizing: border-box;
+	}
 	
-<!-- Schema.org for Google -->
-<meta itemprop="name" content="SpendYourDogecoins.cf">
-<meta itemprop="description" content="Dogecoin Shop Directory including merch, clothing, food, giftcards, donating, web services and much more.">
-<meta itemprop="image" content="https://www.spendyourdogecoins.cf/image/avatarbig.png">
-
-	
-	<link rel="icon" href="/image/favicon.ico">
-
-    <style>
-
-        body {
-            font-family: 'Comic Sans MS', Verdana, sans-serif;
-            color: #FFCC00;
-            background-color: #323232;
-        }
-
-        a:link {
-            color: #FFCC00;
-            text-decoration: none;
-        }
-
-        a:visited {
-            color: #FFCC00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #FFCC00;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-        }
-
-        a:active {
-            color: #FFFFFF;
-            text-decoration: underline;
-            text-shadow: 0px 0px 10px #FF6699;
-
+	body {
+		font-family: "Doge Sans", "Comic Sans MS", Verdana, sans-serif;
+		color: #FFCC00;
+		background-color: #323232;
+		margin: 0;
 	}
 
-	div.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 165px;
-  margin: 3px;
-  border: 1px solid #FFCC00;
+	.header {
+		background-color: #3c3c3c;
+		padding-top: 10px;
+		padding-bottom: 1px;
+		text-align: center;
+	}
+
+	ul {
+     list-style-type: none;
+  margin: auto;
+  padding: 0;
+  height: auto;
+  max-width: 440px;
+  overflow: hidden;
+  background-color: #252525;
+}
+
+li {
+  float: left;
+  border-right:1px solid #494949;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
   background-color: #323232;
 }
 
+.active {
+  background-color: #323232;
+}
 
-    </style>
+	a:link {
+		color: #FFCC00;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: #FFCC00;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #FFCC00;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
+
+	a:active {
+		color: #FFCC00;
+		text-decoration: underline;
+		text-shadow: 0 0 10px #FF6699;
+	}
+	
+	.icon-bar {
+  text-align: center;
+  }
+
+.icon-bar a:hover {
+  -webkit-filter: brightness(125%);
+  filter: brightness(125%);
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.foot {
+  background-color: #3c3c3c;
+}
+
+.background {
+    height: 100px;
+    width: 50%;
+    background: url(img) no-repeat top center;
+	margin-left: 1%;
+}
+
+.bannersmoll {
+ height: auto;
+ max-width: 100%;
+}
+
+.description {
+	color: #ffeea7;
+}
+
+	</style>
 
 </head>
 
-<body>
+<body class="Site">
+<header>
+		
+	
+		<div class="header">
+			<h1 style="font-size: 15px; text-align: center;">
+			<a href="index.html">
+			<img class="bannersmoll" src="./image/banner.png" alt="SpendYourDogecoins">
+			</a>
+		
+		<!-- Navigation -->
+		<ul>
+			<li><a href="index.html" style="text-decoration: none">Home</a></li>
+			<li><a href="directory.html" style="text-decoration: none">Directory</a></li>
+			<li><a href="changelog.html" style="text-decoration: none">Changelog</a></li>
+			<li><a href="about.html" style="text-decoration: none">About</a></li>
+			<li><a href="partners.html" style="text-decoration: none">Other Doge Stuff</a></li>
+		</ul>
+		
+		</h1>
+		</div>
+	</header>
 
-    <h1 style="font-size: 15px; text-align: center;"><a href="index.html"><img src="/image/banner.png" alt="SpendYourDogecoins"></a></h1>
-    
-	<h2 style="font-size: 18px; text-align: center;"><a href="index.html">Home</a> - <a href="changelog.html">Changelog</a> - <a href="about.html">FAQ</a> - <a href="partners.html">Other Doge Stuff</a> - <a href="graphics.html">Graphics</a> - <a href="mailto:spendyourdogecoins@protonmail.com" target=”_blank”>Email</a> - <a href="https://twitter.com/SpendYourDoge" target=”_blank”>Twitter</a>
-
-    <h3 style="font-size: 25px; color: #FF6699; text-align: center;">~ ~ ~ Graphics ~ ~ ~</h3>
+	<main class="Site-content">
+    <h3 style="font-size: 25px; color: #FF6699; text-align: center;"> Banner </h3>
 
 	<div style="font-size: 15px; text-align: center;">
 
-	<img src="/image/banner.png" alt="Banner"></a>
+	<img src="./image/banner.png" alt="Banner"></a>
 	<br>Horizontal Banner 600x100
 	<br><br>
-	<img src="/image/banner200.png" alt="Banner200"></a>
+	<img src="./image/banner200.png" alt="Banner200"></a>
 	<br>Horizontal Banner 200x100
 	<br><br>
-    <img src="/image/avatar.png" alt="AvatarRound"></a>
+    <img src="./image/avatar.png" alt="AvatarRound"></a>
 	<br>Round Avatar 600x600
 	<br><br>
-	<img src="/image/bannerv.png" alt="BannerV"></a>
+	<img src="./image/bannerv.png" alt="BannerV"></a>
 	<br>Vertical Banner 100x600
 	
     </div>
 	
     <br>
 <br>
+</main>
+<div class="background">
+	<a href="https://www.dogecoin.com" target="_blank"><img src="./image/doge.png" height="100" width="100" onmouseover="this.src='./image/dogewow.png'" onmouseout="this.src='./image/doge.png'"></a>
+	</div>
+	
+	<footer class="foot">
+	
+	<!-- Social Media Buttons -->
+	<br>
+		<div class="icon-bar">
+			<a href="mailto:spendyourdogecoins@protonmail.com" target="_blank"><img src="./image/icons/email.png" alt="Email"></a>
+			<a href="https://twitter.com/SpendYourDoge" target="_blank"><img src="./image/icons/twitter.png" alt="Twitter"></a>
+			<a href="https://www.instagram.com/spendyourdogecoins/" target="_blank"><img src="./image/icons/instagram.png" alt="Instagram"></a>
+		</div>
+	
+			<div style="font-size: 13px; text-align: center;">
+			<span>&copy;</span> 2021 SpendYourDogecoins
+			<br>
+			Created by <a href="https://www.twitter.com/DimiFW/"><u>DimiFW</u></a>
+			<br><br>
+			Donate:
+			<br>D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN
+		</div>
 
-
-<h5 style="font-size: 9px; text-align: center;"><a href="https://www.reddit.com/user/DimiFW/"><u>/u/DimiFW</u></a><br>Donate: D62WT9ebWbVW8QtBE57TE8CUaH3s95T3dN</h5>
-<h5 style="text-align: center;"><script src="https://www.w3counter.com/tracker.js?id=136549"></script></h5>
-</div>
+<div style="text-align: center; display:inline-block; float:right; position:relative; right: 5px; bottom: 50px;">
+		<a href="graphics.html" style="text-align: center;"><span>&#8226;</span><u><b>Banners</b></u><span>&#8226;</span></a>
+	</div>		
+		<br>
+		<div style="text-align: center;">
+		<script src="https://www.w3counter.com/tracker.js?id=136549"></script>
+		<br><br>
+	</div>
+		
+</footer>
 </body>
 
 </html>
