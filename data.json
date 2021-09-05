@@ -116,13 +116,6 @@
     "title": "Clothing",
     "entries": [
       {
-        "name": "1337 Fashion",
-        "description": "Various Clothes and merch",
-        "href": "https://1337.fashion/",
-        "location": "USA",
-        "method": "Coinpayments"
-      },
-      {
         "name": "AirbrushCustoms",
         "description": "Custom Airbrushed T shirts, Hats, Hoodies, and more",
         "href": "https://airbrushcustoms.net/",
@@ -471,6 +464,13 @@
         "href": "https://topcryptee.com",
         "location": "Lithuania",
         "method": "Coinpayments"
+      },
+      {
+        "name": "V. H. Hess",
+        "description": "Vaporwave Clothing & Retro Apparel",
+        "href": "https://vhhess.com",
+        "location": "United States",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "zeroconfs",
@@ -1094,6 +1094,12 @@
         "description": "Collecting donations for Wikipedia and Wikimedia projects",
         "href": "https://donate.wikimedia.org/wiki/Ways_to_Give#Cryptocurrency",
         "method": "via Bitpay"
+      },
+      {
+        "name": "Wild Animal Sanctuary",
+        "description": "Animal Sanctuary rescuing large predators",
+        "href": "https://www.wildanimalsanctuary.org/crypto-currency",
+        "method": "via Coinbase Commerce"
       }
     ]
   },
@@ -1489,6 +1495,13 @@
         "method": "CoinGate"
       },
       {
+        "name": "Mimble",
+        "description": "Mobile Gifting App with 150+ different Gift Cards",
+        "href": "https://www.mimble.co",
+        "location": "United States",
+        "method": "In-App Payment"
+      },
+      {
         "name": "TurGame",
         "description": "Mainly Turkey Gift Cards",
         "href": "https://www.turgame.com/",
@@ -1546,6 +1559,13 @@
         "href": "https://www.crmjewelers.com/",
         "location": "USA",
         "method": "Bitpay"
+      },
+      {
+        "name": "Doge Kings Club",
+        "description": "Dogecoin Ring",
+        "href": "https://www.dogekingsclub.com/",
+        "location": "Germany",
+        "method": "Coinpayments"
       },
       {
         "name": "Glamcarat",
@@ -1705,13 +1725,6 @@
         "href": "https://www.royaldoge.com",
         "location": "USA",
         "method": "Coinpayments/NowPayments"
-      },
-      {
-        "name": "ruffi0",
-        "description": "ruffi0 Merch, Shirts, Bags, Stickers and more",
-        "href": "https://ruffi0.com/shop/",
-        "location": "USA",
-        "method": "NowPayments"
       },
       {
         "name": "Springrates Merch",
@@ -3009,13 +3022,6 @@
         "description": "Kalimba/Thumb Piano store",
         "href": "https://kalimbera.com/",
         "location": "Ireland",
-        "method": "Coinpayments"
-      },
-      {
-        "name": "KawaiiCrypto",
-        "description": "Cute Dogecoin/Crypto Stickers",
-        "href": "https://kawaiicrypto.com/",
-        "location": "USA",
         "method": "Coinpayments"
       },
       {
