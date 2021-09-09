@@ -520,6 +520,13 @@
         "method": "Bitpay"
       },
       {
+        "name": "Keystone",
+        "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
+        "href": "https://keyst.one",
+        "location": "Hongkong",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Ledger",
         "description": "Hardware Wallet, buyable with Dogecoin and supporting Dogecoin",
         "href": "https://www.ledger.com/",
@@ -1828,6 +1835,13 @@
         "method": "Coinpayments"
       },
       {
+        "name": "Tail Treasures",
+        "description": "Turning pet pictures into a work of art",
+        "href": "https://tailtreasures.com/",
+        "location": "USA",
+        "method": "Coinbase Commerce"
+      },
+      {
         "name": "Wag!",
         "description": "Pet Care Service",
         "href": "https://wagwalking.com",
@@ -1997,6 +2011,13 @@
         "href": "https://www.stakebox.org/",
         "location": "UK",
         "method": "Bitpay/Coinpayments"
+      },
+      {
+        "name": "TheKey Company",
+        "description": "Keyboards and accessories",
+        "href": "https://thekey.company",
+        "location": "USA",
+        "method": "Coinbase Commerce"
       },
       {
         "name": "Webhallen",
